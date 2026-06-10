@@ -1,0 +1,161 @@
+import { useState } from "react";
+import { Link } from "react-router";
+import { motion } from "framer-motion";
+import { ArrowLeft, Search } from "lucide-react";
+import Layout from "@/components/Layout";
+import { useApp } from "@/context/AppContext";
+import { t } from "@/lib/i18n";
+
+interface Ticket {
+  id: string;
+  date: string;
+  sport: string;
+  plays: number;
+  amount: number;
+  payout: number;
+  status: "pending" | "won" | "lost" | "cashed";
+}
+
+const mockTickets: Ticket[] = [
+  { id: "T-1001", date: "2025-06-10", sport: "MLB", plays: 3, amount: 50, payout: 142.5, status: "won" },
+  { id: "T-1002", date: "2025-06-10", sport: "NBA", plays: 2, amount: 25, payout: 0, status: "lost" },
+  { id: "T-1003", date: "2025-06-09", sport: "Soccer", plays: 1, amount: 100, payout: 250, status: "won" },
+  { id: "T-1004", date: "2025-06-09", sport: "MLB", plays: 4, amount: 75, payout: 0, status: "pending" },
+  { id: "T-1005", date: "2025-06-08", sport: "WNBA", plays: 2, amount: 30, payout: 54, status: "cashed" },
+  { id: "T-1006", date: "2025-06-08", sport: "LMB", plays: 1, amount: 40, payout: 0, status: "lost" },
+  { id: "T-1007", date: "2025-06-07", sport: "NBA-S", plays: 3, amount: 60, payout: 180, status: "won" },
+  { id: "T-1008", date: "2025-06-07", sport: "MLB", plays: 2, amount: 20, payout: 0, status: "pending" },
+];
+
+const statusColors: Record<string, string> = {
+  pending: "bg-[#f39c12] text-white",
+  won: "bg-[#2ecc71] text-white",
+  lost: "bg-[#e74c3c] text-white",
+  cashed: "bg-[#3498db] text-white",
+};
+
+export default function Tickets() {
+  const { language } = useApp();
+  const [search, setSearch] = useState("");
+  const [filter, setFilter] = useState("all");
+
+  const filtered = mockTickets.filter((t) => {
+    const matchesSearch = t.id.toLowerCase().includes(search.toLowerCase()) ||
+      t.sport.toLowerCase().includes(search.toLowerCase());
+    const matchesFilter = filter === "all" || t.status === filter;
+    return matchesSearch && matchesFilter;
+  });
+
+  return (
+    <Layout showSidebar={true} showBetSlip={true}>
+      <motion.div
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 0.3 }}
+        className="min-h-[calc(100vh-56px)] bg-[#3a3f47] p-6"
+      >
+        {/* Header */}
+        <div className="mb-6 flex items-center justify-between">
+          <div className="flex items-center gap-4">
+            <Link
+              to="/"
+              className="flex h-9 w-9 items-center justify-center rounded-md text-white transition-colors hover:bg-white/10"
+            >
+              <ArrowLeft size={18} />
+            </Link>
+            <h1 className="text-xl font-bold text-white">{t(language, "tickets")}</h1>
+          </div>
+
+          {/* Search */}
+          <div className="relative">
+            <Search
+              size={16}
+              className="absolute left-3 top-1/2 -translate-y-1/2 text-[#7f8c8d]"
+            />
+            <input
+              type="text"
+              value={search}
+              onChange={(e) => setSearch(e.target.value)}
+              placeholder="Search tickets..."
+              className="h-9 w-60 rounded-md border border-[#555a60] bg-[#4a4f57] pl-9 pr-3 text-sm text-white outline-none transition-colors placeholder:text-[#7f8c8d] focus:border-[#3498db]"
+            />
+          </div>
+        </div>
+
+        {/* Filters */}
+        <div className="mb-4 flex gap-2">
+          {["all", "pending", "won", "lost", "cashed"].map((f) => (
+            <button
+              key={f}
+              onClick={() => setFilter(f)}
+              className={`rounded px-3 py-1.5 text-xs font-semibold uppercase transition-colors ${
+                filter === f
+                  ? "bg-[#3498db] text-white"
+                  : "bg-[#4a4f57] text-[#b0b5ba] hover:bg-[#4a4f57]/80"
+              }`}
+            >
+              {f}
+            </button>
+          ))}
+        </div>
+
+        {/* Tickets Table */}
+        <div className="overflow-hidden rounded">
+          <div className="grid grid-cols-[100px_100px_80px_70px_80px_100px_90px] bg-[#2c3e50] text-[13px] font-semibold uppercase tracking-wider text-white">
+            <div className="px-3 py-3">ID</div>
+            <div className="px-3 py-3">Date</div>
+            <div className="px-3 py-3">Sport</div>
+            <div className="px-3 py-3 text-center">Plays</div>
+            <div className="px-3 py-3 text-right">Amount</div>
+            <div className="px-3 py-3 text-right">Payout</div>
+            <div className="px-3 py-3 text-center">Status</div>
+          </div>
+
+          {filtered.map((ticket, idx) => (
+            <motion.div
+              key={ticket.id}
+              initial={{ opacity: 0, y: 8 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: idx * 0.03, duration: 0.2 }}
+              className={`grid grid-cols-[100px_100px_80px_70px_80px_100px_90px] border-b border-[#555a60] ${
+                idx % 2 === 0 ? "bg-[#3a3f47]" : "bg-[#4a4f57]"
+              }`}
+            >
+              <div className="px-3 py-3 text-sm font-medium text-white">
+                {ticket.id}
+              </div>
+              <div className="px-3 py-3 text-sm text-[#b0b5ba]">{ticket.date}</div>
+              <div className="px-3 py-3 text-sm font-semibold text-white">
+                {ticket.sport}
+              </div>
+              <div className="px-3 py-3 text-center text-sm text-white">
+                {ticket.plays}
+              </div>
+              <div className="px-3 py-3 text-right text-sm text-white">
+                ${ticket.amount.toFixed(2)}
+              </div>
+              <div className="px-3 py-3 text-right text-sm text-[#3498db]">
+                ${ticket.payout.toFixed(2)}
+              </div>
+              <div className="flex items-center justify-center px-3 py-3">
+                <span
+                  className={`rounded px-2 py-0.5 text-[11px] font-bold uppercase ${
+                    statusColors[ticket.status]
+                  }`}
+                >
+                  {ticket.status}
+                </span>
+              </div>
+            </motion.div>
+          ))}
+        </div>
+
+        {filtered.length === 0 && (
+          <div className="py-10 text-center text-sm text-[#7f8c8d]">
+            No tickets found
+          </div>
+        )}
+      </motion.div>
+    </Layout>
+  );
+}
