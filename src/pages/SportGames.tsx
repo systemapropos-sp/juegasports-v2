@@ -449,13 +449,12 @@ export default function SportGames() {
 
   const allSports: { code: SportCode; name: string }[] = [
     { code: "MLB", name: "MLB" },
-    { code: "CPBL", name: "CPBL" },
     { code: "LMB", name: "LMB" },
     { code: "NBA", name: "NBA" },
     { code: "WNBA", name: "WNBA" },
     { code: "BPS", name: "BPS" },
+    { code: "Soccer", name: "NACIONES" },
     { code: "NBA-S", name: "NBA-S" },
-    { code: "NACIONES", name: "NACIONES" },
   ];
 
   const currentIndex = allSports.findIndex((s) => s.code === code);
@@ -562,7 +561,7 @@ export default function SportGames() {
       </div>
 
       {/* Games List */}
-      <div className="pb-20">
+      <div className="pb-32">
         {games.length === 0 ? (
           <div className="py-16 text-center">
             <p className="text-sm text-[#7f8c8d]">No games available</p>
@@ -574,8 +573,8 @@ export default function SportGames() {
         )}
       </div>
 
-      {/* Bottom: Tus jugadas button */}
-      <div className="fixed bottom-0 left-0 right-0 z-30 bg-transparent p-3">
+      {/* Bottom: Tus jugadas button - above bottom nav */}
+      <div className="fixed bottom-16 left-0 right-0 z-30 p-3">
         <button
           onClick={() => toggleBetSlipSheet()}
           className="flex w-full items-center justify-center gap-2 rounded-lg bg-[#2ecc71] py-3.5 text-sm font-bold uppercase tracking-wide text-white shadow-lg transition-all active:scale-[0.98] active:bg-[#27ae60]"

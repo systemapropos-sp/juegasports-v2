@@ -14,32 +14,22 @@ const sportCardData: {
   {
     code: "MLB",
     name: "MLB",
-    logoUrl:
-      "https://upload.wikimedia.org/wikipedia/en/thumb/a/a6/Major_League_Baseball_logo.svg/1200px-Major_League_Baseball_logo.svg.png",
-  },
-  {
-    code: "CPBL",
-    name: "CPBL",
-    logoUrl:
-      "https://upload.wikimedia.org/wikipedia/en/thumb/2/2a/Chinese_Professional_Baseball_League_logo.svg/1200px-Chinese_Professional_Baseball_League_logo.svg.png",
+    logoUrl: "/logo-mlb.png",
   },
   {
     code: "LMB",
     name: "LMB",
-    logoUrl:
-      "https://upload.wikimedia.org/wikipedia/en/thumb/0/0c/Liga_Mexicana_de_B%C3%A9isbol_logo.svg/1200px-Liga_Mexicana_de_B%C3%A9isbol_logo.svg.png",
+    logoUrl: "/logo-lmb.png",
   },
   {
     code: "NBA",
     name: "NBA",
-    logoUrl:
-      "https://upload.wikimedia.org/wikipedia/en/thumb/0/03/National_Basketball_Association_logo.svg/1200px-National_Basketball_Association_logo.svg.png",
+    logoUrl: "/logo-nba.png",
   },
   {
     code: "WNBA",
     name: "WNBA",
-    logoUrl:
-      "https://upload.wikimedia.org/wikipedia/en/thumb/7/79/WNBA_logo.svg/1200px-WNBA_logo.svg.svg.png",
+    logoUrl: "/logo-wnba.png",
   },
   {
     code: "BPS",
@@ -47,10 +37,9 @@ const sportCardData: {
     isSvg: true,
   },
   {
-    code: "NACIONES",
+    code: "Soccer",
     name: "NACIONES",
-    logoUrl:
-      "https://upload.wikimedia.org/wikipedia/en/thumb/8/8a/UEFA_Nations_League_logo.svg/1200px-UEFA_Nations_League_logo.svg.png",
+    logoUrl: "/logo-naciones.png",
   },
   {
     code: "NBA-S",
@@ -209,8 +198,8 @@ export default function Home() {
         </div>
       </div>
 
-      {/* Bottom: Tus jugadas button */}
-      <div className="fixed bottom-0 left-0 right-0 z-30 bg-transparent p-3">
+      {/* Bottom: Tus jugadas button - positioned above bottom nav */}
+      <div className="fixed bottom-16 left-0 right-0 z-30 p-3">
         <button
           onClick={() => toggleBetSlipSheet()}
           className="flex w-full items-center justify-center gap-2 rounded-lg bg-[#2ecc71] py-3.5 text-sm font-bold uppercase tracking-wide text-white shadow-lg transition-all active:scale-[0.98] active:bg-[#27ae60]"
@@ -225,8 +214,8 @@ export default function Home() {
         </button>
       </div>
 
-      {/* Spacer for bottom button */}
-      <div className="h-20" />
+      {/* Spacer for bottom button + nav */}
+      <div className="h-32" />
     </div>
   );
 }
