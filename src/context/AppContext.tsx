@@ -21,12 +21,14 @@ interface AppState {
   language: Language;
   selectedBets: BetSelection[];
   currentSport: SportCode;
+  expandedGameId: string | null;
+  isLoggedIn: boolean;
   isHelpModalOpen: boolean;
   isWithdrawalNoticeOpen: boolean;
   isGenerateCodeOpen: boolean;
   isClearConfirmOpen: boolean;
-  isSportsDrawerOpen: boolean;
   isBetSlipSheetOpen: boolean;
+  isUserMenuOpen: boolean;
   betSlipTab: "teaser" | "teaserIF" | "regular";
   activateIf: boolean;
   betAmount: string;
@@ -35,6 +37,7 @@ interface AppState {
 interface AppContextType extends AppState {
   setLanguage: (lang: Language) => void;
   setCurrentSport: (sport: SportCode) => void;
+  setExpandedGameId: (id: string | null) => void;
   addBet: (bet: Omit<BetSelection, "id" | "timestamp">) => void;
   removeBet: (betId: string) => void;
   clearBets: () => void;
@@ -42,8 +45,10 @@ interface AppContextType extends AppState {
   toggleWithdrawalNotice: () => void;
   toggleGenerateCode: () => void;
   toggleClearConfirm: () => void;
-  toggleSportsDrawer: () => void;
   toggleBetSlipSheet: () => void;
+  toggleUserMenu: () => void;
+  login: (user: { email: string; username: string; role: string }) => void;
+  logout: () => void;
   setBetSlipTab: (tab: "teaser" | "teaserIF" | "regular") => void;
   setActivateIf: (v: boolean) => void;
   setBetAmount: (v: string) => void;
@@ -54,24 +59,35 @@ interface AppContextType extends AppState {
 const AppContext = createContext<AppContextType | null>(null);
 
 export function AppProvider({ children }: { children: ReactNode }) {
-  const [user] = useState<AppState["user"]>({
-    email: "duepostllc@gmail.com",
-    username: "juan01",
-    role: "player",
-  });
+  const [user, setUser] = useState<AppState["user"]>(null);
+  const [isLoggedIn, setIsLoggedIn] = useState(false);
   const [balance, setBalance] = useState(0.0);
   const [language, setLanguage] = useState<Language>("es");
   const [selectedBets, setSelectedBets] = useState<BetSelection[]>([]);
   const [currentSport, setCurrentSport] = useState<SportCode>("MLB");
+  const [expandedGameId, setExpandedGameId] = useState<string | null>(null);
   const [isHelpModalOpen, setIsHelpModalOpen] = useState(false);
   const [isWithdrawalNoticeOpen, setIsWithdrawalNoticeOpen] = useState(false);
   const [isGenerateCodeOpen, setIsGenerateCodeOpen] = useState(false);
   const [isClearConfirmOpen, setIsClearConfirmOpen] = useState(false);
-  const [isSportsDrawerOpen, setIsSportsDrawerOpen] = useState(false);
   const [isBetSlipSheetOpen, setIsBetSlipSheetOpen] = useState(false);
+  const [isUserMenuOpen, setIsUserMenuOpen] = useState(false);
   const [betSlipTab, setBetSlipTab] = useState<"teaser" | "teaserIF" | "regular">("regular");
   const [activateIf, setActivateIf] = useState(false);
   const [betAmount, setBetAmount] = useState("");
+
+  const login = useCallback((userData: { email: string; username: string; role: string }) => {
+    setUser(userData);
+    setIsLoggedIn(true);
+  }, []);
+
+  const logout = useCallback(() => {
+    setUser(null);
+    setIsLoggedIn(false);
+    setSelectedBets([]);
+    setBetAmount("");
+    setExpandedGameId(null);
+  }, []);
 
   const addBet = useCallback((bet: Omit<BetSelection, "id" | "timestamp">) => {
     setSelectedBets((prev) => {
@@ -116,17 +132,20 @@ export function AppProvider({ children }: { children: ReactNode }) {
         language,
         selectedBets,
         currentSport,
+        expandedGameId,
+        isLoggedIn,
         isHelpModalOpen,
         isWithdrawalNoticeOpen,
         isGenerateCodeOpen,
         isClearConfirmOpen,
-        isSportsDrawerOpen,
         isBetSlipSheetOpen,
+        isUserMenuOpen,
         betSlipTab,
         activateIf,
         betAmount,
         setLanguage,
         setCurrentSport,
+        setExpandedGameId,
         addBet,
         removeBet,
         clearBets,
@@ -134,8 +153,10 @@ export function AppProvider({ children }: { children: ReactNode }) {
         toggleWithdrawalNotice: () => setIsWithdrawalNoticeOpen((v) => !v),
         toggleGenerateCode: () => setIsGenerateCodeOpen((v) => !v),
         toggleClearConfirm: () => setIsClearConfirmOpen((v) => !v),
-        toggleSportsDrawer: () => setIsSportsDrawerOpen((v) => !v),
         toggleBetSlipSheet: () => setIsBetSlipSheetOpen((v) => !v),
+        toggleUserMenu: () => setIsUserMenuOpen((v) => !v),
+        login,
+        logout,
         setBetSlipTab,
         setActivateIf,
         setBetAmount,

@@ -13,6 +13,10 @@ export const translations = {
     settings: "Settings",
     notifications: "Notifications",
     calendar: "Calendar",
+    perfil: "Profile",
+    cerrarSesion: "Logout",
+    avisoRetiro: "Withdrawal Notice",
+    generarCodigo: "Generate Code",
 
     // Sports Sidebar
     majorLeagueBaseball: "Major League Baseball",
@@ -22,6 +26,18 @@ export const translations = {
     baseballPlayers: "Baseball Players",
     nbaSolo: "NBA Solo",
     soccer: "Soccer",
+
+    // New home page
+    tusJugadas: "Your Plays",
+    premio: "PRIZE",
+    premioIf: "PRIZE IF",
+    premioSi: "PRIZE IF",
+    activarSi: "Activate if",
+    lineaCarrera: "Run Line",
+    superRL: "Super R/L",
+    altRL: "Alt R/L",
+    soloMas: "Solo Over",
+    soloMenos: "Solo Under",
 
     // Odds Table
     hora: "Time",
@@ -59,7 +75,6 @@ export const translations = {
     noSelectionsMsg: "No plays selected",
     jugada: "Play",
     linea: "Line",
-    premio: "Prize",
     puntos: "Points",
     activateIf: "Activate if",
     cantidad: "Amount",
@@ -81,7 +96,6 @@ export const translations = {
     horaLabel: "Time",
     cantidadLabel: "Amount",
     notificar: "Notify",
-    generarCodigo: "Generate Withdrawal Code",
     generarCodigoTitle: "Generate code for balance withdrawal",
     generar: "Generate",
     confirmacion: "Confirmation",
@@ -139,6 +153,10 @@ export const translations = {
     settings: "Configuracion",
     notifications: "Notificaciones",
     calendar: "Calendario",
+    perfil: "Perfil",
+    cerrarSesion: "Cerrar sesion",
+    avisoRetiro: "Aviso de retiro",
+    generarCodigo: "Generar codigo",
 
     // Sports Sidebar
     majorLeagueBaseball: "Major League Baseball",
@@ -148,6 +166,18 @@ export const translations = {
     baseballPlayers: "Baseball Players",
     nbaSolo: "NBA Solo",
     soccer: "Soccer",
+
+    // New home page
+    tusJugadas: "Tus jugadas",
+    premio: "PREMIO",
+    premioIf: "PREMIO IF",
+    premioSi: "PREMIO SI",
+    activarSi: "Activar si",
+    lineaCarrera: "Linea de carrera",
+    superRL: "Super R/L",
+    altRL: "Alt R/L",
+    soloMas: "Solo a mas",
+    soloMenos: "Solo a menos",
 
     // Odds Table
     hora: "Hora",
@@ -185,7 +215,6 @@ export const translations = {
     noSelectionsMsg: "No hay jugadas seleccionadas",
     jugada: "Jugada",
     linea: "Linea",
-    premio: "Premio",
     puntos: "Puntos",
     activateIf: "Activate if",
     cantidad: "Cantidad",
@@ -207,7 +236,6 @@ export const translations = {
     horaLabel: "Hora",
     cantidadLabel: "Cantidad",
     notificar: "Notificar",
-    generarCodigo: "Generar codigo para retiro",
     generarCodigoTitle: "Generar codigo para retiro de balance",
     generar: "Generar",
     confirmacion: "Confirmacion",

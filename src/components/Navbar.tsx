@@ -1,219 +1,178 @@
-import { useState, useRef, useEffect } from "react";
+import { useRef, useEffect } from "react";
 import { Link, useLocation } from "react-router";
 import { motion } from "framer-motion";
-import {
-  BarChart3,
-  Calendar,
-  HelpCircle,
-  Settings,
-  Bell,
-  ChevronDown,
-  Menu,
-  Download,
-} from "lucide-react";
+import { Home, Building2, Ticket, Globe, User, Menu, LogOut, FileText, QrCode, CreditCard } from "lucide-react";
 import { useApp } from "@/context/AppContext";
-import { t } from "@/lib/i18n";
-import { usePWAInstall } from "@/hooks/usePWAInstall";
-import { LanguageDropdown, ResultsDropdown } from "./Modals";
 
 export default function Navbar() {
-  const { user, balance, language, toggleHelpModal, toggleWithdrawalNotice, toggleSportsDrawer } = useApp();
-  const { installPrompt, isInstalled, promptInstall } = usePWAInstall();
+  const {
+    balance,
+    isUserMenuOpen,
+    toggleUserMenu,
+    toggleBetSlipSheet,
+    toggleWithdrawalNotice,
+    toggleGenerateCode,
+    logout,
+    isLoggedIn,
+    user,
+  } = useApp();
   const location = useLocation();
-  const [isLangOpen, setIsLangOpen] = useState(false);
-  const [isResultsOpen, setIsResultsOpen] = useState(false);
-  const [balanceFlash, setBalanceFlash] = useState(false);
-  const langRef = useRef<HTMLDivElement>(null);
-  const resultsRef = useRef<HTMLDivElement>(null);
+  const menuRef = useRef<HTMLDivElement>(null);
 
-  // Balance flash animation
-  useEffect(() => {
-    if (balanceFlash) {
-      const timer = setTimeout(() => setBalanceFlash(false), 200);
-      return () => clearTimeout(timer);
-    }
-  }, [balanceFlash]);
-
-  useEffect(() => {
-    setBalanceFlash(true);
-  }, [balance]);
-
-  // Close dropdowns on outside click
+  // Close menu on outside click
   useEffect(() => {
     function handler(e: MouseEvent) {
-      if (langRef.current && !langRef.current.contains(e.target as Node)) {
-        setIsLangOpen(false);
-      }
-      if (resultsRef.current && !resultsRef.current.contains(e.target as Node)) {
-        setIsResultsOpen(false);
+      if (menuRef.current && !menuRef.current.contains(e.target as Node)) {
+        if (isUserMenuOpen) toggleUserMenu();
       }
     }
     document.addEventListener("mousedown", handler);
     return () => document.removeEventListener("mousedown", handler);
-  }, []);
+  }, [isUserMenuOpen, toggleUserMenu]);
 
   const isActive = (path: string) => location.pathname === path;
 
-  const iconBtnClass =
-    "flex h-10 w-10 items-center justify-center rounded-md text-white/80 transition-all duration-100 hover:bg-white/[0.06] hover:text-white";
+  const handleLogout = () => {
+    logout();
+    toggleUserMenu();
+  };
 
   return (
-    <motion.header
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
-      transition={{ duration: 0.2 }}
-      className="fixed left-0 right-0 top-0 z-40 flex h-14 items-center bg-[#3a3f47] px-4 shadow-md"
-      style={{ paddingTop: 'env(safe-area-inset-top)' }}
-    >
-      {/* Mobile hamburger - visible only on mobile */}
-      <button
-        onClick={toggleSportsDrawer}
-        className="mr-3 flex h-10 w-10 items-center justify-center rounded-md text-white/80 transition-all hover:bg-white/[0.06] hover:text-white md:hidden"
-        aria-label="Open sports menu"
+    <>
+      <motion.header
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 0.2 }}
+        className="fixed left-0 right-0 top-0 z-40 flex h-12 items-center bg-[#2c2f33] px-2 shadow-md"
+        style={{ paddingTop: "env(safe-area-inset-top)" }}
       >
-        <Menu size={22} />
-      </button>
-
-      {/* Left - Logo & Nav */}
-      <div className="flex items-center gap-6">
-        <Link to="/" className="relative text-[22px] font-extrabold text-white">
-          Sports v2
-          <span className="absolute -bottom-1 left-0 h-0.5 w-10 bg-[#3498db]" />
+        {/* Left: Home icon (red when active) */}
+        <Link
+          to="/"
+          className={`flex h-9 w-9 shrink-0 items-center justify-center rounded transition-colors ${
+            isActive("/")
+              ? "bg-[#e74c3c] text-white"
+              : "text-white/80 hover:bg-white/10 hover:text-white"
+          }`}
+        >
+          <Home size={20} />
         </Link>
 
-        {/* Desktop nav links - hidden on mobile */}
-        <nav className="hidden items-center gap-1 md:flex">
-          <Link
-            to="/"
-            className={`rounded-md px-3 py-1.5 text-sm font-medium transition-colors ${
-              isActive("/")
-                ? "text-[#3498db]"
-                : "text-white hover:text-[#3498db]"
-            }`}
-          >
-            {t(language, "deportes")}
-          </Link>
-
-          <Link
-            to="/tickets"
-            className={`rounded-md px-3 py-1.5 text-sm font-medium transition-colors ${
-              isActive("/tickets")
-                ? "text-[#3498db]"
-                : "text-white hover:text-[#3498db]"
-            }`}
-          >
-            {t(language, "tickets")}
-          </Link>
-
-          {/* Results Dropdown */}
-          <div className="relative" ref={resultsRef}>
-            <button
-              onClick={() => setIsResultsOpen(!isResultsOpen)}
-              className="flex items-center gap-1 rounded-md px-3 py-1.5 text-sm font-medium text-white transition-colors hover:text-[#3498db]"
-            >
-              {t(language, "resultados")}
-              <ChevronDown size={14} />
-            </button>
-            <ResultsDropdown
-              isOpen={isResultsOpen}
-              onClose={() => setIsResultsOpen(false)}
-            />
-          </div>
-        </nav>
-      </div>
-
-      {/* Right - Icons & User */}
-      <div className="ml-auto flex items-center gap-1">
-        {/* Install button - shown when PWA install available and not installed */}
-        {!isInstalled && installPrompt && (
-          <button
-            onClick={promptInstall}
-            className="mr-1 hidden items-center gap-1.5 rounded-md bg-[#3498db]/20 px-3 py-1.5 text-xs font-semibold text-[#3498db] transition-all hover:bg-[#3498db]/30 md:flex"
-            title="Install App"
-          >
-            <Download size={14} />
-            <span>{t(language, "installApp")}</span>
+        {/* Center: Building, Ticket, Globe */}
+        <div className="flex flex-1 items-center justify-center gap-1">
+          <button className="flex h-9 w-9 items-center justify-center rounded text-white/80 transition-colors hover:bg-white/10 hover:text-white">
+            <Building2 size={20} />
           </button>
-        )}
-
-        {/* Mobile install icon button */}
-        {!isInstalled && installPrompt && (
           <button
-            onClick={promptInstall}
-            className="mr-1 flex h-10 w-10 items-center justify-center rounded-md text-[#3498db] transition-all hover:bg-[#3498db]/10 md:hidden"
-            title="Install App"
+            onClick={() => toggleBetSlipSheet()}
+            className="flex h-9 w-9 items-center justify-center rounded text-white/80 transition-colors hover:bg-white/10 hover:text-white"
           >
-            <Download size={18} />
+            <Ticket size={20} />
           </button>
-        )}
-
-        {/* Balance chart */}
-        <button
-          onClick={toggleWithdrawalNotice}
-          className={iconBtnClass}
-          title={t(language, "balance")}
-        >
-          <BarChart3 size={18} />
-        </button>
-
-        {/* Calendar - desktop only */}
-        <button
-          onClick={() => {}}
-          className={`${iconBtnClass} hidden md:flex`}
-          title={t(language, "calendar")}
-        >
-          <Calendar size={18} />
-        </button>
-
-        {/* Help - desktop only */}
-        <button
-          onClick={toggleHelpModal}
-          className={`${iconBtnClass} hidden md:flex`}
-          title={t(language, "help")}
-        >
-          <HelpCircle size={18} />
-        </button>
-
-        {/* Settings / Language */}
-        <div className="relative" ref={langRef}>
-          <button
-            onClick={() => setIsLangOpen(!isLangOpen)}
-            className={iconBtnClass}
-            title={t(language, "settings")}
-          >
-            <Settings size={18} />
+          <button className="flex h-9 w-9 items-center justify-center rounded text-white/80 transition-colors hover:bg-white/10 hover:text-white">
+            <Globe size={20} />
           </button>
-          <LanguageDropdown
-            isOpen={isLangOpen}
-            onClose={() => setIsLangOpen(false)}
-          />
         </div>
 
-        {/* Notifications - desktop only */}
-        <button
-          onClick={() => {}}
-          className={`${iconBtnClass} hidden md:flex`}
-          title={t(language, "notifications")}
-        >
-          <Bell size={18} />
-        </button>
-
-        {/* Balance */}
-        <motion.span
-          animate={balanceFlash ? { scale: [1, 1.08, 1] } : {}}
-          transition={{ duration: 0.2 }}
-          className="ml-2 text-[15px] font-bold text-white"
-        >
-          ${balance.toFixed(2)}
-        </motion.span>
-
-        {/* User - desktop only */}
-        {user && (
-          <span className="ml-3 hidden text-[13px] text-[#b0b5ba] md:inline">
-            {user.email} ({user.username})
+        {/* Right: $0.00, User icon, Hamburger */}
+        <div className="flex items-center gap-1">
+          <span className="px-1 text-[14px] font-bold text-[#e74c3c]">
+            ${balance.toFixed(2)}
           </span>
-        )}
-      </div>
-    </motion.header>
+
+          <Link
+            to="#"
+            className="flex h-9 w-9 items-center justify-center rounded text-white/80 transition-colors hover:bg-white/10 hover:text-white"
+          >
+            <User size={20} />
+          </Link>
+
+          <div className="relative" ref={menuRef}>
+            <button
+              onClick={toggleUserMenu}
+              className="flex h-9 w-9 items-center justify-center rounded text-white/80 transition-colors hover:bg-white/10 hover:text-white"
+            >
+              <Menu size={20} />
+            </button>
+
+            {/* Hamburger Dropdown */}
+            {isUserMenuOpen && (
+              <>
+                <div className="fixed inset-0 z-40" onClick={toggleUserMenu} />
+                <motion.div
+                  initial={{ opacity: 0, y: -4, scale: 0.95 }}
+                  animate={{ opacity: 1, y: 0, scale: 1 }}
+                  transition={{ duration: 0.15 }}
+                  className="absolute right-0 top-full z-50 mt-1 w-48 overflow-hidden rounded-lg border border-[#555a60] bg-[#3a3f47] shadow-xl"
+                >
+                  {user && (
+                    <div className="border-b border-[#555a60] px-4 py-3">
+                      <p className="text-sm font-semibold text-white">{user.username}</p>
+                      <p className="text-xs text-[#b0b5ba]">{user.email}</p>
+                    </div>
+                  )}
+                  <Link
+                    to="#"
+                    onClick={toggleUserMenu}
+                    className="flex items-center gap-3 px-4 py-2.5 text-sm text-white transition-colors hover:bg-[#4a4f57]"
+                  >
+                    <User size={16} className="text-[#b0b5ba]" />
+                    Perfil
+                  </Link>
+                  <Link
+                    to="/tickets"
+                    onClick={toggleUserMenu}
+                    className="flex items-center gap-3 px-4 py-2.5 text-sm text-white transition-colors hover:bg-[#4a4f57]"
+                  >
+                    <FileText size={16} className="text-[#b0b5ba]" />
+                    Tickets
+                  </Link>
+                  <button
+                    onClick={() => {
+                      toggleUserMenu();
+                      toggleWithdrawalNotice();
+                    }}
+                    className="flex w-full items-center gap-3 px-4 py-2.5 text-sm text-white transition-colors hover:bg-[#4a4f57]"
+                  >
+                    <CreditCard size={16} className="text-[#b0b5ba]" />
+                    Aviso de retiro
+                  </button>
+                  <button
+                    onClick={() => {
+                      toggleUserMenu();
+                      toggleGenerateCode();
+                    }}
+                    className="flex w-full items-center gap-3 px-4 py-2.5 text-sm text-white transition-colors hover:bg-[#4a4f57]"
+                  >
+                    <QrCode size={16} className="text-[#b0b5ba]" />
+                    Generar codigo
+                  </button>
+                  <div className="border-t border-[#555a60]">
+                    {isLoggedIn ? (
+                      <button
+                        onClick={handleLogout}
+                        className="flex w-full items-center gap-3 px-4 py-2.5 text-sm text-[#e74c3c] transition-colors hover:bg-[#4a4f57]"
+                      >
+                        <LogOut size={16} />
+                        Cerrar sesion
+                      </button>
+                    ) : (
+                      <Link
+                        to="/login"
+                        onClick={toggleUserMenu}
+                        className="flex w-full items-center gap-3 px-4 py-2.5 text-sm text-[#3498db] transition-colors hover:bg-[#4a4f57]"
+                      >
+                        <LogOut size={16} />
+                        Log In
+                      </Link>
+                    )}
+                  </div>
+                </motion.div>
+              </>
+            )}
+          </div>
+        </div>
+      </motion.header>
+    </>
   );
 }

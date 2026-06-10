@@ -2,7 +2,6 @@ import { useState } from "react";
 import { Link } from "react-router";
 import { motion } from "framer-motion";
 import { ArrowLeft, Search } from "lucide-react";
-import Layout from "@/components/Layout";
 import { useApp } from "@/context/AppContext";
 import { t } from "@/lib/i18n";
 
@@ -40,22 +39,23 @@ export default function Tickets() {
   const [filter, setFilter] = useState("all");
 
   const filtered = mockTickets.filter((t) => {
-    const matchesSearch = t.id.toLowerCase().includes(search.toLowerCase()) ||
+    const matchesSearch =
+      t.id.toLowerCase().includes(search.toLowerCase()) ||
       t.sport.toLowerCase().includes(search.toLowerCase());
     const matchesFilter = filter === "all" || t.status === filter;
     return matchesSearch && matchesFilter;
   });
 
   return (
-    <Layout showSidebar={true} showBetSlip={true}>
+    <div className="min-h-[100dvh] bg-[#3a3f47] pt-12">
       <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 0.3 }}
-        className="min-h-[calc(100dvh-56px)] bg-[#3a3f47] p-3 md:p-6"
+        className="p-3"
       >
         {/* Header */}
-        <div className="mb-4 flex items-center justify-between md:mb-6">
+        <div className="mb-4 flex items-center justify-between">
           <div className="flex items-center gap-3">
             <Link
               to="/"
@@ -63,7 +63,7 @@ export default function Tickets() {
             >
               <ArrowLeft size={20} />
             </Link>
-            <h1 className="text-lg font-bold text-white md:text-xl">{t(language, "tickets")}</h1>
+            <h1 className="text-lg font-bold text-white">{t(language, "tickets")}</h1>
           </div>
 
           {/* Search */}
@@ -77,12 +77,12 @@ export default function Tickets() {
               value={search}
               onChange={(e) => setSearch(e.target.value)}
               placeholder="Search..."
-              className="h-10 w-44 rounded-md border border-[#555a60] bg-[#4a4f57] pl-9 pr-3 text-sm text-white outline-none transition-colors placeholder:text-[#7f8c8d] focus:border-[#3498db] md:w-60"
+              className="h-10 w-44 rounded-md border border-[#555a60] bg-[#4a4f57] pl-9 pr-3 text-sm text-white outline-none transition-colors placeholder:text-[#7f8c8d] focus:border-[#3498db]"
             />
           </div>
         </div>
 
-        {/* Filters - horizontally scrollable on mobile */}
+        {/* Filters */}
         <div className="mb-4 flex gap-2 overflow-x-auto hide-scrollbar">
           {["all", "pending", "won", "lost", "cashed"].map((f) => (
             <button
@@ -99,59 +99,8 @@ export default function Tickets() {
           ))}
         </div>
 
-        {/* Desktop: Table layout */}
-        <div className="hidden overflow-hidden rounded md:block">
-          <div className="grid grid-cols-[100px_100px_80px_70px_80px_100px_90px] bg-[#2c3e50] text-[13px] font-semibold uppercase tracking-wider text-white">
-            <div className="px-3 py-3">ID</div>
-            <div className="px-3 py-3">Date</div>
-            <div className="px-3 py-3">Sport</div>
-            <div className="px-3 py-3 text-center">Plays</div>
-            <div className="px-3 py-3 text-right">Amount</div>
-            <div className="px-3 py-3 text-right">Payout</div>
-            <div className="px-3 py-3 text-center">Status</div>
-          </div>
-
-          {filtered.map((ticket, idx) => (
-            <motion.div
-              key={ticket.id}
-              initial={{ opacity: 0, y: 8 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: idx * 0.03, duration: 0.2 }}
-              className={`grid grid-cols-[100px_100px_80px_70px_80px_100px_90px] border-b border-[#555a60] ${
-                idx % 2 === 0 ? "bg-[#3a3f47]" : "bg-[#4a4f57]"
-              }`}
-            >
-              <div className="px-3 py-3 text-sm font-medium text-white">
-                {ticket.id}
-              </div>
-              <div className="px-3 py-3 text-sm text-[#b0b5ba]">{ticket.date}</div>
-              <div className="px-3 py-3 text-sm font-semibold text-white">
-                {ticket.sport}
-              </div>
-              <div className="px-3 py-3 text-center text-sm text-white">
-                {ticket.plays}
-              </div>
-              <div className="px-3 py-3 text-right text-sm text-white">
-                ${ticket.amount.toFixed(2)}
-              </div>
-              <div className="px-3 py-3 text-right text-sm text-[#3498db]">
-                ${ticket.payout.toFixed(2)}
-              </div>
-              <div className="flex items-center justify-center px-3 py-3">
-                <span
-                  className={`rounded px-2 py-0.5 text-[11px] font-bold uppercase ${
-                    statusColors[ticket.status]
-                  }`}
-                >
-                  {ticket.status}
-                </span>
-              </div>
-            </motion.div>
-          ))}
-        </div>
-
         {/* Mobile: Card layout */}
-        <div className="space-y-3 md:hidden">
+        <div className="space-y-3 pb-16">
           {filtered.map((ticket, idx) => (
             <motion.div
               key={ticket.id}
@@ -204,6 +153,6 @@ export default function Tickets() {
           </div>
         )}
       </motion.div>
-    </Layout>
+    </div>
   );
 }

@@ -105,8 +105,8 @@
     -webkit-tap-highlight-color: transparent;
   }
 
-  /* Allow text selection on inputs */
-  input, textarea {
+  /* Allow text selection on inputs and textareas */
+  input, textarea, select {
     -webkit-user-select: text;
     user-select: text;
   }

@@ -1,4 +1,4 @@
-export type SportCode = "MLB" | "LMB" | "NBA" | "WNBA" | "BPS" | "NBA-S" | "Soccer";
+export type SportCode = "MLB" | "CPBL" | "LMB" | "NBA" | "WNBA" | "BPS" | "NBA-S" | "NACIONES" | "Soccer";
 
 export interface Team {
   name: string;
@@ -61,12 +61,13 @@ export interface SportInfo {
 
 export const sportsList: SportInfo[] = [
   { code: "MLB", name: "Major League Baseball", matchCount: 13 },
+  { code: "CPBL", name: "Chinese Professional Baseball League", matchCount: 4 },
   { code: "LMB", name: "Liga Mexicana de Beisbol", matchCount: 10 },
   { code: "NBA", name: "National Basketball Association", matchCount: 1 },
   { code: "WNBA", name: "Women's National Basketball Association", matchCount: 2 },
   { code: "BPS", name: "Baseball Players", matchCount: 8 },
   { code: "NBA-S", name: "NBA Solo", matchCount: 29 },
-  { code: "Soccer", name: "Soccer", matchCount: 5 },
+  { code: "NACIONES", name: "UEFA Nations League", matchCount: 4 },
 ];
 
 // MLB Games (13)
@@ -81,8 +82,8 @@ export const mlbGames: Game[] = [
       ou: [{ line: 8.5, over: -110, under: -110 }],
       rl: [{ line: "+1.5", odds: -230 }, { line: "-1.5", odds: +185 }],
       srl: [{ line: "+2.5", odds: -400 }, { line: "-2.5", odds: +280 }],
-      soloPos: ["locked", "locked"],
-      soloNeg: ["locked", "locked"],
+      soloPos: [4.5, -130],
+      soloNeg: [4.5, -130],
       rla: [{ line: "-1.5", odds: +150 }, { line: "+1.5", odds: -220 }],
     },
   },
@@ -96,8 +97,8 @@ export const mlbGames: Game[] = [
       ou: [{ line: 8.5, over: -105, under: -115 }],
       rl: [{ line: "+1.5", odds: -150 }, { line: "-1.5", odds: +130 }],
       srl: [{ line: "+2.5", odds: -320 }, { line: "-2.5", odds: +200 }],
-      soloPos: ["locked", "locked"],
-      soloNeg: ["locked", "locked"],
+      soloPos: [4.5, -130],
+      soloNeg: [4.5, -130],
       rla: [{ line: "-1.5", odds: +170 }, { line: "+1.5", odds: -210 }],
     },
   },
@@ -111,8 +112,8 @@ export const mlbGames: Game[] = [
       ou: [{ line: 7.5, over: -110, under: -110 }],
       rl: [{ line: "+1.5", odds: -140 }, { line: "-1.5", odds: +120 }],
       srl: [{ line: "+2.5", odds: -280 }, { line: "-2.5", odds: +180 }],
-      soloPos: ["locked", "locked"],
-      soloNeg: ["locked", "locked"],
+      soloPos: [4.5, -130],
+      soloNeg: [4.5, -130],
       rla: [{ line: "-1.5", odds: +200 }, { line: "+1.5", odds: -250 }],
     },
   },
@@ -126,8 +127,8 @@ export const mlbGames: Game[] = [
       ou: [{ line: 8.0, over: -110, under: -110 }],
       rl: [{ line: "-1.5", odds: +140 }, { line: "+1.5", odds: -160 }],
       srl: [{ line: "-2.5", odds: +260 }, { line: "+2.5", odds: -340 }],
-      soloPos: ["locked", "locked"],
-      soloNeg: ["locked", "locked"],
+      soloPos: [4.5, -130],
+      soloNeg: [4.5, -130],
       rla: [{ line: "-1.5", odds: +130 }, { line: "+1.5", odds: -155 }],
     },
   },
@@ -141,8 +142,8 @@ export const mlbGames: Game[] = [
       ou: [{ line: 8.5, over: -105, under: -115 }],
       rl: [{ line: "-1.5", odds: +135 }, { line: "+1.5", odds: -155 }],
       srl: [{ line: "-2.5", odds: +240 }, { line: "+2.5", odds: -300 }],
-      soloPos: ["locked", "locked"],
-      soloNeg: ["locked", "locked"],
+      soloPos: [4.5, -130],
+      soloNeg: [4.5, -130],
       rla: [{ line: "-1.5", odds: +125 }, { line: "+1.5", odds: -145 }],
     },
   },
@@ -156,8 +157,8 @@ export const mlbGames: Game[] = [
       ou: [{ line: 9.0, over: -110, under: -110 }],
       rl: [{ line: "-1.5", odds: +115 }, { line: "+1.5", odds: -135 }],
       srl: [{ line: "-2.5", odds: +200 }, { line: "+2.5", odds: -260 }],
-      soloPos: ["locked", "locked"],
-      soloNeg: ["locked", "locked"],
+      soloPos: [4.5, -130],
+      soloNeg: [4.5, -130],
       rla: [{ line: "-1.5", odds: +110 }, { line: "+1.5", odds: -130 }],
     },
   },
@@ -171,8 +172,8 @@ export const mlbGames: Game[] = [
       ou: [{ line: 8.5, over: -110, under: -110 }],
       rl: [{ line: "-1.5", odds: +110 }, { line: "+1.5", odds: -130 }],
       srl: [{ line: "-2.5", odds: +180 }, { line: "+2.5", odds: -240 }],
-      soloPos: ["locked", "locked"],
-      soloNeg: ["locked", "locked"],
+      soloPos: [4.5, -130],
+      soloNeg: [4.5, -130],
       rla: [{ line: "-1.5", odds: +105 }, { line: "+1.5", odds: -125 }],
     },
   },
@@ -186,8 +187,8 @@ export const mlbGames: Game[] = [
       ou: [{ line: 7.0, over: -115, under: -105 }],
       rl: [{ line: "-1.5", odds: +155 }, { line: "+1.5", odds: -180 }],
       srl: [{ line: "-2.5", odds: +240 }, { line: "+2.5", odds: -300 }],
-      soloPos: ["locked", "locked"],
-      soloNeg: ["locked", "locked"],
+      soloPos: [4.5, -130],
+      soloNeg: [4.5, -130],
       rla: [{ line: "-1.5", odds: +140 }, { line: "+1.5", odds: -165 }],
     },
   },
@@ -201,8 +202,8 @@ export const mlbGames: Game[] = [
       ou: [{ line: 8.5, over: -110, under: -110 }],
       rl: [{ line: "+1.5", odds: -170 }, { line: "-1.5", odds: +145 }],
       srl: [{ line: "+2.5", odds: -340 }, { line: "-2.5", odds: +260 }],
-      soloPos: ["locked", "locked"],
-      soloNeg: ["locked", "locked"],
+      soloPos: [4.5, -130],
+      soloNeg: [4.5, -130],
       rla: [{ line: "-1.5", odds: +185 }, { line: "+1.5", odds: -225 }],
     },
   },
@@ -216,8 +217,8 @@ export const mlbGames: Game[] = [
       ou: [{ line: 8.5, over: -105, under: -115 }],
       rl: [{ line: "-1.5", odds: +125 }, { line: "+1.5", odds: -145 }],
       srl: [{ line: "-2.5", odds: +210 }, { line: "+2.5", odds: -270 }],
-      soloPos: ["locked", "locked"],
-      soloNeg: ["locked", "locked"],
+      soloPos: [4.5, -130],
+      soloNeg: [4.5, -130],
       rla: [{ line: "-1.5", odds: +115 }, { line: "+1.5", odds: -135 }],
     },
   },
@@ -231,8 +232,8 @@ export const mlbGames: Game[] = [
       ou: [{ line: 8.0, over: -110, under: -110 }],
       rl: [{ line: "+1.5", odds: -185 }, { line: "-1.5", odds: +155 }],
       srl: [{ line: "+2.5", odds: -360 }, { line: "-2.5", odds: +280 }],
-      soloPos: ["locked", "locked"],
-      soloNeg: ["locked", "locked"],
+      soloPos: [4.5, -130],
+      soloNeg: [4.5, -130],
       rla: [{ line: "-1.5", odds: +195 }, { line: "+1.5", odds: -240 }],
     },
   },
@@ -246,8 +247,8 @@ export const mlbGames: Game[] = [
       ou: [{ line: 8.5, over: -110, under: -110 }],
       rl: [{ line: "+1.5", odds: -160 }, { line: "-1.5", odds: +135 }],
       srl: [{ line: "+2.5", odds: -310 }, { line: "-2.5", odds: +240 }],
-      soloPos: ["locked", "locked"],
-      soloNeg: ["locked", "locked"],
+      soloPos: [4.5, -130],
+      soloNeg: [4.5, -130],
       rla: [{ line: "-1.5", odds: +175 }, { line: "+1.5", odds: -215 }],
     },
   },
@@ -261,9 +262,73 @@ export const mlbGames: Game[] = [
       ou: [{ line: 8.0, over: -110, under: -110 }],
       rl: [{ line: "-1.5", odds: +150 }, { line: "+1.5", odds: -175 }],
       srl: [{ line: "-2.5", odds: +230 }, { line: "+2.5", odds: -290 }],
-      soloPos: ["locked", "locked"],
-      soloNeg: ["locked", "locked"],
+      soloPos: [4.5, -130],
+      soloNeg: [4.5, -130],
       rla: [{ line: "-1.5", odds: +135 }, { line: "+1.5", odds: -160 }],
+    },
+  },
+];
+
+// CPBL Games (4)
+export const cpblGames: Game[] = [
+  {
+    id: "cpbl-1",
+    time: "06:35 AM",
+    away: { name: "Rakuten Monkeys", pitcher: "C. Wang", logo: "RAK" },
+    home: { name: "Uni-Lions", pitcher: "L. Chen", logo: "UL" },
+    odds: {
+      ml: [-120, +100],
+      ou: [{ line: 10.5, over: -110, under: -110 }],
+      rl: [{ line: "-1.5", odds: +140 }, { line: "+1.5", odds: -160 }],
+      srl: [{ line: "-2.5", odds: +200 }, { line: "+2.5", odds: -260 }],
+      soloPos: [5.5, -130],
+      soloNeg: [5.5, -130],
+      rla: [{ line: "-1.5", odds: +130 }, { line: "+1.5", odds: -155 }],
+    },
+  },
+  {
+    id: "cpbl-2",
+    time: "06:35 AM",
+    away: { name: "Fubon Guardians", pitcher: "H. Yang", logo: "FBG" },
+    home: { name: "Wei Chuan Dragons", pitcher: "E. Paredes", logo: "WCD" },
+    odds: {
+      ml: [+110, -130],
+      ou: [{ line: 9.5, over: -110, under: -110 }],
+      rl: [{ line: "+1.5", odds: -175 }, { line: "-1.5", odds: +150 }],
+      srl: [{ line: "+2.5", odds: -340 }, { line: "-2.5", odds: +260 }],
+      soloPos: [5.5, -130],
+      soloNeg: [5.5, -130],
+      rla: [{ line: "-1.5", odds: +160 }, { line: "+1.5", odds: -190 }],
+    },
+  },
+  {
+    id: "cpbl-3",
+    time: "06:35 AM",
+    away: { name: "TSG Hawks", pitcher: "B. Woodall", logo: "TSG" },
+    home: { name: "CTBC Brothers", pitcher: "J. Houbrick", logo: "CTBC" },
+    odds: {
+      ml: [+150, -175],
+      ou: [{ line: 10.0, over: -105, under: -115 }],
+      rl: [{ line: "+1.5", odds: -140 }, { line: "-1.5", odds: +120 }],
+      srl: [{ line: "+2.5", odds: -300 }, { line: "-2.5", odds: +220 }],
+      soloPos: [5.5, -130],
+      soloNeg: [5.5, -130],
+      rla: [{ line: "-1.5", odds: +180 }, { line: "+1.5", odds: -220 }],
+    },
+  },
+  {
+    id: "cpbl-4",
+    time: "06:35 AM",
+    away: { name: "Wei Chuan Dragons", pitcher: "T. Brock", logo: "WCD" },
+    home: { name: "Rakuten Monkeys", pitcher: "A. Carducci", logo: "RAK" },
+    odds: {
+      ml: [-110, -110],
+      ou: [{ line: 9.5, over: -110, under: -110 }],
+      rl: [{ line: "-1.5", odds: +150 }, { line: "+1.5", odds: -175 }],
+      srl: [{ line: "-2.5", odds: +210 }, { line: "+2.5", odds: -270 }],
+      soloPos: [5.5, -130],
+      soloNeg: [5.5, -130],
+      rla: [{ line: "-1.5", odds: +140 }, { line: "+1.5", odds: -165 }],
     },
   },
 ];
@@ -280,8 +345,8 @@ export const lmbGames: Game[] = [
       ou: [{ line: 9.5, over: -110, under: -110 }],
       rl: [{ line: "-1.5", odds: +140 }, { line: "+1.5", odds: -160 }],
       srl: [{ line: "-2.5", odds: +220 }, { line: "+2.5", odds: -280 }],
-      soloPos: ["locked", "locked"],
-      soloNeg: ["locked", "locked"],
+      soloPos: [4.5, -130],
+      soloNeg: [4.5, -130],
       rla: [{ line: "-1.5", odds: +130 }, { line: "+1.5", odds: -155 }],
     },
   },
@@ -295,8 +360,8 @@ export const lmbGames: Game[] = [
       ou: [{ line: 10.0, over: -105, under: -115 }],
       rl: [{ line: "-1.5", odds: +155 }, { line: "+1.5", odds: -180 }],
       srl: [{ line: "-2.5", odds: +260 }, { line: "+2.5", odds: -340 }],
-      soloPos: ["locked", "locked"],
-      soloNeg: ["locked", "locked"],
+      soloPos: [4.5, -130],
+      soloNeg: [4.5, -130],
       rla: [{ line: "-1.5", odds: +145 }, { line: "+1.5", odds: -170 }],
     },
   },
@@ -310,8 +375,8 @@ export const lmbGames: Game[] = [
       ou: [{ line: 9.0, over: -110, under: -110 }],
       rl: [{ line: "-1.5", odds: +120 }, { line: "+1.5", odds: -140 }],
       srl: [{ line: "-2.5", odds: +200 }, { line: "+2.5", odds: -250 }],
-      soloPos: ["locked", "locked"],
-      soloNeg: ["locked", "locked"],
+      soloPos: [4.5, -130],
+      soloNeg: [4.5, -130],
       rla: [{ line: "-1.5", odds: +110 }, { line: "+1.5", odds: -130 }],
     },
   },
@@ -325,8 +390,8 @@ export const lmbGames: Game[] = [
       ou: [{ line: 9.5, over: -110, under: -110 }],
       rl: [{ line: "-1.5", odds: +135 }, { line: "+1.5", odds: -155 }],
       srl: [{ line: "-2.5", odds: +220 }, { line: "+2.5", odds: -270 }],
-      soloPos: ["locked", "locked"],
-      soloNeg: ["locked", "locked"],
+      soloPos: [4.5, -130],
+      soloNeg: [4.5, -130],
       rla: [{ line: "-1.5", odds: +125 }, { line: "+1.5", odds: -150 }],
     },
   },
@@ -340,8 +405,8 @@ export const lmbGames: Game[] = [
       ou: [{ line: 10.5, over: -105, under: -115 }],
       rl: [{ line: "+1.5", odds: -165 }, { line: "-1.5", odds: +140 }],
       srl: [{ line: "+2.5", odds: -330 }, { line: "-2.5", odds: +250 }],
-      soloPos: ["locked", "locked"],
-      soloNeg: ["locked", "locked"],
+      soloPos: [4.5, -130],
+      soloNeg: [4.5, -130],
       rla: [{ line: "-1.5", odds: +180 }, { line: "+1.5", odds: -220 }],
     },
   },
@@ -355,8 +420,8 @@ export const lmbGames: Game[] = [
       ou: [{ line: 9.5, over: -110, under: -110 }],
       rl: [{ line: "+1.5", odds: -150 }, { line: "-1.5", odds: +125 }],
       srl: [{ line: "+2.5", odds: -300 }, { line: "-2.5", odds: +230 }],
-      soloPos: ["locked", "locked"],
-      soloNeg: ["locked", "locked"],
+      soloPos: [4.5, -130],
+      soloNeg: [4.5, -130],
       rla: [{ line: "-1.5", odds: +195 }, { line: "+1.5", odds: -240 }],
     },
   },
@@ -370,8 +435,8 @@ export const lmbGames: Game[] = [
       ou: [{ line: 9.0, over: -110, under: -110 }],
       rl: [{ line: "-1.5", odds: +150 }, { line: "+1.5", odds: -175 }],
       srl: [{ line: "-2.5", odds: +240 }, { line: "+2.5", odds: -300 }],
-      soloPos: ["locked", "locked"],
-      soloNeg: ["locked", "locked"],
+      soloPos: [4.5, -130],
+      soloNeg: [4.5, -130],
       rla: [{ line: "-1.5", odds: +135 }, { line: "+1.5", odds: -160 }],
     },
   },
@@ -385,8 +450,8 @@ export const lmbGames: Game[] = [
       ou: [{ line: 9.5, over: -105, under: -115 }],
       rl: [{ line: "+1.5", odds: -170 }, { line: "-1.5", odds: +145 }],
       srl: [{ line: "+2.5", odds: -340 }, { line: "-2.5", odds: +260 }],
-      soloPos: ["locked", "locked"],
-      soloNeg: ["locked", "locked"],
+      soloPos: [4.5, -130],
+      soloNeg: [4.5, -130],
       rla: [{ line: "-1.5", odds: +185 }, { line: "+1.5", odds: -225 }],
     },
   },
@@ -400,8 +465,8 @@ export const lmbGames: Game[] = [
       ou: [{ line: 9.0, over: -110, under: -110 }],
       rl: [{ line: "-1.5", odds: +125 }, { line: "+1.5", odds: -145 }],
       srl: [{ line: "-2.5", odds: +210 }, { line: "+2.5", odds: -265 }],
-      soloPos: ["locked", "locked"],
-      soloNeg: ["locked", "locked"],
+      soloPos: [4.5, -130],
+      soloNeg: [4.5, -130],
       rla: [{ line: "-1.5", odds: +115 }, { line: "+1.5", odds: -135 }],
     },
   },
@@ -415,8 +480,8 @@ export const lmbGames: Game[] = [
       ou: [{ line: 9.5, over: -110, under: -110 }],
       rl: [{ line: "+1.5", odds: -160 }, { line: "-1.5", odds: +135 }],
       srl: [{ line: "+2.5", odds: -320 }, { line: "-2.5", odds: +245 }],
-      soloPos: ["locked", "locked"],
-      soloNeg: ["locked", "locked"],
+      soloPos: [4.5, -130],
+      soloNeg: [4.5, -130],
       rla: [{ line: "-1.5", odds: +175 }, { line: "+1.5", odds: -210 }],
     },
   },
@@ -514,6 +579,58 @@ export const nbasGames: NBASGame[] = [
   { id: "nbas-29", time: "07:00 PM", player: "J. Embiid", team: "PHI", category: "Puntos", ou: { line: 31.5, over: -110, under: -110 }, precioMas: -135, precioMenos: -105 },
 ];
 
+// NACIONES (UEFA Nations League) Games (4)
+export const nacionesGames: Game[] = [
+  {
+    id: "nac-1",
+    time: "02:45 PM",
+    away: { name: "Spain", flag: "ES" },
+    home: { name: "Germany", flag: "DE" },
+    odds: {
+      ml: [+125, -150],
+      ou: [{ line: 2.5, over: -105, under: -115 }],
+      rl: [{ line: "+0.5", odds: -175 }, { line: "-0.5", odds: +145 }],
+      draw: "+0.5 -130",
+    },
+  },
+  {
+    id: "nac-2",
+    time: "02:45 PM",
+    away: { name: "France", flag: "FR" },
+    home: { name: "Italy", flag: "IT" },
+    odds: {
+      ml: [-130, +110],
+      ou: [{ line: 2.5, over: -110, under: -110 }],
+      rl: [{ line: "-0.5", odds: +140 }, { line: "+0.5", odds: -160 }],
+      draw: "+0.5 -130",
+    },
+  },
+  {
+    id: "nac-3",
+    time: "02:45 PM",
+    away: { name: "Portugal", flag: "PT" },
+    home: { name: "Netherlands", flag: "NL" },
+    odds: {
+      ml: [+110, -130],
+      ou: [{ line: 2.5, over: -105, under: -115 }],
+      rl: [{ line: "+0.5", odds: -165 }, { line: "-0.5", odds: +140 }],
+      draw: "+0.5 -130",
+    },
+  },
+  {
+    id: "nac-4",
+    time: "02:45 PM",
+    away: { name: "England", flag: "GB" },
+    home: { name: "Croatia", flag: "HR" },
+    odds: {
+      ml: [-145, +120],
+      ou: [{ line: 2.5, over: -110, under: -110 }],
+      rl: [{ line: "-0.5", odds: +130 }, { line: "+0.5", odds: -150 }],
+      draw: "+0.5 -130",
+    },
+  },
+];
+
 // Soccer Games (5)
 export const soccerGames: Game[] = [
   {
@@ -584,7 +701,7 @@ export const soccerGames: Game[] = [
 ];
 
 // Period tabs per sport
-export const periodTabs: Record<SportCode, string[]> = {
+export const periodTabs: Record<string, string[]> = {
   MLB: ["juegoCompleto", "primeraMitad", "primeraTercia", "extra"],
   LMB: ["juegoCompleto", "primeraMitad", "primeraTercia", "extra"],
   NBA: ["juegoCompleto", "primeraMitad", "segundaMitad", "periodo1", "periodo2", "periodo3", "periodo4"],
@@ -592,10 +709,12 @@ export const periodTabs: Record<SportCode, string[]> = {
   Soccer: ["juegoCompleto", "primeraMitad", "segundaMitad"],
   BPS: ["juegoCompleto"],
   "NBA-S": ["juegoCompleto"],
+  CPBL: ["juegoCompleto", "primeraMitad", "primeraTercia", "extra"],
+  NACIONES: ["juegoCompleto", "primeraMitad", "segundaMitad"],
 };
 
 // Banner gradients per sport
-export const sportBanners: Record<SportCode, string> = {
+export const sportBanners: Record<string, string> = {
   MLB: "linear-gradient(135deg, #1a3a1c 0%, #0d2810 50%, #1a4720 100%)",
   LMB: "linear-gradient(135deg, #1a3a1c 0%, #0d2810 50%, #1a4720 100%)",
   NBA: "linear-gradient(135deg, #1a1a3e 0%, #0d0d2b 50%, #1a1640 100%)",
@@ -603,6 +722,8 @@ export const sportBanners: Record<SportCode, string> = {
   BPS: "linear-gradient(135deg, #1a3a1c 0%, #0d2810 50%, #1a4720 100%)",
   "NBA-S": "linear-gradient(135deg, #1a1a3e 0%, #0d0d2b 50%, #1a1640 100%)",
   Soccer: "linear-gradient(135deg, #0d2b1a 0%, #1a3a1c 50%, #0d2810 100%)",
+  CPBL: "linear-gradient(135deg, #1a3a1c 0%, #0d2810 50%, #1a4720 100%)",
+  NACIONES: "linear-gradient(135deg, #1a1a3e 0%, #16213e 50%, #0f3460 100%)",
 };
 
 // Results dropdown items
@@ -621,3 +742,17 @@ export const resultsItems = [
   { label: "UFC", url: "https://www.ufc.com/scores" },
   { label: "GALLOS", url: "https://www.sabong.net/" },
 ];
+
+// Helper to get games by sport code
+export function getGamesBySport(sportCode: SportCode): Game[] {
+  switch (sportCode) {
+    case "MLB": return mlbGames;
+    case "CPBL": return cpblGames;
+    case "LMB": return lmbGames;
+    case "NBA": return nbaGames;
+    case "WNBA": return wnbaGames;
+    case "NACIONES": return nacionesGames;
+    case "Soccer": return soccerGames;
+    default: return [];
+  }
+}
