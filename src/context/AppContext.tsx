@@ -25,6 +25,8 @@ interface AppState {
   isWithdrawalNoticeOpen: boolean;
   isGenerateCodeOpen: boolean;
   isClearConfirmOpen: boolean;
+  isSportsDrawerOpen: boolean;
+  isBetSlipSheetOpen: boolean;
   betSlipTab: "teaser" | "teaserIF" | "regular";
   activateIf: boolean;
   betAmount: string;
@@ -40,6 +42,8 @@ interface AppContextType extends AppState {
   toggleWithdrawalNotice: () => void;
   toggleGenerateCode: () => void;
   toggleClearConfirm: () => void;
+  toggleSportsDrawer: () => void;
+  toggleBetSlipSheet: () => void;
   setBetSlipTab: (tab: "teaser" | "teaserIF" | "regular") => void;
   setActivateIf: (v: boolean) => void;
   setBetAmount: (v: string) => void;
@@ -63,6 +67,8 @@ export function AppProvider({ children }: { children: ReactNode }) {
   const [isWithdrawalNoticeOpen, setIsWithdrawalNoticeOpen] = useState(false);
   const [isGenerateCodeOpen, setIsGenerateCodeOpen] = useState(false);
   const [isClearConfirmOpen, setIsClearConfirmOpen] = useState(false);
+  const [isSportsDrawerOpen, setIsSportsDrawerOpen] = useState(false);
+  const [isBetSlipSheetOpen, setIsBetSlipSheetOpen] = useState(false);
   const [betSlipTab, setBetSlipTab] = useState<"teaser" | "teaserIF" | "regular">("regular");
   const [activateIf, setActivateIf] = useState(false);
   const [betAmount, setBetAmount] = useState("");
@@ -114,6 +120,8 @@ export function AppProvider({ children }: { children: ReactNode }) {
         isWithdrawalNoticeOpen,
         isGenerateCodeOpen,
         isClearConfirmOpen,
+        isSportsDrawerOpen,
+        isBetSlipSheetOpen,
         betSlipTab,
         activateIf,
         betAmount,
@@ -126,6 +134,8 @@ export function AppProvider({ children }: { children: ReactNode }) {
         toggleWithdrawalNotice: () => setIsWithdrawalNoticeOpen((v) => !v),
         toggleGenerateCode: () => setIsGenerateCodeOpen((v) => !v),
         toggleClearConfirm: () => setIsClearConfirmOpen((v) => !v),
+        toggleSportsDrawer: () => setIsSportsDrawerOpen((v) => !v),
+        toggleBetSlipSheet: () => setIsBetSlipSheetOpen((v) => !v),
         setBetSlipTab,
         setActivateIf,
         setBetAmount,

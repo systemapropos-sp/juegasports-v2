@@ -14,7 +14,7 @@ export default function Login() {
   };
 
   return (
-    <div className="relative flex min-h-[100dvh] items-center justify-center overflow-hidden">
+    <div className="relative flex min-h-[100dvh] items-center justify-center overflow-hidden px-4">
       {/* Animated mesh gradient background */}
       <div
         className="absolute inset-0"
@@ -32,9 +32,9 @@ export default function Login() {
         initial={{ opacity: 0, y: 30 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5 }}
-        className="relative z-10 w-full max-w-[400px] rounded-lg bg-[#3a3f47]/90 p-8 shadow-2xl backdrop-blur-sm"
+        className="relative z-10 w-full max-w-[400px] rounded-xl bg-[#3a3f47]/90 p-6 shadow-2xl backdrop-blur-sm md:p-8"
       >
-        <h1 className="mb-6 text-center text-[32px] font-extrabold text-white">
+        <h1 className="mb-6 text-center text-[28px] font-extrabold text-white md:text-[32px]">
           Sports v2
         </h1>
 
@@ -48,7 +48,7 @@ export default function Login() {
               value={email}
               onChange={(e) => setEmail(e.target.value)}
               placeholder="Enter your email"
-              className="w-full rounded border border-[#555a60] bg-[#4a4f57] px-4 py-3 text-sm text-white outline-none transition-colors placeholder:text-[#7f8c8d] focus:border-[#3498db]"
+              className="w-full rounded-lg border border-[#555a60] bg-[#4a4f57] px-4 py-3.5 text-sm text-white outline-none transition-colors placeholder:text-[#7f8c8d] focus:border-[#3498db] min-h-[48px]"
               required
             />
           </div>
@@ -62,7 +62,7 @@ export default function Login() {
               value={username}
               onChange={(e) => setUsername(e.target.value)}
               placeholder="Enter your username"
-              className="w-full rounded border border-[#555a60] bg-[#4a4f57] px-4 py-3 text-sm text-white outline-none transition-colors placeholder:text-[#7f8c8d] focus:border-[#3498db]"
+              className="w-full rounded-lg border border-[#555a60] bg-[#4a4f57] px-4 py-3.5 text-sm text-white outline-none transition-colors placeholder:text-[#7f8c8d] focus:border-[#3498db] min-h-[48px]"
               required
             />
           </div>
@@ -76,14 +76,14 @@ export default function Login() {
               value={password}
               onChange={(e) => setPassword(e.target.value)}
               placeholder="Enter your password"
-              className="w-full rounded border border-[#555a60] bg-[#4a4f57] px-4 py-3 text-sm text-white outline-none transition-colors placeholder:text-[#7f8c8d] focus:border-[#3498db]"
+              className="w-full rounded-lg border border-[#555a60] bg-[#4a4f57] px-4 py-3.5 text-sm text-white outline-none transition-colors placeholder:text-[#7f8c8d] focus:border-[#3498db] min-h-[48px]"
               required
             />
           </div>
 
           <button
             type="submit"
-            className="mt-2 w-full rounded bg-[#e74c3c] py-3 text-sm font-bold uppercase text-white transition-all hover:bg-[#c0392b] active:scale-[0.98]"
+            className="mt-2 w-full rounded-lg bg-[#e74c3c] py-3.5 text-sm font-bold uppercase text-white transition-all hover:bg-[#c0392b] active:scale-[0.98] min-h-[48px]"
           >
             Login
           </button>

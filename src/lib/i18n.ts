@@ -121,6 +121,11 @@ export const translations = {
     // Empty states
     emptyBetSlip: "Your bet slip is empty",
     selectOdds: "Click on any odds to add selections",
+
+    // PWA Install
+    installApp: "Install App",
+    installPrompt: "Install JuegaSports for quick access",
+    dismiss: "Dismiss",
   },
   es: {
     // Navbar
@@ -242,6 +247,11 @@ export const translations = {
     // Empty states
     emptyBetSlip: "Tu ticket esta vacio",
     selectOdds: "Haz clic en cualquier cuota para agregar selecciones",
+
+    // PWA Install
+    installApp: "Instalar App",
+    installPrompt: "Instala JuegaSports para acceso rapido",
+    dismiss: "Descartar",
   },
 } as const;
 

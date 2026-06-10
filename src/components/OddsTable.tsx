@@ -1,4 +1,4 @@
-import { useState, useMemo } from "react";
+import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Lock } from "lucide-react";
 import { useApp } from "@/context/AppContext";
@@ -14,7 +14,7 @@ import {
   periodTabs,
   sportBanners,
 } from "@/data/mockData";
-import type { SportCode, Game, BPSPlayer, NBASGame, GameOdds, Team } from "@/data/mockData";
+import type { SportCode, Game, BPSPlayer, NBASGame, Team } from "@/data/mockData";
 
 const containerVariants = {
   hidden: {},
@@ -38,7 +38,7 @@ export default function OddsTable() {
   const tabs = periodTabs[currentSport] || ["juegoCompleto"];
 
   return (
-    <div className="flex-1 overflow-auto p-4">
+    <div className="flex-1 overflow-auto p-3 md:p-4">
       {/* Sport Banner */}
       <AnimatePresence mode="wait">
         <motion.div
@@ -47,30 +47,29 @@ export default function OddsTable() {
           initial="hidden"
           animate="visible"
           exit="hidden"
-          className="relative mb-4 h-[120px] overflow-hidden rounded-lg"
+          className="relative mb-4 h-[100px] overflow-hidden rounded-lg md:h-[120px]"
           style={{ background: sportBanners[currentSport] }}
         >
           {/* Watermark */}
           <span
-            className="absolute inset-0 flex items-center justify-center text-5xl font-extrabold text-white/[0.06] select-none"
-            style={{ fontSize: "48px" }}
+            className="absolute inset-0 flex items-center justify-center text-4xl font-extrabold text-white/[0.06] select-none md:text-5xl"
           >
             {currentSport}
           </span>
           {/* Label */}
-          <div className="absolute bottom-0 left-0 p-4">
-            <span className="text-base font-bold text-white">{currentSport}</span>
+          <div className="absolute bottom-0 left-0 p-3 md:p-4">
+            <span className="text-sm font-bold text-white md:text-base">{currentSport}</span>
           </div>
         </motion.div>
       </AnimatePresence>
 
-      {/* Period Tabs */}
-      <div className="mb-3 flex">
+      {/* Period Tabs - horizontally scrollable on mobile */}
+      <div className="mb-3 flex overflow-x-auto hide-scrollbar">
         {tabs.map((tabKey, idx) => (
           <button
             key={tabKey}
             onClick={() => setActivePeriod(idx)}
-            className={`px-5 py-2.5 text-[13px] font-semibold uppercase tracking-wider text-white transition-all duration-100 ${
+            className={`shrink-0 px-4 py-2.5 text-[12px] font-semibold uppercase tracking-wider text-white transition-all duration-100 md:px-5 md:text-[13px] min-h-[44px] ${
               activePeriod === idx
                 ? "border-t-2 border-t-white bg-[#3a3f47]"
                 : "border-t-2 border-t-transparent bg-[#4a4f57] hover:bg-white/[0.04]"
@@ -81,7 +80,7 @@ export default function OddsTable() {
         ))}
       </div>
 
-      {/* Table Content */}
+      {/* Table Content - horizontally scrollable on mobile */}
       <AnimatePresence mode="wait">
         <motion.div
           key={currentSport + "-" + activePeriod}
@@ -89,6 +88,7 @@ export default function OddsTable() {
           animate={{ opacity: 1 }}
           exit={{ opacity: 0 }}
           transition={{ duration: 0.15 }}
+          className="overflow-x-auto hide-scrollbar"
         >
           {currentSport === "MLB" && <MLBTable games={mlbGames} />}
           {currentSport === "LMB" && <MLBTable games={lmbGames} />}
@@ -108,9 +108,9 @@ function MLBTable({ games }: { games: Game[] }) {
   const { language } = useApp();
 
   return (
-    <div className="overflow-hidden rounded">
+    <div className="min-w-[720px] overflow-hidden rounded md:w-full">
       {/* Header */}
-      <div className="grid grid-cols-[70px_1fr_70px_90px_80px_80px_80px_80px] bg-[#2c3e50] text-[13px] font-semibold uppercase tracking-wider text-white">
+      <div className="grid grid-cols-[60px_1fr_65px_85px_75px_75px_75px_75px] bg-[#2c3e50] text-[12px] font-semibold uppercase tracking-wider text-white md:text-[13px] md:grid-cols-[70px_1fr_70px_90px_80px_80px_80px_80px]">
         <div className="px-2 py-2.5">{t(language, "hora")}</div>
         <div className="px-2 py-2.5">{t(language, "equipo")}</div>
         <div className="px-2 py-2.5 text-center">{t(language, "ml")}</div>
@@ -136,7 +136,7 @@ function MLBTable({ games }: { games: Game[] }) {
 }
 
 function GameRowsMLB({ game, gameIndex }: { game: Game; gameIndex: number }) {
-  const { addBet, isBetSelected, language } = useApp();
+  const { addBet, isBetSelected } = useApp();
 
   const handleCellClick = (
     team: Team,
@@ -169,10 +169,10 @@ function GameRowsMLB({ game, gameIndex }: { game: Game; gameIndex: number }) {
           <motion.div
             key={`${game.id}-${tIdx}`}
             variants={rowVariants}
-            className={`grid grid-cols-[70px_1fr_70px_90px_80px_80px_80px_80px] border-b border-[#555a60] ${rowBg}`}
+            className={`grid grid-cols-[60px_1fr_65px_85px_75px_75px_75px_75px] border-b border-[#555a60] ${rowBg} md:grid-cols-[70px_1fr_70px_90px_80px_80px_80px_80px]`}
           >
             {/* Time */}
-            <div className="flex items-center px-2 py-2.5 text-sm text-white">
+            <div className="flex items-center px-2 py-3 text-sm text-white">
               {tIdx === 0 ? game.time : ""}
             </div>
 
@@ -283,8 +283,8 @@ function NBATable({ games }: { games: Game[] }) {
   const { language } = useApp();
 
   return (
-    <div className="overflow-hidden rounded">
-      <div className="grid grid-cols-[70px_1fr_70px_80px_90px_80px_80px] bg-[#2c3e50] text-[13px] font-semibold uppercase tracking-wider text-white">
+    <div className="min-w-[640px] overflow-hidden rounded md:w-full">
+      <div className="grid grid-cols-[60px_1fr_65px_75px_85px_75px_75px] bg-[#2c3e50] text-[12px] font-semibold uppercase tracking-wider text-white md:text-[13px] md:grid-cols-[70px_1fr_70px_80px_90px_80px_80px]">
         <div className="px-2 py-2.5">{t(language, "hora")}</div>
         <div className="px-2 py-2.5">{t(language, "equipo")}</div>
         <div className="px-2 py-2.5 text-center">{t(language, "ml")}</div>
@@ -329,9 +329,9 @@ function GameRowsNBA({ game, gameIndex }: { game: Game; gameIndex: number }) {
           <motion.div
             key={`${game.id}-${tIdx}`}
             variants={rowVariants}
-            className={`grid grid-cols-[70px_1fr_70px_80px_90px_80px_80px] border-b border-[#555a60] ${rowBg}`}
+            className={`grid grid-cols-[60px_1fr_65px_75px_85px_75px_75px] border-b border-[#555a60] ${rowBg} md:grid-cols-[70px_1fr_70px_80px_90px_80px_80px]`}
           >
-            <div className="flex items-center px-2 py-2.5 text-sm text-white">
+            <div className="flex items-center px-2 py-3 text-sm text-white">
               {tIdx === 0 ? game.time : ""}
             </div>
             <div className="flex flex-col justify-center px-2 py-2.5">
@@ -406,8 +406,8 @@ function BPSTable({ players }: { players: BPSPlayer[] }) {
   const { language, addBet, isBetSelected } = useApp();
 
   return (
-    <div className="overflow-hidden rounded">
-      <div className="grid grid-cols-[70px_1fr_1fr_80px] bg-[#2c3e50] text-[13px] font-semibold uppercase tracking-wider text-white">
+    <div className="min-w-[400px] overflow-hidden rounded md:w-full">
+      <div className="grid grid-cols-[60px_1fr_1fr_75px] bg-[#2c3e50] text-[12px] font-semibold uppercase tracking-wider text-white md:text-[13px] md:grid-cols-[70px_1fr_1fr_80px]">
         <div className="px-2 py-2.5">{t(language, "hora")}</div>
         <div className="px-2 py-2.5">{t(language, "equipo")}</div>
         <div className="px-2 py-2.5">Player</div>
@@ -427,15 +427,15 @@ function BPSTable({ players }: { players: BPSPlayer[] }) {
             <motion.div
               key={player.id}
               variants={rowVariants}
-              className={`grid grid-cols-[70px_1fr_1fr_80px] border-b border-[#555a60] ${rowBg}`}
+              className={`grid grid-cols-[60px_1fr_1fr_75px] border-b border-[#555a60] ${rowBg} md:grid-cols-[70px_1fr_1fr_80px]`}
             >
-              <div className="flex items-center px-2 py-2.5 text-sm text-white">
+              <div className="flex items-center px-2 py-3 text-sm text-white">
                 {player.time}
               </div>
-              <div className="flex items-center px-2 py-2.5 text-sm font-semibold text-white">
+              <div className="flex items-center px-2 py-3 text-sm font-semibold text-white">
                 {player.team}
               </div>
-              <div className="flex items-center px-2 py-2.5 text-sm font-semibold text-white">
+              <div className="flex items-center px-2 py-3 text-sm font-semibold text-white">
                 {player.name}
               </div>
               <OddsCell
@@ -465,8 +465,8 @@ function NBASTable({ games }: { games: NBASGame[] }) {
   const { language, addBet, isBetSelected } = useApp();
 
   return (
-    <div className="overflow-hidden rounded">
-      <div className="grid grid-cols-[70px_1fr_1fr_100px_80px_90px] bg-[#2c3e50] text-[13px] font-semibold uppercase tracking-wider text-white">
+    <div className="min-w-[560px] overflow-hidden rounded md:w-full">
+      <div className="grid grid-cols-[60px_1fr_1fr_95px_75px_85px] bg-[#2c3e50] text-[12px] font-semibold uppercase tracking-wider text-white md:text-[13px] md:grid-cols-[70px_1fr_1fr_100px_80px_90px]">
         <div className="px-2 py-2.5">{t(language, "hora")}</div>
         <div className="px-2 py-2.5">Player</div>
         <div className="px-2 py-2.5">{t(language, "categoria")}</div>
@@ -487,15 +487,15 @@ function NBASTable({ games }: { games: NBASGame[] }) {
             <motion.div
               key={game.id}
               variants={rowVariants}
-              className={`grid grid-cols-[70px_1fr_1fr_100px_80px_90px] border-b border-[#555a60] ${rowBg}`}
+              className={`grid grid-cols-[60px_1fr_1fr_95px_75px_85px] border-b border-[#555a60] ${rowBg} md:grid-cols-[70px_1fr_1fr_100px_80px_90px]`}
             >
-              <div className="flex items-center px-2 py-2.5 text-sm text-white">
+              <div className="flex items-center px-2 py-3 text-sm text-white">
                 {game.time}
               </div>
-              <div className="flex items-center px-2 py-2.5 text-sm font-semibold text-white">
+              <div className="flex items-center px-2 py-3 text-sm font-semibold text-white">
                 {game.player}
               </div>
-              <div className="flex items-center px-2 py-2.5 text-sm text-[#b0b5ba]">
+              <div className="flex items-center px-2 py-3 text-sm text-[#b0b5ba]">
                 {game.category}
               </div>
 
@@ -557,11 +557,11 @@ function NBASTable({ games }: { games: NBASGame[] }) {
 
 // Soccer Table
 function SoccerTable({ games }: { games: Game[] }) {
-  const { language, addBet, isBetSelected } = useApp();
+  const { language } = useApp();
 
   return (
-    <div className="overflow-hidden rounded">
-      <div className="grid grid-cols-[70px_1fr_80px_80px_90px_80px_80px] bg-[#2c3e50] text-[13px] font-semibold uppercase tracking-wider text-white">
+    <div className="min-w-[580px] overflow-hidden rounded md:w-full">
+      <div className="grid grid-cols-[60px_1fr_75px_75px_85px_75px_75px] bg-[#2c3e50] text-[12px] font-semibold uppercase tracking-wider text-white md:text-[13px] md:grid-cols-[70px_1fr_80px_80px_90px_80px_80px]">
         <div className="px-2 py-2.5">{t(language, "hora")}</div>
         <div className="px-2 py-2.5">{t(language, "equipo")}</div>
         <div className="px-2 py-2.5 text-center">{t(language, "alML")}</div>
@@ -605,9 +605,9 @@ function SoccerGameRows({ game, gameIndex }: { game: Game; gameIndex: number }) 
           <motion.div
             key={`${game.id}-${tIdx}`}
             variants={rowVariants}
-            className={`grid grid-cols-[70px_1fr_80px_80px_90px_80px_80px] border-b border-[#555a60] ${rowBg}`}
+            className={`grid grid-cols-[60px_1fr_75px_75px_85px_75px_75px] border-b border-[#555a60] ${rowBg} md:grid-cols-[70px_1fr_80px_80px_90px_80px_80px]`}
           >
-            <div className="flex items-center px-2 py-2.5 text-sm text-white">
+            <div className="flex items-center px-2 py-3 text-sm text-white">
               {tIdx === 0 ? game.time : ""}
             </div>
             <div className="flex flex-col justify-center px-2 py-2.5">
@@ -697,12 +697,12 @@ function OddsCell({
   onClick: () => void;
 }) {
   if (value === undefined || value === "") {
-    return <div className="flex items-center justify-center px-1 py-2.5" />;
+    return <div className="flex items-center justify-center px-1 py-3" />;
   }
 
   if (value === "locked" || value === "Locked") {
     return (
-      <div className="flex items-center justify-center px-1 py-2.5">
+      <div className="flex items-center justify-center px-1 py-3">
         <Lock size={14} className="text-[#7f8c8d]" />
       </div>
     );
@@ -711,7 +711,7 @@ function OddsCell({
   return (
     <button
       onClick={onClick}
-      className={`flex items-center justify-center px-1 py-2.5 text-sm transition-all duration-100 ${
+      className={`flex items-center justify-center px-1 py-3 text-sm transition-all duration-100 min-h-[44px] ${
         isSelected
           ? "animate-pulse-red bg-[#e74c3c] font-bold text-white"
           : "bg-transparent font-semibold text-white hover:bg-[#3498db]/12"
