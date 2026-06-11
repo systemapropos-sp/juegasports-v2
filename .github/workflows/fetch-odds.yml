@@ -1,0 +1,32 @@
+name: Fetch Sports Odds
+
+on:
+  schedule:
+    # 15:00 UTC = 11:00 AM Eastern Time (ET)
+    - cron: '0 15 * * *'
+  workflow_dispatch:
+    # Also allows manual "Run workflow" button in GitHub Actions tab
+
+jobs:
+  fetch-odds:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Fetch odds & upload to Supabase Storage
+        env:
+          ODDS_API_KEY: ${{ secrets.ODDS_API_KEY }}
+          SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+          SUPABASE_SERVICE_KEY: ${{ secrets.SUPABASE_SERVICE_KEY }}
+        run: node .github/scripts/fetch-odds.cjs
+
+      - name: Done
+        run: echo "Odds updated successfully at $(date -u)"
