@@ -1,17 +1,1 @@
-{
-  "files": [],
-  "references": [
-    {
-      "path": "./tsconfig.app.json"
-    },
-    {
-      "path": "./tsconfig.node.json"
-    }
-  ],
-  "compilerOptions": {
-    "baseUrl": ".",
-    "paths": {
-      "@/*": ["./src/*"]
-    }
-  }
-}
+ewogICJmaWxlcyI6IFtdLAogICJyZWZlcmVuY2VzIjogWwogICAgewogICAgICAicGF0aCI6ICIuL3RzY29uZmlnLmFwcC5qc29uIgogICAgfSwKICAgIHsKICAgICAgInBhdGgiOiAiLi90c2NvbmZpZy5ub2RlLmpzb24iCiAgICB9CiAgXSwKICAiY29tcGlsZXJPcHRpb25zIjogewogICAgImJhc2VVcmwiOiAiLiIsCiAgICAicGF0aHMiOiB7CiAgICAgICJALyoiOiBbIi4vc3JjLyoiXQogICAgfQogIH0KfQ==

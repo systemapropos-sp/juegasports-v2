@@ -1,17 +1,1 @@
-import { createRoot } from 'react-dom/client'
-import { HashRouter } from 'react-router'
-import './index.css'
-import App from './App.tsx'
-
-createRoot(document.getElementById('root')!).render(
-  <HashRouter>
-    <App />
-  </HashRouter>,
-)
-
-// Register service worker for PWA
-if ('serviceWorker' in navigator) {
-  window.addEventListener('load', () => {
-    navigator.serviceWorker.register('/sw.js').catch(() => {});
-  });
-}
+aW1wb3J0IHsgY3JlYXRlUm9vdCB9IGZyb20gJ3JlYWN0LWRvbS9jbGllbnQnCmltcG9ydCB7IEhhc2hSb3V0ZXIgfSBmcm9tICdyZWFjdC1yb3V0ZXInCmltcG9ydCAnLi9pbmRleC5jc3MnCmltcG9ydCBBcHAgZnJvbSAnLi9BcHAudHN4JwoKY3JlYXRlUm9vdChkb2N1bWVudC5nZXRFbGVtZW50QnlJZCgncm9vdCcpISkucmVuZGVyKAogIDxIYXNoUm91dGVyPgogICAgPEFwcCAvPgogIDwvSGFzaFJvdXRlcj4sCikKCi8vIFJlZ2lzdGVyIHNlcnZpY2Ugd29ya2VyIGZvciBQV0EKaWYgKCdzZXJ2aWNlV29ya2VyJyBpbiBuYXZpZ2F0b3IpIHsKICB3aW5kb3cuYWRkRXZlbnRMaXN0ZW5lcignbG9hZCcsICgpID0+IHsKICAgIG5hdmlnYXRvci5zZXJ2aWNlV29ya2VyLnJlZ2lzdGVyKCcvc3cuanMnKS5jYXRjaCgoKSA9PiB7fSk7CiAgfSk7Cn0K

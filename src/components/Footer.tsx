@@ -1,7 +1,1 @@
-export default function Footer() {
-  return (
-    <footer className="border-t border-[#555a60] bg-[#3a3f47] py-3 text-center text-xs text-[#7f8c8d]">
-      <p>Sports v2 &copy; {new Date().getFullYear()}</p>
-    </footer>
-  );
-}
+ZXhwb3J0IGRlZmF1bHQgZnVuY3Rpb24gRm9vdGVyKCkgewogIHJldHVybiAoCiAgICA8Zm9vdGVyIGNsYXNzTmFtZT0iYm9yZGVyLXQgYm9yZGVyLVsjNTU1YTYwXSBiZy1bIzNhM2Y0N10gcHktMyB0ZXh0LWNlbnRlciB0ZXh0LXhzIHRleHQtWyM3ZjhjOGRdIj4KICAgICAgPHA+U3BvcnRzIHYyICZjb3B5OyB7bmV3IERhdGUoKS5nZXRGdWxsWWVhcigpfTwvcD4KICAgIDwvZm9vdGVyPgogICk7Cn0K
