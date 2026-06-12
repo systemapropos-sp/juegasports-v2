@@ -4,7 +4,7 @@ import { ChevronLeft, ChevronRight, ChevronUp, Plus, Minus } from "lucide-react"
 import { useApp } from "@/context/AppContext";
 import { t } from "@/lib/i18n";
 import type { SportCode, Game } from "@/data/mockData";
-import { getGamesBySport } from "@/data/mockData";
+import { useOddsGames } from "@/hooks/useOddsGames";
 
 interface BettingLineButtonProps {
   label: string;
@@ -439,7 +439,7 @@ export default function SportGames() {
   } = useApp();
 
   const code = (sportCode || "MLB") as SportCode;
-  const games = getGamesBySport(code);
+  const { games, loading } = useOddsGames(code);
 
   const totalPayout = selectedBets.reduce((acc) => {
     const amt = parseFloat(betAmount) || 0;
@@ -562,12 +562,17 @@ export default function SportGames() {
 
       {/* Games List */}
       <div className="pb-32">
-        {games.length === 0 ? (
+        {loading ? (
           <div className="py-16 text-center">
-            <p className="text-sm text-[#7f8c8d]">No games available</p>
+            <div className="mx-auto mb-3 h-8 w-8 animate-spin rounded-full border-2 border-[#555a60] border-t-[#3498db]" />
+            <p className="text-sm text-[#7f8c8d]">Cargando juegos...</p>
+          </div>
+        ) : games.length === 0 ? (
+          <div className="py-16 text-center">
+            <p className="text-sm text-[#7f8c8d]">No hay juegos disponibles hoy</p>
           </div>
         ) : (
-          games.map((game) => (
+          games.map((game: Game) => (
             <GameRow key={game.id} game={game} sportCode={code} />
           ))
         )}
