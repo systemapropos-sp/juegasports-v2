@@ -1,1 +1,273 @@
-aW1wb3J0IHR5cGUgeyBSZWFjdE5vZGUgfSBmcm9tICJyZWFjdCI7CmltcG9ydCB7IGNyZWF0ZUNvbnRleHQsIHVzZUNvbnRleHQsIHVzZVN0YXRlLCB1c2VDYWxsYmFjayB9IGZyb20gInJlYWN0IjsKaW1wb3J0IHR5cGUgeyBTcG9ydENvZGUgfSBmcm9tICJAL2RhdGEvbW9ja0RhdGEiOwppbXBvcnQgdHlwZSB7IExhbmd1YWdlIH0gZnJvbSAiQC9saWIvaTE4biI7CgpleHBvcnQgaW50ZXJmYWNlIEJldFNlbGVjdGlvbiB7CiAgaWQ6IHN0cmluZzsKICBzcG9ydDogU3BvcnRDb2RlOwogIGdhbWVJZDogc3RyaW5nOwogIHRlYW06IHN0cmluZzsKICB0eXBlOiBzdHJpbmc7CiAgbGluZTogc3RyaW5nOwogIG9kZHM6IG51bWJlcjsKICBwb2ludHM/OiBzdHJpbmc7CiAgdGltZXN0YW1wOiBudW1iZXI7Cn0KCmV4cG9ydCBpbnRlcmZhY2UgU2F2ZWRUaWNrZXQgewogIGlkOiBzdHJpbmc7CiAgZGF0ZTogc3RyaW5nOwogIHRpbWU6IHN0cmluZzsKICBhbW91bnQ6IG51bWJlcjsKICBwYXlvdXQ6IG51bWJlcjsKICBzdGF0dXM6ICJwZW5kaWVudGUiIHwgImdhbmFkbyIgfCAicGVyZGlkbyI7CiAgc2VsZWN0aW9uczogQmV0U2VsZWN0aW9uW107Cn0KCmludGVyZmFjZSBBcHBTdGF0ZSB7CiAgdXNlcjogeyBlbWFpbDogc3RyaW5nOyB1c2VybmFtZTogc3RyaW5nOyByb2xlOiBzdHJpbmcgfSB8IG51bGw7CiAgYmFsYW5jZTogbnVtYmVyOwogIGxhbmd1YWdlOiBMYW5ndWFnZTsKICBzZWxlY3RlZEJldHM6IEJldFNlbGVjdGlvbltdOwogIGN1cnJlbnRTcG9ydDogU3BvcnRDb2RlOwogIGV4cGFuZGVkR2FtZUlkOiBzdHJpbmcgfCBudWxsOwogIGlzTG9nZ2VkSW46IGJvb2xlYW47CiAgaXNIZWxwTW9kYWxPcGVuOiBib29sZWFuOwogIGlzV2l0aGRyYXdhbE5vdGljZU9wZW46IGJvb2xlYW47CiAgaXNHZW5lcmF0ZUNvZGVPcGVuOiBib29sZWFuOwogIGlzQ2xlYXJDb25maXJtT3BlbjogYm9vbGVhbjsKICBpc0JldFNsaXBTaGVldE9wZW46IGJvb2xlYW47CiAgaXNVc2VyTWVudU9wZW46IGJvb2xlYW47CiAgaXNMYXN0TW92ZW1lbnRzT3BlbjogYm9vbGVhbjsKICBpc1BhcmxheUNhbGN1bGF0b3JPcGVuOiBib29sZWFuOwogIGlzVGlja2V0Q3JlYXRlZE9wZW46IGJvb2xlYW47CiAgYmV0U2xpcFRhYjogInRlYXNlciIgfCAidGVhc2VySUYiIHwgInJlZ3VsYXIiOwogIGJldFNsaXBWaWV3VGFiOiAianVnYXIiIHwgInRpY2tldHNBYmllcnRvcyI7CiAgYWN0aXZhdGVJZjogYm9vbGVhbjsKICBiZXRBbW91bnQ6IHN0cmluZzsKICBzYXZlZFRpY2tldHM6IFNhdmVkVGlja2V0W107Cn0KCmludGVyZmFjZSBBcHBDb250ZXh0VHlwZSBleHRlbmRzIEFwcFN0YXRlIHsKICBzZXRMYW5ndWFnZTogKGxhbmc6IExhbmd1YWdlKSA9PiB2b2lkOwogIHNldEN1cnJlbnRTcG9ydDogKHNwb3J0OiBTcG9ydENvZGUpID0+IHZvaWQ7CiAgc2V0RXhwYW5kZWRHYW1lSWQ6IChpZDogc3RyaW5nIHwgbnVsbCkgPT4gdm9pZDsKICBhZGRCZXQ6IChiZXQ6IE9taXQ8QmV0U2VsZWN0aW9uLCAiaWQiIHwgInRpbWVzdGFtcCI+KSA9PiB2b2lkOwogIHJlbW92ZUJldDogKGJldElkOiBzdHJpbmcpID0+IHZvaWQ7CiAgY2xlYXJCZXRzOiAoKSA9PiB2b2lkOwogIHRvZ2dsZUhlbHBNb2RhbDogKCkgPT4gdm9pZDsKICB0b2dnbGVXaXRoZHJhd2FsTm90aWNlOiAoKSA9PiB2b2lkOwogIHRvZ2dsZUdlbmVyYXRlQ29kZTogKCkgPT4gdm9pZDsKICB0b2dnbGVDbGVhckNvbmZpcm06ICgpID0+IHZvaWQ7CiAgdG9nZ2xlQmV0U2xpcFNoZWV0OiAoKSA9PiB2b2lkOwogIHRvZ2dsZVVzZXJNZW51OiAoKSA9PiB2b2lkOwogIHRvZ2dsZUxhc3RNb3ZlbWVudHM6ICgpID0+IHZvaWQ7CiAgdG9nZ2xlUGFybGF5Q2FsY3VsYXRvcjogKCkgPT4gdm9pZDsKICB0b2dnbGVUaWNrZXRDcmVhdGVkOiAoKSA9PiB2b2lkOwogIGxvZ2luOiAodXNlcjogeyBlbWFpbDogc3RyaW5nOyB1c2VybmFtZTogc3RyaW5nOyByb2xlOiBzdHJpbmcgfSkgPT4gdm9pZDsKICBsb2dvdXQ6ICgpID0+IHZvaWQ7CiAgc2V0QmV0U2xpcFRhYjogKHRhYjogInRlYXNlciIgfCAidGVhc2VySUYiIHwgInJlZ3VsYXIiKSA9PiB2b2lkOwogIHNldEJldFNsaXBWaWV3VGFiOiAodGFiOiAianVnYXIiIHwgInRpY2tldHNBYmllcnRvcyIpID0+IHZvaWQ7CiAgc2V0QWN0aXZhdGVJZjogKHY6IGJvb2xlYW4pID0+IHZvaWQ7CiAgc2V0QmV0QW1vdW50OiAodjogc3RyaW5nKSA9PiB2b2lkOwogIHNldEJhbGFuY2U6ICh2OiBudW1iZXIgfCAoKHByZXY6IG51bWJlcikgPT4gbnVtYmVyKSkgPT4gdm9pZDsKICBpc0JldFNlbGVjdGVkOiAoZ2FtZUlkOiBzdHJpbmcsIHR5cGU6IHN0cmluZywgdGVhbTogc3RyaW5nKSA9PiBib29sZWFuOwogIHNhdmVUaWNrZXQ6ICgpID0+IHZvaWQ7Cn0KCmNvbnN0IEFwcENvbnRleHQgPSBjcmVhdGVDb250ZXh0PEFwcENvbnRleHRUeXBlIHwgbnVsbD4obnVsbCk7CgpleHBvcnQgZnVuY3Rpb24gQXBwUHJvdmlkZXIoeyBjaGlsZHJlbiB9OiB7IGNoaWxkcmVuOiBSZWFjdE5vZGUgfSkgewogIGNvbnN0IFt1c2VyLCBzZXRVc2VyXSA9IHVzZVN0YXRlPEFwcFN0YXRlWyJ1c2VyIl0+KG51bGwpOwogIGNvbnN0IFtpc0xvZ2dlZEluLCBzZXRJc0xvZ2dlZEluXSA9IHVzZVN0YXRlKGZhbHNlKTsKICBjb25zdCBbYmFsYW5jZSwgc2V0QmFsYW5jZV0gPSB1c2VTdGF0ZSgxMDAuMCk7CiAgY29uc3QgW2xhbmd1YWdlLCBzZXRMYW5ndWFnZV0gPSB1c2VTdGF0ZTxMYW5ndWFnZT4oImVzIik7CiAgY29uc3QgW3NlbGVjdGVkQmV0cywgc2V0U2VsZWN0ZWRCZXRzXSA9IHVzZVN0YXRlPEJldFNlbGVjdGlvbltdPihbXSk7CiAgY29uc3QgW2N1cnJlbnRTcG9ydCwgc2V0Q3VycmVudFNwb3J0XSA9IHVzZVN0YXRlPFNwb3J0Q29kZT4oIk1MQiIpOwogIGNvbnN0IFtleHBhbmRlZEdhbWVJZCwgc2V0RXhwYW5kZWRHYW1lSWRdID0gdXNlU3RhdGU8c3RyaW5nIHwgbnVsbD4obnVsbCk7CiAgY29uc3QgW2lzSGVscE1vZGFsT3Blbiwgc2V0SXNIZWxwTW9kYWxPcGVuXSA9IHVzZVN0YXRlKGZhbHNlKTsKICBjb25zdCBbaXNXaXRoZHJhd2FsTm90aWNlT3Blbiwgc2V0SXNXaXRoZHJhd2FsTm90aWNlT3Blbl0gPSB1c2VTdGF0ZShmYWxzZSk7CiAgY29uc3QgW2lzR2VuZXJhdGVDb2RlT3Blbiwgc2V0SXNHZW5lcmF0ZUNvZGVPcGVuXSA9IHVzZVN0YXRlKGZhbHNlKTsKICBjb25zdCBbaXNDbGVhckNvbmZpcm1PcGVuLCBzZXRJc0NsZWFyQ29uZmlybU9wZW5dID0gdXNlU3RhdGUoZmFsc2UpOwogIGNvbnN0IFtpc0JldFNsaXBTaGVldE9wZW4sIHNldElzQmV0U2xpcFNoZWV0T3Blbl0gPSB1c2VTdGF0ZShmYWxzZSk7CiAgY29uc3QgW2lzVXNlck1lbnVPcGVuLCBzZXRJc1VzZXJNZW51T3Blbl0gPSB1c2VTdGF0ZShmYWxzZSk7CiAgY29uc3QgW2lzTGFzdE1vdmVtZW50c09wZW4sIHNldElzTGFzdE1vdmVtZW50c09wZW5dID0gdXNlU3RhdGUoZmFsc2UpOwogIGNvbnN0IFtpc1BhcmxheUNhbGN1bGF0b3JPcGVuLCBzZXRJc1BhcmxheUNhbGN1bGF0b3JPcGVuXSA9IHVzZVN0YXRlKGZhbHNlKTsKICBjb25zdCBbaXNUaWNrZXRDcmVhdGVkT3Blbiwgc2V0SXNUaWNrZXRDcmVhdGVkT3Blbl0gPSB1c2VTdGF0ZShmYWxzZSk7CiAgY29uc3QgW2JldFNsaXBUYWIsIHNldEJldFNsaXBUYWJdID0gdXNlU3RhdGU8InRlYXNlciIgfCAidGVhc2VySUYiIHwgInJlZ3VsYXIiPigicmVndWxhciIpOwogIGNvbnN0IFtiZXRTbGlwVmlld1RhYiwgc2V0QmV0U2xpcFZpZXdUYWJdID0gdXNlU3RhdGU8Imp1Z2FyIiB8ICJ0aWNrZXRzQWJpZXJ0b3MiPigianVnYXIiKTsKICBjb25zdCBbYWN0aXZhdGVJZiwgc2V0QWN0aXZhdGVJZl0gPSB1c2VTdGF0ZShmYWxzZSk7CiAgY29uc3QgW2JldEFtb3VudCwgc2V0QmV0QW1vdW50XSA9IHVzZVN0YXRlKCIiKTsKICBjb25zdCBbc2F2ZWRUaWNrZXRzLCBzZXRTYXZlZFRpY2tldHNdID0gdXNlU3RhdGU8U2F2ZWRUaWNrZXRbXT4oWwogICAgewogICAgICBpZDogInRpY2tldC1kZW1vLTAwMSIsCiAgICAgIGRhdGU6ICIxMS8wNi8yMDI2IiwKICAgICAgdGltZTogIjEwOjMwIEFNIiwKICAgICAgYW1vdW50OiAyMCwKICAgICAgcGF5b3V0OiA2My4wLAogICAgICBzdGF0dXM6ICJwZW5kaWVudGUiLAogICAgICBzZWxlY3Rpb25zOiBbCiAgICAgICAgewogICAgICAgICAgaWQ6ICJzZWwtMDAxIiwKICAgICAgICAgIHNwb3J0OiAiTUxCIiwKICAgICAgICAgIGdhbWVJZDogImdhbWUtMDAxIiwKICAgICAgICAgIHRlYW06ICJDYXJkaW5hbHMiLAogICAgICAgICAgdHlwZTogIlIvTCIsCiAgICAgICAgICBsaW5lOiAiKzEuNSIsCiAgICAgICAgICBvZGRzOiAtMTY1LAogICAgICAgICAgdGltZXN0YW1wOiBEYXRlLm5vdygpIC0gMzYwMDAwMCwKICAgICAgICB9LAogICAgICAgIHsKICAgICAgICAgIGlkOiAic2VsLTAwMiIsCiAgICAgICAgICBzcG9ydDogIk1MQiIsCiAgICAgICAgICBnYW1lSWQ6ICJnYW1lLTAwMSIsCiAgICAgICAgICB0ZWFtOiAiQ2FyZGluYWxzIHZzIE1ldHMiLAogICAgICAgICAgdHlwZTogIkEgTUFTIiwKICAgICAgICAgIGxpbmU6ICI5LjAiLAogICAgICAgICAgb2RkczogLTEwNSwKICAgICAgICAgIHRpbWVzdGFtcDogRGF0ZS5ub3coKSAtIDM1MDAwMDAsCiAgICAgICAgfSwKICAgICAgXSwKICAgIH0sCiAgXSk7CgogIGNvbnN0IGxvZ2luID0gdXNlQ2FsbGJhY2soKHVzZXJEYXRhOiB7IGVtYWlsOiBzdHJpbmc7IHVzZXJuYW1lOiBzdHJpbmc7IHJvbGU6IHN0cmluZyB9KSA9PiB7CiAgICBzZXRVc2VyKHVzZXJEYXRhKTsKICAgIHNldElzTG9nZ2VkSW4odHJ1ZSk7CiAgfSwgW10pOwoKICBjb25zdCBsb2dvdXQgPSB1c2VDYWxsYmFjaygoKSA9PiB7CiAgICBzZXRVc2VyKG51bGwpOwogICAgc2V0SXNMb2dnZWRJbihmYWxzZSk7CiAgICBzZXRTZWxlY3RlZEJldHMoW10pOwogICAgc2V0QmV0QW1vdW50KCIiKTsKICAgIHNldEV4cGFuZGVkR2FtZUlkKG51bGwpOwogIH0sIFtdKTsKCiAgY29uc3QgYWRkQmV0ID0gdXNlQ2FsbGJhY2soKGJldDogT21pdDxCZXRTZWxlY3Rpb24sICJpZCIgfCAidGltZXN0YW1wIj4pID0+IHsKICAgIHNldFNlbGVjdGVkQmV0cygocHJldikgPT4gewogICAgICBjb25zdCBleGlzdHMgPSBwcmV2LmZpbmQoCiAgICAgICAgKGIpID0+IGIuZ2FtZUlkID09PSBiZXQuZ2FtZUlkICYmIGIudHlwZSA9PT0gYmV0LnR5cGUgJiYgYi50ZWFtID09PSBiZXQudGVhbQogICAgICApOwogICAgICBpZiAoZXhpc3RzKSB7CiAgICAgICAgcmV0dXJuIHByZXYuZmlsdGVyKChiKSA9PiBiLmlkICE9PSBleGlzdHMuaWQpOwogICAgICB9CiAgICAgIGNvbnN0IG5ld0JldDogQmV0U2VsZWN0aW9uID0gewogICAgICAgIC4uLmJldCwKICAgICAgICBpZDogYCR7YmV0LmdhbWVJZH0tJHtiZXQudHlwZX0tJHtiZXQudGVhbX0tJHtEYXRlLm5vdygpfWAsCiAgICAgICAgdGltZXN0YW1wOiBEYXRlLm5vdygpLAogICAgICB9OwogICAgICByZXR1cm4gWy4uLnByZXYsIG5ld0JldF07CiAgICB9KTsKICB9LCBbXSk7CgogIGNvbnN0IHJlbW92ZUJldCA9IHVzZUNhbGxiYWNrKChiZXRJZDogc3RyaW5nKSA9PiB7CiAgICBzZXRTZWxlY3RlZEJldHMoKHByZXYpID0+IHByZXYuZmlsdGVyKChiKSA9PiBiLmlkICE9PSBiZXRJZCkpOwogIH0sIFtdKTsKCiAgY29uc3QgY2xlYXJCZXRzID0gdXNlQ2FsbGJhY2soKCkgPT4gewogICAgc2V0U2VsZWN0ZWRCZXRzKFtdKTsKICAgIHNldEJldEFtb3VudCgiIik7CiAgfSwgW10pOwoKICBjb25zdCBpc0JldFNlbGVjdGVkID0gdXNlQ2FsbGJhY2soCiAgICAoZ2FtZUlkOiBzdHJpbmcsIHR5cGU6IHN0cmluZywgdGVhbTogc3RyaW5nKSA9PiB7CiAgICAgIHJldHVybiBzZWxlY3RlZEJldHMuc29tZSgKICAgICAgICAoYikgPT4gYi5nYW1lSWQgPT09IGdhbWVJZCAmJiBiLnR5cGUgPT09IHR5cGUgJiYgYi50ZWFtID09PSB0ZWFtCiAgICAgICk7CiAgICB9LAogICAgW3NlbGVjdGVkQmV0c10KICApOwoKICBjb25zdCBzYXZlVGlja2V0ID0gdXNlQ2FsbGJhY2soKCkgPT4gewogICAgY29uc3QgYW1vdW50ID0gcGFyc2VGbG9hdChiZXRBbW91bnQpIHx8IDA7CiAgICBpZiAoYW1vdW50IDw9IDAgfHwgc2VsZWN0ZWRCZXRzLmxlbmd0aCA9PT0gMCkgcmV0dXJuOwoKICAgIC8vIENhbGN1bGF0ZSBwYXlvdXQKICAgIGxldCB0b3RhbE11bHRpcGxpZXIgPSAxOwogICAgZm9yIChjb25zdCBiZXQgb2Ygc2VsZWN0ZWRCZXRzKSB7CiAgICAgIGNvbnN0IG9kZHMgPSBiZXQub2RkczsKICAgICAgaWYgKG9kZHMgPiAwKSB0b3RhbE11bHRpcGxpZXIgKj0gb2RkcyAvIDEwMCArIDE7CiAgICAgIGVsc2UgaWYgKG9kZHMgPCAwKSB0b3RhbE11bHRpcGxpZXIgKj0gMTAwIC8gTWF0aC5hYnMob2RkcykgKyAxOwogICAgfQogICAgY29uc3QgcGF5b3V0ID0gYW1vdW50ICogKHRvdGFsTXVsdGlwbGllciAtIDEpOwoKICAgIGNvbnN0IG5ld1RpY2tldDogU2F2ZWRUaWNrZXQgPSB7CiAgICAgIGlkOiBgdGlja2V0LSR7RGF0ZS5ub3coKX1gLAogICAgICBkYXRlOiBuZXcgRGF0ZSgpLnRvTG9jYWxlRGF0ZVN0cmluZygpLAogICAgICB0aW1lOiBuZXcgRGF0ZSgpLnRvTG9jYWxlVGltZVN0cmluZyhbXSwgeyBob3VyOiAnMi1kaWdpdCcsIG1pbnV0ZTogJzItZGlnaXQnIH0pLAogICAgICBhbW91bnQsCiAgICAgIHBheW91dCwKICAgICAgc3RhdHVzOiAicGVuZGllbnRlIiwKICAgICAgc2VsZWN0aW9uczogWy4uLnNlbGVjdGVkQmV0c10sCiAgICB9OwoKICAgIHNldFNhdmVkVGlja2V0cygocHJldikgPT4gW25ld1RpY2tldCwgLi4ucHJldl0pOwogICAgc2V0QmFsYW5jZSgocHJldikgPT4gcHJldiAtIGFtb3VudCk7CiAgICBzZXRTZWxlY3RlZEJldHMoW10pOwogICAgc2V0QmV0QW1vdW50KCIiKTsKICAgIHNldElzVGlja2V0Q3JlYXRlZE9wZW4odHJ1ZSk7CiAgICBzZXRJc0JldFNsaXBTaGVldE9wZW4oZmFsc2UpOwogIH0sIFtiZXRBbW91bnQsIHNlbGVjdGVkQmV0c10pOwoKICByZXR1cm4gKAogICAgPEFwcENvbnRleHQuUHJvdmlkZXIKICAgICAgdmFsdWU9e3sKICAgICAgICB1c2VyLAogICAgICAgIGJhbGFuY2UsCiAgICAgICAgbGFuZ3VhZ2UsCiAgICAgICAgc2VsZWN0ZWRCZXRzLAogICAgICAgIGN1cnJlbnRTcG9ydCwKICAgICAgICBleHBhbmRlZEdhbWVJZCwKICAgICAgICBpc0xvZ2dlZEluLAogICAgICAgIGlzSGVscE1vZGFsT3BlbiwKICAgICAgICBpc1dpdGhkcmF3YWxOb3RpY2VPcGVuLAogICAgICAgIGlzR2VuZXJhdGVDb2RlT3BlbiwKICAgICAgICBpc0NsZWFyQ29uZmlybU9wZW4sCiAgICAgICAgaXNCZXRTbGlwU2hlZXRPcGVuLAogICAgICAgIGlzVXNlck1lbnVPcGVuLAogICAgICAgIGlzTGFzdE1vdmVtZW50c09wZW4sCiAgICAgICAgaXNQYXJsYXlDYWxjdWxhdG9yT3BlbiwKICAgICAgICBpc1RpY2tldENyZWF0ZWRPcGVuLAogICAgICAgIGJldFNsaXBUYWIsCiAgICAgICAgYmV0U2xpcFZpZXdUYWIsCiAgICAgICAgYWN0aXZhdGVJZiwKICAgICAgICBiZXRBbW91bnQsCiAgICAgICAgc2F2ZWRUaWNrZXRzLAogICAgICAgIHNldExhbmd1YWdlLAogICAgICAgIHNldEN1cnJlbnRTcG9ydCwKICAgICAgICBzZXRFeHBhbmRlZEdhbWVJZCwKICAgICAgICBhZGRCZXQsCiAgICAgICAgcmVtb3ZlQmV0LAogICAgICAgIGNsZWFyQmV0cywKICAgICAgICB0b2dnbGVIZWxwTW9kYWw6ICgpID0+IHNldElzSGVscE1vZGFsT3BlbigodikgPT4gIXYpLAogICAgICAgIHRvZ2dsZVdpdGhkcmF3YWxOb3RpY2U6ICgpID0+IHNldElzV2l0aGRyYXdhbE5vdGljZU9wZW4oKHYpID0+ICF2KSwKICAgICAgICB0b2dnbGVHZW5lcmF0ZUNvZGU6ICgpID0+IHNldElzR2VuZXJhdGVDb2RlT3BlbigodikgPT4gIXYpLAogICAgICAgIHRvZ2dsZUNsZWFyQ29uZmlybTogKCkgPT4gc2V0SXNDbGVhckNvbmZpcm1PcGVuKCh2KSA9PiAhdiksCiAgICAgICAgdG9nZ2xlQmV0U2xpcFNoZWV0OiAoKSA9PiBzZXRJc0JldFNsaXBTaGVldE9wZW4oKHYpID0+ICF2KSwKICAgICAgICB0b2dnbGVVc2VyTWVudTogKCkgPT4gc2V0SXNVc2VyTWVudU9wZW4oKHYpID0+ICF2KSwKICAgICAgICB0b2dnbGVMYXN0TW92ZW1lbnRzOiAoKSA9PiBzZXRJc0xhc3RNb3ZlbWVudHNPcGVuKCh2KSA9PiAhdiksCiAgICAgICAgdG9nZ2xlUGFybGF5Q2FsY3VsYXRvcjogKCkgPT4gc2V0SXNQYXJsYXlDYWxjdWxhdG9yT3BlbigodikgPT4gIXYpLAogICAgICAgIHRvZ2dsZVRpY2tldENyZWF0ZWQ6ICgpID0+IHNldElzVGlja2V0Q3JlYXRlZE9wZW4oKHYpID0+ICF2KSwKICAgICAgICBsb2dpbiwKICAgICAgICBsb2dvdXQsCiAgICAgICAgc2V0QmV0U2xpcFRhYiwKICAgICAgICBzZXRCZXRTbGlwVmlld1RhYiwKICAgICAgICBzZXRBY3RpdmF0ZUlmLAogICAgICAgIHNldEJldEFtb3VudCwKICAgICAgICBzZXRCYWxhbmNlLAogICAgICAgIGlzQmV0U2VsZWN0ZWQsCiAgICAgICAgc2F2ZVRpY2tldCwKICAgICAgfX0KICAgID4KICAgICAge2NoaWxkcmVufQogICAgPC9BcHBDb250ZXh0LlByb3ZpZGVyPgogICk7Cn0KCmV4cG9ydCBmdW5jdGlvbiB1c2VBcHAoKSB7CiAgY29uc3QgY3R4ID0gdXNlQ29udGV4dChBcHBDb250ZXh0KTsKICBpZiAoIWN0eCkgdGhyb3cgbmV3IEVycm9yKCJ1c2VBcHAgbXVzdCBiZSB1c2VkIHdpdGhpbiBBcHBQcm92aWRlciIpOwogIHJldHVybiBjdHg7Cn0K
+﻿import type { ReactNode } from "react";
+import { createContext, useContext, useState, useCallback } from "react";
+import type { SportCode } from "@/data/mockData";
+import type { Language } from "@/lib/i18n";
+
+export interface BetSelection {
+  id: string;
+  sport: SportCode;
+  gameId: string;
+  team: string;
+  type: string;
+  line: string;
+  odds: number;
+  points?: string;
+  timestamp: number;
+}
+
+export interface SavedTicket {
+  id: string;
+  date: string;
+  time: string;
+  amount: number;
+  payout: number;
+  status: "pendiente" | "ganado" | "perdido";
+  selections: BetSelection[];
+}
+
+interface AppState {
+  user: { email: string; username: string; role: string } | null;
+  balance: number;
+  language: Language;
+  selectedBets: BetSelection[];
+  currentSport: SportCode;
+  expandedGameId: string | null;
+  isLoggedIn: boolean;
+  isHelpModalOpen: boolean;
+  isWithdrawalNoticeOpen: boolean;
+  isGenerateCodeOpen: boolean;
+  isClearConfirmOpen: boolean;
+  isBetSlipSheetOpen: boolean;
+  isUserMenuOpen: boolean;
+  isLastMovementsOpen: boolean;
+  isParlayCalculatorOpen: boolean;
+  isTicketCreatedOpen: boolean;
+  betSlipTab: "teaser" | "teaserIF" | "regular";
+  betSlipViewTab: "jugar" | "ticketsAbiertos";
+  activateIf: boolean;
+  betAmount: string;
+  savedTickets: SavedTicket[];
+}
+
+interface AppContextType extends AppState {
+  setLanguage: (lang: Language) => void;
+  setCurrentSport: (sport: SportCode) => void;
+  setExpandedGameId: (id: string | null) => void;
+  addBet: (bet: Omit<BetSelection, "id" | "timestamp">) => void;
+  removeBet: (betId: string) => void;
+  clearBets: () => void;
+  toggleHelpModal: () => void;
+  toggleWithdrawalNotice: () => void;
+  toggleGenerateCode: () => void;
+  toggleClearConfirm: () => void;
+  toggleBetSlipSheet: () => void;
+  toggleUserMenu: () => void;
+  toggleLastMovements: () => void;
+  toggleParlayCalculator: () => void;
+  toggleTicketCreated: () => void;
+  login: (user: { email: string; username: string; role: string }) => void;
+  logout: () => void;
+  setBetSlipTab: (tab: "teaser" | "teaserIF" | "regular") => void;
+  setBetSlipViewTab: (tab: "jugar" | "ticketsAbiertos") => void;
+  setActivateIf: (v: boolean) => void;
+  setBetAmount: (v: string) => void;
+  setBalance: (v: number | ((prev: number) => number)) => void;
+  isBetSelected: (gameId: string, type: string, team: string) => boolean;
+  saveTicket: () => void;
+}
+
+const AppContext = createContext<AppContextType | null>(null);
+
+export function AppProvider({ children }: { children: ReactNode }) {
+  const [user, setUser] = useState<AppState["user"]>(null);
+  const [isLoggedIn, setIsLoggedIn] = useState(false);
+  const [balance, setBalance] = useState(100.0);
+  const [language, setLanguage] = useState<Language>("es");
+  const [selectedBets, setSelectedBets] = useState<BetSelection[]>([]);
+  const [currentSport, setCurrentSport] = useState<SportCode>("MLB");
+  const [expandedGameId, setExpandedGameId] = useState<string | null>(null);
+  const [isHelpModalOpen, setIsHelpModalOpen] = useState(false);
+  const [isWithdrawalNoticeOpen, setIsWithdrawalNoticeOpen] = useState(false);
+  const [isGenerateCodeOpen, setIsGenerateCodeOpen] = useState(false);
+  const [isClearConfirmOpen, setIsClearConfirmOpen] = useState(false);
+  const [isBetSlipSheetOpen, setIsBetSlipSheetOpen] = useState(false);
+  const [isUserMenuOpen, setIsUserMenuOpen] = useState(false);
+  const [isLastMovementsOpen, setIsLastMovementsOpen] = useState(false);
+  const [isParlayCalculatorOpen, setIsParlayCalculatorOpen] = useState(false);
+  const [isTicketCreatedOpen, setIsTicketCreatedOpen] = useState(false);
+  const [betSlipTab, setBetSlipTab] = useState<"teaser" | "teaserIF" | "regular">("regular");
+  const [betSlipViewTab, setBetSlipViewTab] = useState<"jugar" | "ticketsAbiertos">("jugar");
+  const [activateIf, setActivateIf] = useState(false);
+  const [betAmount, setBetAmount] = useState("");
+  const [savedTickets, setSavedTickets] = useState<SavedTicket[]>([
+    {
+      id: "ticket-demo-001",
+      date: "11/06/2026",
+      time: "10:30 AM",
+      amount: 20,
+      payout: 63.0,
+      status: "pendiente",
+      selections: [
+        {
+          id: "sel-001",
+          sport: "MLB",
+          gameId: "game-001",
+          team: "Cardinals",
+          type: "R/L",
+          line: "+1.5",
+          odds: -165,
+          timestamp: Date.now() - 3600000,
+        },
+        {
+          id: "sel-002",
+          sport: "MLB",
+          gameId: "game-001",
+          team: "Cardinals vs Mets",
+          type: "A MAS",
+          line: "9.0",
+          odds: -105,
+          timestamp: Date.now() - 3500000,
+        },
+      ],
+    },
+  ]);
+
+  const login = useCallback((userData: { email: string; username: string; role: string }) => {
+    setUser(userData);
+    setIsLoggedIn(true);
+  }, []);
+
+  const logout = useCallback(() => {
+    setUser(null);
+    setIsLoggedIn(false);
+    setSelectedBets([]);
+    setBetAmount("");
+    setExpandedGameId(null);
+  }, []);
+
+  const addBet = useCallback((bet: Omit<BetSelection, "id" | "timestamp">) => {
+    setSelectedBets((prev) => {
+      const exists = prev.find(
+        (b) => b.gameId === bet.gameId && b.type === bet.type && b.team === bet.team
+      );
+      if (exists) {
+        return prev.filter((b) => b.id !== exists.id);
+      }
+      const newBet: BetSelection = {
+        ...bet,
+        id: `${bet.gameId}-${bet.type}-${bet.team}-${Date.now()}`,
+        timestamp: Date.now(),
+      };
+      return [...prev, newBet];
+    });
+  }, []);
+
+  const removeBet = useCallback((betId: string) => {
+    setSelectedBets((prev) => prev.filter((b) => b.id !== betId));
+  }, []);
+
+  const clearBets = useCallback(() => {
+    setSelectedBets([]);
+    setBetAmount("");
+  }, []);
+
+  const isBetSelected = useCallback(
+    (gameId: string, type: string, team: string) => {
+      return selectedBets.some(
+        (b) => b.gameId === gameId && b.type === type && b.team === team
+      );
+    },
+    [selectedBets]
+  );
+
+  const saveTicket = useCallback(() => {
+    const amount = parseFloat(betAmount) || 0;
+    if (amount <= 0 || selectedBets.length === 0) return;
+
+    // Calculate payout
+    let totalMultiplier = 1;
+    for (const bet of selectedBets) {
+      const odds = bet.odds;
+      if (odds > 0) totalMultiplier *= odds / 100 + 1;
+      else if (odds < 0) totalMultiplier *= 100 / Math.abs(odds) + 1;
+    }
+    const payout = amount * (totalMultiplier - 1);
+
+    const newTicket: SavedTicket = {
+      id: `ticket-${Date.now()}`,
+      date: new Date().toLocaleDateString(),
+      time: new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' }),
+      amount,
+      payout,
+      status: "pendiente",
+      selections: [...selectedBets],
+    };
+
+    setSavedTickets((prev) => [newTicket, ...prev]);
+    setBalance((prev) => prev - amount);
+    setSelectedBets([]);
+    setBetAmount("");
+    setIsTicketCreatedOpen(true);
+    setIsBetSlipSheetOpen(false);
+  }, [betAmount, selectedBets]);
+
+  return (
+    <AppContext.Provider
+      value={{
+        user,
+        balance,
+        language,
+        selectedBets,
+        currentSport,
+        expandedGameId,
+        isLoggedIn,
+        isHelpModalOpen,
+        isWithdrawalNoticeOpen,
+        isGenerateCodeOpen,
+        isClearConfirmOpen,
+        isBetSlipSheetOpen,
+        isUserMenuOpen,
+        isLastMovementsOpen,
+        isParlayCalculatorOpen,
+        isTicketCreatedOpen,
+        betSlipTab,
+        betSlipViewTab,
+        activateIf,
+        betAmount,
+        savedTickets,
+        setLanguage,
+        setCurrentSport,
+        setExpandedGameId,
+        addBet,
+        removeBet,
+        clearBets,
+        toggleHelpModal: () => setIsHelpModalOpen((v) => !v),
+        toggleWithdrawalNotice: () => setIsWithdrawalNoticeOpen((v) => !v),
+        toggleGenerateCode: () => setIsGenerateCodeOpen((v) => !v),
+        toggleClearConfirm: () => setIsClearConfirmOpen((v) => !v),
+        toggleBetSlipSheet: () => setIsBetSlipSheetOpen((v) => !v),
+        toggleUserMenu: () => setIsUserMenuOpen((v) => !v),
+        toggleLastMovements: () => setIsLastMovementsOpen((v) => !v),
+        toggleParlayCalculator: () => setIsParlayCalculatorOpen((v) => !v),
+        toggleTicketCreated: () => setIsTicketCreatedOpen((v) => !v),
+        login,
+        logout,
+        setBetSlipTab,
+        setBetSlipViewTab,
+        setActivateIf,
+        setBetAmount,
+        setBalance,
+        isBetSelected,
+        saveTicket,
+      }}
+    >
+      {children}
+    </AppContext.Provider>
+  );
+}
+
+export function useApp() {
+  const ctx = useContext(AppContext);
+  if (!ctx) throw new Error("useApp must be used within AppProvider");
+  return ctx;
+}

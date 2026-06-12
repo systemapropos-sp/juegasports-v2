@@ -1,1 +1,330 @@
-ZXhwb3J0IHR5cGUgTGFuZ3VhZ2UgPSAiZW4iIHwgImVzIjsKCmV4cG9ydCBjb25zdCB0cmFuc2xhdGlvbnMgPSB7CiAgZW46IHsKICAgIC8vIE5hdmJhcgogICAgc3BvcnRzOiAiU3BvcnRzIiwKICAgIHNwb3J0c1YyOiAiU3BvcnRzIHYyIiwKICAgIGRlcG9ydGVzOiAiU3BvcnRzIiwKICAgIHRpY2tldHM6ICJUaWNrZXRzIiwKICAgIHJlc3VsdGFkb3M6ICJSZXN1bHRzIiwKICAgIGJhbGFuY2U6ICJCYWxhbmNlIiwKICAgIGhlbHA6ICJIZWxwIiwKICAgIHNldHRpbmdzOiAiU2V0dGluZ3MiLAogICAgbm90aWZpY2F0aW9uczogIk5vdGlmaWNhdGlvbnMiLAogICAgY2FsZW5kYXI6ICJDYWxlbmRhciIsCiAgICBwZXJmaWw6ICJQcm9maWxlIiwKICAgIGNlcnJhclNlc2lvbjogIkxvZ291dCIsCiAgICBhdmlzb1JldGlybzogIldpdGhkcmF3YWwgTm90aWNlIiwKICAgIGdlbmVyYXJDb2RpZ286ICJHZW5lcmF0ZSBDb2RlIiwKCiAgICAvLyBTcG9ydHMgU2lkZWJhcgogICAgbWFqb3JMZWFndWVCYXNlYmFsbDogIk1ham9yIExlYWd1ZSBCYXNlYmFsbCIsCiAgICBsaWdhTWV4aWNhbmFCZWlzYm9sOiAiTGlnYSBNZXhpY2FuYSBkZSBCZWlzYm9sIiwKICAgIG5hdGlvbmFsQmFza2V0YmFsbEFzc29jaWF0aW9uOiAiTmF0aW9uYWwgQmFza2V0YmFsbCBBc3NvY2lhdGlvbiIsCiAgICB3b21lbnNOQkE6ICJXb21lbidzIE5hdGlvbmFsIEJhc2tldGJhbGwgQXNzb2NpYXRpb24iLAogICAgYmFzZWJhbGxQbGF5ZXJzOiAiQmFzZWJhbGwgUGxheWVycyIsCiAgICBuYmFTb2xvOiAiTkJBIFNvbG8iLAogICAgc29jY2VyOiAiU29jY2VyIiwKCiAgICAvLyBOZXcgaG9tZSBwYWdlCiAgICB0dXNKdWdhZGFzOiAiWW91ciBQbGF5cyIsCiAgICBwcmVtaW86ICJQUklaRSIsCiAgICBwcmVtaW9JZjogIlBSSVpFIElGIiwKICAgIHByZW1pb1NpOiAiUFJJWkUgSUYiLAogICAgYWN0aXZhclNpOiAiQWN0aXZhdGUgaWYiLAogICAgbGluZWFDYXJyZXJhOiAiUnVuIExpbmUiLAogICAgc3VwZXJSTDogIlN1cGVyIFIvTCIsCiAgICBhbHRSTDogIkFsdCBSL0wiLAogICAgc29sb01hczogIlNvbG8gT3ZlciIsCiAgICBzb2xvTWVub3M6ICJTb2xvIFVuZGVyIiwKCiAgICAvLyBPZGRzIFRhYmxlCiAgICBob3JhOiAiVGltZSIsCiAgICBlcXVpcG86ICJUZWFtIiwKICAgIG1sOiAiTS5MLiIsCiAgICBvdmVyVW5kZXI6ICJPL1UiLAogICAgcmw6ICJSL0wiLAogICAgc3JsOiAiU1JMIiwKICAgIHNvbG9Qb3M6ICJTT0xPKCspIiwKICAgIHNvbG9OZWc6ICJTT0xPKC0pIiwKICAgIHJsYTogIlJMQSIsCiAgICBhbE1MOiAiQWwgTUwiLAogICAgZW1wYXRlOiAiRHJhdyIsCiAgICBjYXRlZ29yaWE6ICJDYXRlZ29yeSIsCiAgICBwcmVjaW9NYXM6ICJQcmljZSArIiwKICAgIHByZWNpb01lbm9zOiAiUHJpY2UgLSIsCiAgICBsb2NrZWQ6ICJMb2NrZWQiLAoKICAgIC8vIFBlcmlvZCB0YWJzCiAgICBqdWVnb0NvbXBsZXRvOiAiRnVsbCBHYW1lIiwKICAgIHByaW1lcmFNaXRhZDogIkZpcnN0IEhhbGYiLAogICAgcHJpbWVyYVRlcmNpYTogIkZpcnN0IFRoaXJkIiwKICAgIGV4dHJhOiAiRXh0cmEiLAogICAgc2VndW5kYU1pdGFkOiAiU2Vjb25kIEhhbGYiLAogICAgcGVyaW9kbzE6ICJQZXJpb2QgIzEiLAogICAgcGVyaW9kbzI6ICJQZXJpb2QgIzIiLAogICAgcGVyaW9kbzM6ICJQZXJpb2QgIzMiLAogICAgcGVyaW9kbzQ6ICJQZXJpb2QgIzQiLAoKICAgIC8vIEJldCBTbGlwCiAgICB0ZWFzZXI6ICJUZWFzZXIiLAogICAgdGVhc2VySUY6ICJUZWFzZXIgSUYiLAogICAganVnYWRhc1JlZ3VsYXJlczogIlJlZ3VsYXIgUGxheXMiLAogICAgbm9TZWxlY3Rpb25zOiAiTm8gc2VsZWN0aW9ucyIsCiAgICBub1NlbGVjdGlvbnNNc2c6ICJObyBwbGF5cyBzZWxlY3RlZCIsCiAgICBqdWdhZGE6ICJQbGF5IiwKICAgIGxpbmVhOiAiTGluZSIsCiAgICBwdW50b3M6ICJQb2ludHMiLAogICAgYWN0aXZhdGVJZjogIkFjdGl2YXRlIGlmIiwKICAgIGNhbnRpZGFkOiAiQW1vdW50IiwKICAgIHBhZ286ICJQYXlvdXQiLAogICAgZ3VhcmRhcjogIlNBVkUiLAogICAgbGltcGlhcjogIkNMRUFSIiwKICAgIGNyZWFyOiAiQ3JlYXRlIiwKICAgIGp1Z2FyOiAiUGxheSIsCiAgICB0aWNrZXRzQWJpZXJ0b3M6ICJPcGVuIFRpY2tldHMiLAogICAgbm9UaWNrZXRzQWJpZXJ0b3M6ICJZb3UgaGF2ZSBubyBvcGVuIHRpY2tldHMiLAoKICAgIC8vIE1vZGFscwogICAgYXl1ZGE6ICJIZWxwIiwKICAgIGF5dWRhQmFzZWJhbGw6ICJCYXNlYmFsbCIsCiAgICBheXVkYUJhbG9uY2VzdG86ICJCYXNrZXRiYWxsIiwKICAgIGF5dWRhRm9vdGJhbGw6ICJGb290YmFsbCIsCiAgICBheXVkYUhvY2tleTogIkhvY2tleSIsCiAgICBheXVkYVNvY2NlcjogIlNvY2NlciIsCiAgICBheXVkYVRpemE6ICJDaGFsayIsCiAgICBjYW5jZWxhcjogIkNhbmNlbCIsCiAgICBub3RpZmljYWNpb25SZXRpcm86ICJXaXRoZHJhd2FsIE5vdGlmaWNhdGlvbiIsCiAgICBmZWNoYTogIkRhdGUiLAogICAgaG9yYUxhYmVsOiAiVGltZSIsCiAgICBjYW50aWRhZExhYmVsOiAiQW1vdW50IiwKICAgIG5vdGlmaWNhcjogIk5vdGlmeSIsCiAgICBnZW5lcmFyQ29kaWdvVGl0bGU6ICJHZW5lcmF0ZSBjb2RlIGZvciBiYWxhbmNlIHdpdGhkcmF3YWwiLAogICAgZ2VuZXJhcjogIkdlbmVyYXRlIiwKICAgIGNvbmZpcm1hY2lvbjogIkNvbmZpcm1hdGlvbiIsCiAgICBjb25maXJtYWNpb25MaW1waWFyOiAiQXJlIHlvdSBzdXJlIHlvdSB3YW50IHRvIGNsZWFyIGFsbCBwbGF5cz8iLAogICAgY29uZmlybWFyOiAiQ29uZmlybSIsCiAgICBlbmdsaXNoOiAiRW5nbGlzaCIsCiAgICBlc3Bhbm9sOiAiU3BhbmlzaCIsCgogICAgLy8gTmV3IHRyYW5zbGF0aW9ucwogICAgdWx0aW1vc01vdmltaWVudG9zOiAiTGFzdCBtb3ZlbWVudHMiLAogICAgcmV0aXJvOiAiV2l0aGRyYXdhbCIsCiAgICBhdmlzb0RlUmV0aXJvOiAiV2l0aGRyYXdhbCBub3RpY2UiLAogICAgY2FsY3VsYWRvcmE6ICJDYWxjdWxhdG9yIiwKICAgIGNvbW9KdWdhcjogIkhvdyB0byBQbGF5IiwKICAgIHRpY2tldENyZWFkbzogIlRpY2tldCBjcmVhdGVkIiwKICAgIHRpY2tldENyZWFkb0V4aXRvOiAiVGhlIHRpY2tldCBoYXMgYmVlbiBjcmVhdGVkIHN1Y2Nlc3NmdWxseSIsCiAgICBvazogIk9LIiwKICAgIGNhbGN1bGFyOiAiQ2FsY3VsYXRlIiwKICAgIGFwdWVzdGE6ICJCZXQiLAogICAgYmFsYW5jZUxhYmVsOiAiQmFsYW5jZSIsCiAgICBkZXNjcmlwY2lvbjogIkRlc2NyaXB0aW9uIiwKICAgIHRpcG86ICJUeXBlIiwKICAgIG1vbnRvOiAiQW1vdW50IiwKCiAgICAvLyBSdWxlcyB0ZXh0CiAgICBydWxlc0Jhc2ViYWxsOgogICAgICAiQmFzZWJhbGwgcnVsZXM6IFRoZSBnYW1lIG11c3QgZ28gOC41IGlubmluZ3MgZm9yIGFjdGlvbi4gRXh0cmEgaW5uaW5ncyBjb3VudCBmb3IgYWxsIGJldHMuIFBpdGNoZXIgY2hhbmdlcyB2b2lkIGxpc3RlZCBwaXRjaGVyIGJldHMgb25seS4gU3VzcGVuZGVkIGdhbWVzIGNvbnRpbnVlIGZyb20gcG9pbnQgb2Ygc3VzcGVuc2lvbiB3aXRoaW4gMzYgaG91cnMuIiwKICAgIHJ1bGVzQmFza2V0YmFsbDoKICAgICAgIkJhc2tldGJhbGwgcnVsZXM6IEdhbWVzIG11c3QgZ28gNDMgbWludXRlcyBmb3IgYWN0aW9uLiBPdmVydGltZSBjb3VudHMgZm9yIGFsbCBiZXRzIGV4Y2VwdCBzcGVjaWZpYyBxdWFydGVyL2hhbGYgYmV0cy4gVGhlIHJlc3VsdCBpcyBvZmZpY2lhbCBhZnRlciB0aGUgZmluYWwgYnV6emVyLiIsCiAgICBydWxlc0Zvb3RiYWxsOgogICAgICAiRm9vdGJhbGwgcnVsZXM6IEdhbWVzIG11c3QgZ28gNTUgbWludXRlcyBmb3IgYWN0aW9uLiBPdmVydGltZSBjb3VudHMgZm9yIGFsbCBiZXRzLiBDb2xsZWdlIGZvb3RiYWxsIG92ZXJ0aW1lIHJ1bGVzIGFwcGx5IGFjY29yZGluZ2x5LiIsCiAgICBydWxlc0hvY2tleToKICAgICAgIkhvY2tleSBydWxlczogR2FtZXMgbXVzdCBnbyA1OCBtaW51dGVzIGZvciBhY3Rpb24uIFNob290b3V0cyBjb3VudCBmb3IgbW9uZXlsaW5lIG9ubHkuIE92ZXJ0aW1lIGNvdW50cyBmb3IgYWxsIGJldHMgZXhjZXB0IHBlcmlvZC1zcGVjaWZpYyB3YWdlcnMuIiwKICAgIHJ1bGVzU29jY2VyOgogICAgICAiU29jY2VyIHJ1bGVzOiA5MCBtaW51dGVzIG9mIHBsYXkgcGx1cyBzdG9wcGFnZSB0aW1lLiBFeHRyYSB0aW1lIGFuZCBwZW5hbHRpZXMgZG8gbm90IGNvdW50IHVubGVzcyBzcGVjaWZpZWQuIE93biBnb2FscyBjb3VudCBmb3IgdGhlIGNyZWRpdGVkIHRlYW0uIiwKICAgIHJ1bGVzVGl6YToKICAgICAgIkNoYWxrIHJ1bGVzOiBGb2xsb3cgc3RhbmRhcmQgc3BvcnQtc3BlY2lmaWMgcnVsZXMuIE1heGltdW0gcGF5b3V0IGxpbWl0cyBhcHBseS4gTWFuYWdlbWVudCByZXNlcnZlcyB0aGUgcmlnaHQgdG8gYWRqdXN0IGxpbWl0cy4iLAoKICAgIC8vIFJlc3VsdHMgZHJvcGRvd24KICAgIG1sYjogIk1MQiIsCiAgICBsbWI6ICJMTUIiLAogICAgbGlkb206ICJMSURPTSIsCiAgICBuYmE6ICJOQkEiLAogICAgd25iYTogIldOQkEiLAogICAgY2JiOiAiQ0JCIiwKICAgIG5obDogIk5ITCIsCiAgICBuZmw6ICJORkwiLAogICAgY2ZiOiAiQ0ZCIiwKICAgIGNmbDogIkNGTCIsCiAgICB1ZmM6ICJVRkMiLAogICAgZ2FsbG9zOiAiR0FMTE9TIiwKCiAgICAvLyBFbXB0eSBzdGF0ZXMKICAgIGVtcHR5QmV0U2xpcDogIllvdXIgYmV0IHNsaXAgaXMgZW1wdHkiLAogICAgc2VsZWN0T2RkczogIkNsaWNrIG9uIGFueSBvZGRzIHRvIGFkZCBzZWxlY3Rpb25zIiwKCiAgICAvLyBQV0EgSW5zdGFsbAogICAgaW5zdGFsbEFwcDogIkluc3RhbGwgQXBwIiwKICAgIGluc3RhbGxQcm9tcHQ6ICJJbnN0YWxsIEp1ZWdhU3BvcnRzIGZvciBxdWljayBhY2Nlc3MiLAogICAgZGlzbWlzczogIkRpc21pc3MiLAogIH0sCiAgZXM6IHsKICAgIC8vIE5hdmJhcgogICAgc3BvcnRzOiAiRGVwb3J0ZXMiLAogICAgc3BvcnRzVjI6ICJTcG9ydHMgdjIiLAogICAgZGVwb3J0ZXM6ICJEZXBvcnRlcyIsCiAgICB0aWNrZXRzOiAiVGlja2V0cyIsCiAgICByZXN1bHRhZG9zOiAiUmVzdWx0YWRvcyIsCiAgICBiYWxhbmNlOiAiQmFsYW5jZSIsCiAgICBoZWxwOiAiQXl1ZGEiLAogICAgc2V0dGluZ3M6ICJDb25maWd1cmFjaW9uIiwKICAgIG5vdGlmaWNhdGlvbnM6ICJOb3RpZmljYWNpb25lcyIsCiAgICBjYWxlbmRhcjogIkNhbGVuZGFyaW8iLAogICAgcGVyZmlsOiAiUGVyZmlsIiwKICAgIGNlcnJhclNlc2lvbjogIkNlcnJhciBzZXNpb24iLAogICAgYXZpc29SZXRpcm86ICJBdmlzbyBkZSByZXRpcm8iLAogICAgZ2VuZXJhckNvZGlnbzogIkdlbmVyYXIgY29kaWdvIiwKCiAgICAvLyBTcG9ydHMgU2lkZWJhcgogICAgbWFqb3JMZWFndWVCYXNlYmFsbDogIk1ham9yIExlYWd1ZSBCYXNlYmFsbCIsCiAgICBsaWdhTWV4aWNhbmFCZWlzYm9sOiAiTGlnYSBNZXhpY2FuYSBkZSBCZWlzYm9sIiwKICAgIG5hdGlvbmFsQmFza2V0YmFsbEFzc29jaWF0aW9uOiAiTmF0aW9uYWwgQmFza2V0YmFsbCBBc3NvY2lhdGlvbiIsCiAgICB3b21lbnNOQkE6ICJXb21lbidzIE5hdGlvbmFsIEJhc2tldGJhbGwgQXNzb2NpYXRpb24iLAogICAgYmFzZWJhbGxQbGF5ZXJzOiAiQmFzZWJhbGwgUGxheWVycyIsCiAgICBuYmFTb2xvOiAiTkJBIFNvbG8iLAogICAgc29jY2VyOiAiU29jY2VyIiwKCiAgICAvLyBOZXcgaG9tZSBwYWdlCiAgICB0dXNKdWdhZGFzOiAiVHVzIGp1Z2FkYXMiLAogICAgcHJlbWlvOiAiUFJFTUlPIiwKICAgIHByZW1pb0lmOiAiUFJFTUlPIElGIiwKICAgIHByZW1pb1NpOiAiUFJFTUlPIFNJIiwKICAgIGFjdGl2YXJTaTogIkFjdGl2YXIgc2kiLAogICAgbGluZWFDYXJyZXJhOiAiTGluZWEgZGUgY2FycmVyYSIsCiAgICBzdXBlclJMOiAiU3VwZXIgUi9MIiwKICAgIGFsdFJMOiAiQWx0IFIvTCIsCiAgICBzb2xvTWFzOiAiU29sbyBhIG1hcyIsCiAgICBzb2xvTWVub3M6ICJTb2xvIGEgbWVub3MiLAoKICAgIC8vIE9kZHMgVGFibGUKICAgIGhvcmE6ICJIb3JhIiwKICAgIGVxdWlwbzogIkVxdWlwbyIsCiAgICBtbDogIk0uTC4iLAogICAgb3ZlclVuZGVyOiAiTy9VIiwKICAgIHJsOiAiUi9MIiwKICAgIHNybDogIlNSTCIsCiAgICBzb2xvUG9zOiAiU09MTygrKSIsCiAgICBzb2xvTmVnOiAiU09MTygtKSIsCiAgICBybGE6ICJSTEEiLAogICAgYWxNTDogIkFsIE1MIiwKICAgIGVtcGF0ZTogIkVtcGF0ZSIsCiAgICBjYXRlZ29yaWE6ICJDYXRlZ29yaWEiLAogICAgcHJlY2lvTWFzOiAiUHJlY2lvIGEgbWFzIiwKICAgIHByZWNpb01lbm9zOiAiUHJlY2lvIGEgbWVub3MiLAogICAgbG9ja2VkOiAiQmxvcXVlYWRvIiwKCiAgICAvLyBQZXJpb2QgdGFicwogICAganVlZ29Db21wbGV0bzogIkp1ZWdvIENvbXBsLiIsCiAgICBwcmltZXJhTWl0YWQ6ICIxcmEgTWl0YWQiLAogICAgcHJpbWVyYVRlcmNpYTogIjFyYSBUZXJjaWEiLAogICAgZXh0cmE6ICJFeHRyYSIsCiAgICBzZWd1bmRhTWl0YWQ6ICIyZGEgTWl0YWQiLAogICAgcGVyaW9kbzE6ICJQZXJpb2RvICMxIiwKICAgIHBlcmlvZG8yOiAiUGVyaW9kbyAjMiIsCiAgICBwZXJpb2RvMzogIlBlcmlvZG8gIzMiLAogICAgcGVyaW9kbzQ6ICJQZXJpb2RvICM0IiwKCiAgICAvLyBCZXQgU2xpcAogICAgdGVhc2VyOiAiVGVhc2VyIiwKICAgIHRlYXNlcklGOiAiVGVhc2VyIElGIiwKICAgIGp1Z2FkYXNSZWd1bGFyZXM6ICJKdWdhZGFzIHJlZ3VsYXJlcyIsCiAgICBub1NlbGVjdGlvbnM6ICJTaW4gc2VsZWNjaW9uZXMiLAogICAgbm9TZWxlY3Rpb25zTXNnOiAiTm8gaGF5IGp1Z2FkYXMgc2VsZWNjaW9uYWRhcyIsCiAgICBqdWdhZGE6ICJKdWdhZGEiLAogICAgbGluZWE6ICJMaW5lYSIsCiAgICBwdW50b3M6ICJQdW50b3MiLAogICAgYWN0aXZhdGVJZjogIkFjdGl2YXRlIGlmIiwKICAgIGNhbnRpZGFkOiAiQ2FudGlkYWQiLAogICAgcGFnbzogIlBhZ28iLAogICAgZ3VhcmRhcjogIkdVQVJEQVIiLAogICAgbGltcGlhcjogIkxJTVBJQVIiLAogICAgY3JlYXI6ICJDcmVhciIsCiAgICBqdWdhcjogIkp1Z2FyIiwKICAgIHRpY2tldHNBYmllcnRvczogIlRpY2tldHMgYWJpZXJ0b3MiLAogICAgbm9UaWNrZXRzQWJpZXJ0b3M6ICJVc3RlZCBubyBwb3NlZSB0aWNrZXRzIGFiaWVydG9zIiwKCiAgICAvLyBNb2RhbHMKICAgIGF5dWRhOiAiQXl1ZGEiLAogICAgYXl1ZGFCYXNlYmFsbDogIkJhc2ViYWxsIiwKICAgIGF5dWRhQmFsb25jZXN0bzogIkJhbG9uY2VzdG8iLAogICAgYXl1ZGFGb290YmFsbDogIkZvb3RiYWxsIiwKICAgIGF5dWRhSG9ja2V5OiAiSG9ja2V5IiwKICAgIGF5dWRhU29jY2VyOiAiU29jY2VyIiwKICAgIGF5dWRhVGl6YTogIlRpemEiLAogICAgY2FuY2VsYXI6ICJDYW5jZWxhciIsCiAgICBub3RpZmljYWNpb25SZXRpcm86ICJOb3RpZmljYWNpb24gZGUgcmV0aXJvIiwKICAgIGZlY2hhOiAiRmVjaGEiLAogICAgaG9yYUxhYmVsOiAiSG9yYSIsCiAgICBjYW50aWRhZExhYmVsOiAiQ2FudGlkYWQiLAogICAgbm90aWZpY2FyOiAiTm90aWZpY2FyIiwKICAgIGdlbmVyYXJDb2RpZ29UaXRsZTogIkdlbmVyYXIgY29kaWdvIHBhcmEgcmV0aXJvIGRlIGJhbGFuY2UiLAogICAgZ2VuZXJhcjogIkdlbmVyYXIiLAogICAgY29uZmlybWFjaW9uOiAiQ29uZmlybWFjaW9uIiwKICAgIGNvbmZpcm1hY2lvbkxpbXBpYXI6ICJFc3RhIHNlZ3VybyBxdWUgZGVzZWEgbGltcGlhciB0b2RhcyBsYXMganVnYWRhcz8iLAogICAgY29uZmlybWFyOiAiQ29uZmlybWFyIiwKICAgIGVuZ2xpc2g6ICJFbmdsaXNoIiwKICAgIGVzcGFub2w6ICJFc3Bhbm9sIiwKCiAgICAvLyBOZXcgdHJhbnNsYXRpb25zCiAgICB1bHRpbW9zTW92aW1pZW50b3M6ICJVbHRpbW9zIG1vdmltaWVudG9zIiwKICAgIHJldGlybzogIlJldGlybyIsCiAgICBhdmlzb0RlUmV0aXJvOiAiQXZpc28gZGUgcmV0aXJvIiwKICAgIGNhbGN1bGFkb3JhOiAiQ2FsY3VsYWRvcmEiLAogICAgY29tb0p1Z2FyOiAiQ29tbyBKdWdhciIsCiAgICB0aWNrZXRDcmVhZG86ICJUaWNrZXQgY3JlYWRvIiwKICAgIHRpY2tldENyZWFkb0V4aXRvOiAiRWwgdGlja2V0IGhhIHNpZG8gY3JlYWRvIGNvbiBleGl0byIsCiAgICBvazogIk9LIiwKICAgIGNhbGN1bGFyOiAiQ2FsY3VsYXIiLAogICAgYXB1ZXN0YTogIkFwdWVzdGEiLAogICAgYmFsYW5jZUxhYmVsOiAiQmFsYW5jZSIsCiAgICBkZXNjcmlwY2lvbjogIkRlc2NyaXBjaW9uIiwKICAgIHRpcG86ICJUaXBvIiwKICAgIG1vbnRvOiAiTW9udG8iLAoKICAgIC8vIFJ1bGVzIHRleHQKICAgIHJ1bGVzQmFzZWJhbGw6CiAgICAgICJSZWdsYXMgZGUgQmFzZWJhbGw6IEVsIGp1ZWdvIGRlYmUgY29tcGxldGFyIDguNSBlbnRyYWRhcyBwYXJhIGFjY2lvbi4gRW50cmFkYXMgZXh0cmFzIGN1ZW50YW4gcGFyYSB0b2RhcyBsYXMgYXB1ZXN0YXMuIENhbWJpb3MgZGUgcGl0Y2hlciBhbnVsYW4gYXB1ZXN0YXMgZGUgcGl0Y2hlciBsaXN0YWRvIHNvbG8uIEp1ZWdvcyBzdXNwZW5kaWRvcyBjb250aW51YW4gZGVzZGUgZWwgcHVudG8gZGUgc3VzcGVuc2lvbiBkZW50cm8gZGUgMzYgaG9yYXMuIiwKICAgIHJ1bGVzQmFza2V0YmFsbDoKICAgICAgIlJlZ2xhcyBkZSBCYWxvbmNlc3RvOiBMb3MganVlZ29zIGRlYmVuIGNvbXBsZXRhciA0MyBtaW51dG9zIHBhcmEgYWNjaW9uLiBFbCB0aWVtcG8gZXh0cmEgY3VlbnRhIHBhcmEgdG9kYXMgbGFzIGFwdWVzdGFzIGV4Y2VwdG8gYXB1ZXN0YXMgZGUgY3VhcnRvL21pdGFkIGVzcGVjaWZpY29zLiBFbCByZXN1bHRhZG8gZXMgb2ZpY2lhbCBkZXNwdWVzIGRlIGxhIGJvY2luYSBmaW5hbC4iLAogICAgcnVsZXNGb290YmFsbDoKICAgICAgIlJlZ2xhcyBkZSBGb290YmFsbDogTG9zIGp1ZWdvcyBkZWJlbiBjb21wbGV0YXIgNTUgbWludXRvcyBwYXJhIGFjY2lvbi4gRWwgdGllbXBvIGV4dHJhIGN1ZW50YSBwYXJhIHRvZGFzIGxhcyBhcHVlc3Rhcy4gTGFzIHJlZ2xhcyBkZSB0aWVtcG8gZXh0cmEgZGUgZm9vdGJhbGwgY29sZWdpYWwgYXBsaWNhbiBlbiBjb25zZWN1ZW5jaWEuIiwKICAgIHJ1bGVzSG9ja2V5OgogICAgICAiUmVnbGFzIGRlIEhvY2tleTogTG9zIGp1ZWdvcyBkZWJlbiBjb21wbGV0YXIgNTggbWludXRvcyBwYXJhIGFjY2lvbi4gTG9zIHNob290b3V0cyBjdWVudGFuIHBhcmEgbW9uZXlsaW5lIHNvbGFtZW50ZS4gRWwgdGllbXBvIGV4dHJhIGN1ZW50YSBwYXJhIHRvZGFzIGxhcyBhcHVlc3RhcyBleGNlcHRvIGFwdWVzdGFzIGRlIHBlcmlvZG8gZXNwZWNpZmljby4iLAogICAgcnVsZXNTb2NjZXI6CiAgICAgICJSZWdsYXMgZGUgU29jY2VyOiA5MCBtaW51dG9zIGRlIGp1ZWdvIG1hcyB0aWVtcG8gZGUgZGVzY3VlbnRvLiBFbCB0aWVtcG8gZXh0cmEgeSBwZW5hbGVzIG5vIGN1ZW50YW4gYSBtZW5vcyBxdWUgc2UgZXNwZWNpZmlxdWUuIExvcyBhdXRvZ29sZXMgY3VlbnRhbiBwYXJhIGVsIGVxdWlwbyBhY3JlZGl0YWRvLiIsCiAgICBydWxlc1RpemE6CiAgICAgICJSZWdsYXMgZGUgVGl6YTogU2lnYSBsYXMgcmVnbGFzIGVzdGFuZGFyIGVzcGVjaWZpY2FzIGRlIGNhZGEgZGVwb3J0ZS4gQXBsaWNhbiBsaW1pdGVzIG1heGltb3MgZGUgcGFnby4gTGEgYWRtaW5pc3RyYWNpb24gc2UgcmVzZXJ2YSBlbCBkZXJlY2hvIGRlIGFqdXN0YXIgbGltaXRlcy4iLAoKICAgIC8vIFJlc3VsdHMgZHJvcGRvd24KICAgIG1sYjogIk1MQiIsCiAgICBsbWI6ICJMTUIiLAogICAgbGlkb206ICJMSURPTSIsCiAgICBuYmE6ICJOQkEiLAogICAgd25iYTogIldOQkEiLAogICAgY2JiOiAiQ0JCIiwKICAgIG5obDogIk5ITCIsCiAgICBuZmw6ICJORkwiLAogICAgY2ZiOiAiQ0ZCIiwKICAgIGNmbDogIkNGTCIsCiAgICB1ZmM6ICJVRkMiLAogICAgZ2FsbG9zOiAiR0FMTE9TIiwKCiAgICAvLyBFbXB0eSBzdGF0ZXMKICAgIGVtcHR5QmV0U2xpcDogIlR1IHRpY2tldCBlc3RhIHZhY2lvIiwKICAgIHNlbGVjdE9kZHM6ICJIYXogY2xpYyBlbiBjdWFscXVpZXIgY3VvdGEgcGFyYSBhZ3JlZ2FyIHNlbGVjY2lvbmVzIiwKCiAgICAvLyBQV0EgSW5zdGFsbAogICAgaW5zdGFsbEFwcDogIkluc3RhbGFyIEFwcCIsCiAgICBpbnN0YWxsUHJvbXB0OiAiSW5zdGFsYSBKdWVnYVNwb3J0cyBwYXJhIGFjY2VzbyByYXBpZG8iLAogICAgZGlzbWlzczogIkRlc2NhcnRhciIsCiAgfSwKfSBhcyBjb25zdDsKCmV4cG9ydCB0eXBlIFRyYW5zbGF0aW9ucyA9IHR5cGVvZiB0cmFuc2xhdGlvbnM7CgpleHBvcnQgZnVuY3Rpb24gdChsYW5nOiBMYW5ndWFnZSwga2V5OiBrZXlvZiBUcmFuc2xhdGlvbnNbImVuIl0pOiBzdHJpbmcgewogIHJldHVybiB0cmFuc2xhdGlvbnNbbGFuZ11ba2V5XSB8fCBrZXk7Cn0K
+﻿export type Language = "en" | "es";
+
+export const translations = {
+  en: {
+    // Navbar
+    sports: "Sports",
+    sportsV2: "Sports v2",
+    deportes: "Sports",
+    tickets: "Tickets",
+    resultados: "Results",
+    balance: "Balance",
+    help: "Help",
+    settings: "Settings",
+    notifications: "Notifications",
+    calendar: "Calendar",
+    perfil: "Profile",
+    cerrarSesion: "Logout",
+    avisoRetiro: "Withdrawal Notice",
+    generarCodigo: "Generate Code",
+
+    // Sports Sidebar
+    majorLeagueBaseball: "Major League Baseball",
+    ligaMexicanaBeisbol: "Liga Mexicana de Beisbol",
+    nationalBasketballAssociation: "National Basketball Association",
+    womensNBA: "Women's National Basketball Association",
+    baseballPlayers: "Baseball Players",
+    nbaSolo: "NBA Solo",
+    soccer: "Soccer",
+
+    // New home page
+    tusJugadas: "Your Plays",
+    premio: "PRIZE",
+    premioIf: "PRIZE IF",
+    premioSi: "PRIZE IF",
+    activarSi: "Activate if",
+    lineaCarrera: "Run Line",
+    superRL: "Super R/L",
+    altRL: "Alt R/L",
+    soloMas: "Solo Over",
+    soloMenos: "Solo Under",
+
+    // Odds Table
+    hora: "Time",
+    equipo: "Team",
+    ml: "M.L.",
+    overUnder: "O/U",
+    rl: "R/L",
+    srl: "SRL",
+    soloPos: "SOLO(+)",
+    soloNeg: "SOLO(-)",
+    rla: "RLA",
+    alML: "Al ML",
+    empate: "Draw",
+    categoria: "Category",
+    precioMas: "Price +",
+    precioMenos: "Price -",
+    locked: "Locked",
+
+    // Period tabs
+    juegoCompleto: "Full Game",
+    primeraMitad: "First Half",
+    primeraTercia: "First Third",
+    extra: "Extra",
+    segundaMitad: "Second Half",
+    periodo1: "Period #1",
+    periodo2: "Period #2",
+    periodo3: "Period #3",
+    periodo4: "Period #4",
+
+    // Bet Slip
+    teaser: "Teaser",
+    teaserIF: "Teaser IF",
+    jugadasRegulares: "Regular Plays",
+    noSelections: "No selections",
+    noSelectionsMsg: "No plays selected",
+    jugada: "Play",
+    linea: "Line",
+    puntos: "Points",
+    activateIf: "Activate if",
+    cantidad: "Amount",
+    pago: "Payout",
+    guardar: "SAVE",
+    limpiar: "CLEAR",
+    crear: "Create",
+    jugar: "Play",
+    ticketsAbiertos: "Open Tickets",
+    noTicketsAbiertos: "You have no open tickets",
+
+    // Modals
+    ayuda: "Help",
+    ayudaBaseball: "Baseball",
+    ayudaBaloncesto: "Basketball",
+    ayudaFootball: "Football",
+    ayudaHockey: "Hockey",
+    ayudaSoccer: "Soccer",
+    ayudaTiza: "Chalk",
+    cancelar: "Cancel",
+    notificacionRetiro: "Withdrawal Notification",
+    fecha: "Date",
+    horaLabel: "Time",
+    cantidadLabel: "Amount",
+    notificar: "Notify",
+    generarCodigoTitle: "Generate code for balance withdrawal",
+    generar: "Generate",
+    confirmacion: "Confirmation",
+    confirmacionLimpiar: "Are you sure you want to clear all plays?",
+    confirmar: "Confirm",
+    english: "English",
+    espanol: "Spanish",
+
+    // New translations
+    ultimosMovimientos: "Last movements",
+    retiro: "Withdrawal",
+    avisoDeRetiro: "Withdrawal notice",
+    calculadora: "Calculator",
+    comoJugar: "How to Play",
+    ticketCreado: "Ticket created",
+    ticketCreadoExito: "The ticket has been created successfully",
+    ok: "OK",
+    calcular: "Calculate",
+    apuesta: "Bet",
+    balanceLabel: "Balance",
+    descripcion: "Description",
+    tipo: "Type",
+    monto: "Amount",
+
+    // Rules text
+    rulesBaseball:
+      "Baseball rules: The game must go 8.5 innings for action. Extra innings count for all bets. Pitcher changes void listed pitcher bets only. Suspended games continue from point of suspension within 36 hours.",
+    rulesBasketball:
+      "Basketball rules: Games must go 43 minutes for action. Overtime counts for all bets except specific quarter/half bets. The result is official after the final buzzer.",
+    rulesFootball:
+      "Football rules: Games must go 55 minutes for action. Overtime counts for all bets. College football overtime rules apply accordingly.",
+    rulesHockey:
+      "Hockey rules: Games must go 58 minutes for action. Shootouts count for moneyline only. Overtime counts for all bets except period-specific wagers.",
+    rulesSoccer:
+      "Soccer rules: 90 minutes of play plus stoppage time. Extra time and penalties do not count unless specified. Own goals count for the credited team.",
+    rulesTiza:
+      "Chalk rules: Follow standard sport-specific rules. Maximum payout limits apply. Management reserves the right to adjust limits.",
+
+    // Results dropdown
+    mlb: "MLB",
+    lmb: "LMB",
+    lidom: "LIDOM",
+    nba: "NBA",
+    wnba: "WNBA",
+    cbb: "CBB",
+    nhl: "NHL",
+    nfl: "NFL",
+    cfb: "CFB",
+    cfl: "CFL",
+    ufc: "UFC",
+    gallos: "GALLOS",
+
+    // Empty states
+    emptyBetSlip: "Your bet slip is empty",
+    selectOdds: "Click on any odds to add selections",
+
+    // PWA Install
+    installApp: "Install App",
+    installPrompt: "Install JuegaSports for quick access",
+    dismiss: "Dismiss",
+  },
+  es: {
+    // Navbar
+    sports: "Deportes",
+    sportsV2: "Sports v2",
+    deportes: "Deportes",
+    tickets: "Tickets",
+    resultados: "Resultados",
+    balance: "Balance",
+    help: "Ayuda",
+    settings: "Configuracion",
+    notifications: "Notificaciones",
+    calendar: "Calendario",
+    perfil: "Perfil",
+    cerrarSesion: "Cerrar sesion",
+    avisoRetiro: "Aviso de retiro",
+    generarCodigo: "Generar codigo",
+
+    // Sports Sidebar
+    majorLeagueBaseball: "Major League Baseball",
+    ligaMexicanaBeisbol: "Liga Mexicana de Beisbol",
+    nationalBasketballAssociation: "National Basketball Association",
+    womensNBA: "Women's National Basketball Association",
+    baseballPlayers: "Baseball Players",
+    nbaSolo: "NBA Solo",
+    soccer: "Soccer",
+
+    // New home page
+    tusJugadas: "Tus jugadas",
+    premio: "PREMIO",
+    premioIf: "PREMIO IF",
+    premioSi: "PREMIO SI",
+    activarSi: "Activar si",
+    lineaCarrera: "Linea de carrera",
+    superRL: "Super R/L",
+    altRL: "Alt R/L",
+    soloMas: "Solo a mas",
+    soloMenos: "Solo a menos",
+
+    // Odds Table
+    hora: "Hora",
+    equipo: "Equipo",
+    ml: "M.L.",
+    overUnder: "O/U",
+    rl: "R/L",
+    srl: "SRL",
+    soloPos: "SOLO(+)",
+    soloNeg: "SOLO(-)",
+    rla: "RLA",
+    alML: "Al ML",
+    empate: "Empate",
+    categoria: "Categoria",
+    precioMas: "Precio a mas",
+    precioMenos: "Precio a menos",
+    locked: "Bloqueado",
+
+    // Period tabs
+    juegoCompleto: "Juego Compl.",
+    primeraMitad: "1ra Mitad",
+    primeraTercia: "1ra Tercia",
+    extra: "Extra",
+    segundaMitad: "2da Mitad",
+    periodo1: "Periodo #1",
+    periodo2: "Periodo #2",
+    periodo3: "Periodo #3",
+    periodo4: "Periodo #4",
+
+    // Bet Slip
+    teaser: "Teaser",
+    teaserIF: "Teaser IF",
+    jugadasRegulares: "Jugadas regulares",
+    noSelections: "Sin selecciones",
+    noSelectionsMsg: "No hay jugadas seleccionadas",
+    jugada: "Jugada",
+    linea: "Linea",
+    puntos: "Puntos",
+    activateIf: "Activate if",
+    cantidad: "Cantidad",
+    pago: "Pago",
+    guardar: "GUARDAR",
+    limpiar: "LIMPIAR",
+    crear: "Crear",
+    jugar: "Jugar",
+    ticketsAbiertos: "Tickets abiertos",
+    noTicketsAbiertos: "Usted no posee tickets abiertos",
+
+    // Modals
+    ayuda: "Ayuda",
+    ayudaBaseball: "Baseball",
+    ayudaBaloncesto: "Baloncesto",
+    ayudaFootball: "Football",
+    ayudaHockey: "Hockey",
+    ayudaSoccer: "Soccer",
+    ayudaTiza: "Tiza",
+    cancelar: "Cancelar",
+    notificacionRetiro: "Notificacion de retiro",
+    fecha: "Fecha",
+    horaLabel: "Hora",
+    cantidadLabel: "Cantidad",
+    notificar: "Notificar",
+    generarCodigoTitle: "Generar codigo para retiro de balance",
+    generar: "Generar",
+    confirmacion: "Confirmacion",
+    confirmacionLimpiar: "Esta seguro que desea limpiar todas las jugadas?",
+    confirmar: "Confirmar",
+    english: "English",
+    espanol: "Espanol",
+
+    // New translations
+    ultimosMovimientos: "Ultimos movimientos",
+    retiro: "Retiro",
+    avisoDeRetiro: "Aviso de retiro",
+    calculadora: "Calculadora",
+    comoJugar: "Como Jugar",
+    ticketCreado: "Ticket creado",
+    ticketCreadoExito: "El ticket ha sido creado con exito",
+    ok: "OK",
+    calcular: "Calcular",
+    apuesta: "Apuesta",
+    balanceLabel: "Balance",
+    descripcion: "Descripcion",
+    tipo: "Tipo",
+    monto: "Monto",
+
+    // Rules text
+    rulesBaseball:
+      "Reglas de Baseball: El juego debe completar 8.5 entradas para accion. Entradas extras cuentan para todas las apuestas. Cambios de pitcher anulan apuestas de pitcher listado solo. Juegos suspendidos continuan desde el punto de suspension dentro de 36 horas.",
+    rulesBasketball:
+      "Reglas de Baloncesto: Los juegos deben completar 43 minutos para accion. El tiempo extra cuenta para todas las apuestas excepto apuestas de cuarto/mitad especificos. El resultado es oficial despues de la bocina final.",
+    rulesFootball:
+      "Reglas de Football: Los juegos deben completar 55 minutos para accion. El tiempo extra cuenta para todas las apuestas. Las reglas de tiempo extra de football colegial aplican en consecuencia.",
+    rulesHockey:
+      "Reglas de Hockey: Los juegos deben completar 58 minutos para accion. Los shootouts cuentan para moneyline solamente. El tiempo extra cuenta para todas las apuestas excepto apuestas de periodo especifico.",
+    rulesSoccer:
+      "Reglas de Soccer: 90 minutos de juego mas tiempo de descuento. El tiempo extra y penales no cuentan a menos que se especifique. Los autogoles cuentan para el equipo acreditado.",
+    rulesTiza:
+      "Reglas de Tiza: Siga las reglas estandar especificas de cada deporte. Aplican limites maximos de pago. La administracion se reserva el derecho de ajustar limites.",
+
+    // Results dropdown
+    mlb: "MLB",
+    lmb: "LMB",
+    lidom: "LIDOM",
+    nba: "NBA",
+    wnba: "WNBA",
+    cbb: "CBB",
+    nhl: "NHL",
+    nfl: "NFL",
+    cfb: "CFB",
+    cfl: "CFL",
+    ufc: "UFC",
+    gallos: "GALLOS",
+
+    // Empty states
+    emptyBetSlip: "Tu ticket esta vacio",
+    selectOdds: "Haz clic en cualquier cuota para agregar selecciones",
+
+    // PWA Install
+    installApp: "Instalar App",
+    installPrompt: "Instala JuegaSports para acceso rapido",
+    dismiss: "Descartar",
+  },
+} as const;
+
+export type Translations = typeof translations;
+
+export function t(lang: Language, key: keyof Translations["en"]): string {
+  return translations[lang][key] || key;
+}

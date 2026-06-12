@@ -1,1 +1,16 @@
-ewogICJuYW1lIjogIkp1ZWdhU3BvcnRzIHYyIiwKICAic2hvcnRfbmFtZSI6ICJKdWVnYVNwb3J0cyIsCiAgImRlc2NyaXB0aW9uIjogIlNpc3RlbWEgZGUgYXB1ZXN0YXMgZGVwb3J0aXZhcyIsCiAgInN0YXJ0X3VybCI6ICIvIiwKICAiZGlzcGxheSI6ICJzdGFuZGFsb25lIiwKICAiYmFja2dyb3VuZF9jb2xvciI6ICIjMmIyZjM2IiwKICAidGhlbWVfY29sb3IiOiAiIzJiMmYzNiIsCiAgIm9yaWVudGF0aW9uIjogInBvcnRyYWl0IiwKICAic2NvcGUiOiAiLyIsCiAgImxhbmciOiAiZXMiLAogICJpY29ucyI6IFsKICAgIHsgInNyYyI6ICIvaWNvbi0xOTJ4MTkyLnBuZyIsICJzaXplcyI6ICIxOTJ4MTkyIiwgInR5cGUiOiAiaW1hZ2UvcG5nIiB9LAogICAgeyAic3JjIjogIi9pY29uLTUxMng1MTIucG5nIiwgInNpemVzIjogIjUxMng1MTIiLCAidHlwZSI6ICJpbWFnZS9wbmciIH0KICBdCn0K
+﻿{
+  "name": "JuegaSports v2",
+  "short_name": "JuegaSports",
+  "description": "Sistema de apuestas deportivas",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#2b2f36",
+  "theme_color": "#2b2f36",
+  "orientation": "portrait",
+  "scope": "/",
+  "lang": "es",
+  "icons": [
+    { "src": "/icon-192x192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "/icon-512x512.png", "sizes": "512x512", "type": "image/png" }
+  ]
+}

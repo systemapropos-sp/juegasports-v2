@@ -1,1 +1,127 @@
-QGltcG9ydCB1cmwoJ2h0dHBzOi8vZm9udHMuZ29vZ2xlYXBpcy5jb20vY3NzMj9mYW1pbHk9SW50ZXI6d2dodEA0MDA7NTAwOzYwMDs3MDA7ODAwJmRpc3BsYXk9c3dhcCcpOwoKQHRhaWx3aW5kIGJhc2U7CkB0YWlsd2luZCBjb21wb25lbnRzOwpAdGFpbHdpbmQgdXRpbGl0aWVzOwoKQGxheWVyIGJhc2UgewogIDpyb290IHsKICAgIC0tYmFja2dyb3VuZDogMjIwIDEwJSAyMCU7CiAgICAtLWZvcmVncm91bmQ6IDAgMCUgMTAwJTsKICAgIC0tY2FyZDogMjIwIDEwJSAyNCU7CiAgICAtLWNhcmQtZm9yZWdyb3VuZDogMCAwJSAxMDAlOwogICAgLS1wb3BvdmVyOiAyMjAgMTAlIDI0JTsKICAgIC0tcG9wb3Zlci1mb3JlZ3JvdW5kOiAwIDAlIDEwMCU7CiAgICAtLXByaW1hcnk6IDIwNCA3MCUgNTMlOwogICAgLS1wcmltYXJ5LWZvcmVncm91bmQ6IDAgMCUgMTAwJTsKICAgIC0tc2Vjb25kYXJ5OiAyMjAgOCUgMzAlOwogICAgLS1zZWNvbmRhcnktZm9yZWdyb3VuZDogMCAwJSAxMDAlOwogICAgLS1tdXRlZDogMjIwIDglIDMwJTsKICAgIC0tbXV0ZWQtZm9yZWdyb3VuZDogMjE0IDglIDczJTsKICAgIC0tYWNjZW50OiAyMjAgOCUgMzAlOwogICAgLS1hY2NlbnQtZm9yZWdyb3VuZDogMCAwJSAxMDAlOwogICAgLS1kZXN0cnVjdGl2ZTogNCA3OCUgNTYlOwogICAgLS1kZXN0cnVjdGl2ZS1mb3JlZ3JvdW5kOiAwIDAlIDEwMCU7CiAgICAtLWJvcmRlcjogMjE0IDYlIDM1JTsKICAgIC0taW5wdXQ6IDIxNCA2JSAzNSU7CiAgICAtLXJpbmc6IDIwNCA3MCUgNTMlOwogICAgLS1yYWRpdXM6IDAuNXJlbTsKCiAgICAvKiBKdWVnYVNwb3J0cyBkZXNpZ24gdG9rZW5zICovCiAgICAtLWJnLWJvZHk6ICMyYjJmMzY7CiAgICAtLWJnLWhlYWRlcjogIzNhM2Y0NzsKICAgIC0tYmctc2lkZWJhcjogIzRhNGY1NzsKICAgIC0tYmctcGFuZWw6ICMzYTNmNDc7CiAgICAtLWJnLXRhYmxlLWhlYWRlcjogIzJjM2U1MDsKICAgIC0tYmctdGFibGUtcm93LW9kZDogIzNhM2Y0NzsKICAgIC0tYmctdGFibGUtcm93LWV2ZW46ICM0YTRmNTc7CiAgICAtLWJnLXRhYjogIzRhNGY1NzsKICAgIC0tYmctdGFiLWFjdGl2ZTogIzNhM2Y0NzsKICAgIC0tYWNjZW50LWJsdWU6ICMzNDk4ZGI7CiAgICAtLWFjY2VudC1yZWQ6ICNlNzRjM2M7CiAgICAtLWJvcmRlci1zdWJ0bGU6ICM1NTVhNjA7CiAgICAtLXRleHQtcHJpbWFyeTogI2ZmZmZmZjsKICAgIC0tdGV4dC1zZWNvbmRhcnk6ICNiMGI1YmE7CiAgICAtLXRleHQtZGFyazogIzMzMzMzMzsKICAgIC0tbG9ja2VkOiAjN2Y4YzhkOwogIH0KCiAgYm9keSB7CiAgICBmb250LWZhbWlseTogJ0ludGVyJywgc3lzdGVtLXVpLCBzYW5zLXNlcmlmOwogICAgYmFja2dyb3VuZC1jb2xvcjogdmFyKC0tYmctYm9keSk7CiAgICBjb2xvcjogdmFyKC0tdGV4dC1wcmltYXJ5KTsKICAgIC13ZWJraXQtZm9udC1zbW9vdGhpbmc6IGFudGlhbGlhc2VkOwogICAgLW1vei1vc3gtZm9udC1zbW9vdGhpbmc6IGdyYXlzY2FsZTsKICB9CgogICogewogICAgQGFwcGx5IGJvcmRlci1ib3JkZXI7CiAgfQoKICAvKiBDdXN0b20gc2Nyb2xsYmFyIGZvciBzaWRlYmFyIGFuZCBiZXQgc2xpcCAqLwogIC5jdXN0b20tc2Nyb2xsYmFyOjotd2Via2l0LXNjcm9sbGJhciB7CiAgICB3aWR0aDogNnB4OwogIH0KCiAgLmN1c3RvbS1zY3JvbGxiYXI6Oi13ZWJraXQtc2Nyb2xsYmFyLXRyYWNrIHsKICAgIGJhY2tncm91bmQ6IHRyYW5zcGFyZW50OwogIH0KCiAgLmN1c3RvbS1zY3JvbGxiYXI6Oi13ZWJraXQtc2Nyb2xsYmFyLXRodW1iIHsKICAgIGJhY2tncm91bmQtY29sb3I6ICM1NTVhNjA7CiAgICBib3JkZXItcmFkaXVzOiAzcHg7CiAgfQoKICAuY3VzdG9tLXNjcm9sbGJhcjo6LXdlYmtpdC1zY3JvbGxiYXItdGh1bWI6aG92ZXIgewogICAgYmFja2dyb3VuZC1jb2xvcjogIzM0OThkYjsKICB9CgogIC8qIEZpcmVmb3ggc2Nyb2xsYmFyICovCiAgLmN1c3RvbS1zY3JvbGxiYXIgewogICAgc2Nyb2xsYmFyLXdpZHRoOiB0aGluOwogICAgc2Nyb2xsYmFyLWNvbG9yOiAjNTU1YTYwIHRyYW5zcGFyZW50OwogIH0KCiAgLyogSGlkZSBkZWZhdWx0IHNjcm9sbGJhciBidXQga2VlcCBmdW5jdGlvbmFsaXR5ICovCiAgLmhpZGUtc2Nyb2xsYmFyOjotd2Via2l0LXNjcm9sbGJhciB7CiAgICBkaXNwbGF5OiBub25lOwogIH0KCiAgLmhpZGUtc2Nyb2xsYmFyIHsKICAgIC1tcy1vdmVyZmxvdy1zdHlsZTogbm9uZTsKICAgIHNjcm9sbGJhci13aWR0aDogbm9uZTsKICB9CgogIC8qIFByZXZlbnQgcHVsbC10by1yZWZyZXNoIG9uIG1vYmlsZSAqLwogIGh0bWwsIGJvZHkgewogICAgb3ZlcnNjcm9sbC1iZWhhdmlvci15OiBub25lOwogICAgLXdlYmtpdC1vdmVyZmxvdy1zY3JvbGxpbmc6IHRvdWNoOwogIH0KCiAgLyogUHJldmVudCB0ZXh0IHNlbGVjdGlvbiBmb3IgYXBwLWxpa2UgZmVlbCAqLwogIGJvZHkgewogICAgLXdlYmtpdC11c2VyLXNlbGVjdDogbm9uZTsKICAgIHVzZXItc2VsZWN0OiBub25lOwogICAgLXdlYmtpdC10YXAtaGlnaGxpZ2h0LWNvbG9yOiB0cmFuc3BhcmVudDsKICB9CgogIC8qIEFsbG93IHRleHQgc2VsZWN0aW9uIG9uIGlucHV0cyBhbmQgdGV4dGFyZWFzICovCiAgaW5wdXQsIHRleHRhcmVhLCBzZWxlY3QgewogICAgLXdlYmtpdC11c2VyLXNlbGVjdDogdGV4dDsKICAgIHVzZXItc2VsZWN0OiB0ZXh0OwogIH0KCiAgLyogU21vb3RoIHNjcm9sbGluZyAqLwogIGh0bWwgewogICAgc2Nyb2xsLWJlaGF2aW9yOiBzbW9vdGg7CiAgfQoKICAvKiBTYWZlIGFyZWEgaW5zZXRzIGZvciBub3RjaGVkIHBob25lcyAqLwogIC5zYWZlLXRvcCB7CiAgICBwYWRkaW5nLXRvcDogZW52KHNhZmUtYXJlYS1pbnNldC10b3ApOwogIH0KCiAgLnNhZmUtYm90dG9tIHsKICAgIHBhZGRpbmctYm90dG9tOiBlbnYoc2FmZS1hcmVhLWluc2V0LWJvdHRvbSk7CiAgfQp9Cg==
+﻿@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 220 10% 20%;
+    --foreground: 0 0% 100%;
+    --card: 220 10% 24%;
+    --card-foreground: 0 0% 100%;
+    --popover: 220 10% 24%;
+    --popover-foreground: 0 0% 100%;
+    --primary: 204 70% 53%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 220 8% 30%;
+    --secondary-foreground: 0 0% 100%;
+    --muted: 220 8% 30%;
+    --muted-foreground: 214 8% 73%;
+    --accent: 220 8% 30%;
+    --accent-foreground: 0 0% 100%;
+    --destructive: 4 78% 56%;
+    --destructive-foreground: 0 0% 100%;
+    --border: 214 6% 35%;
+    --input: 214 6% 35%;
+    --ring: 204 70% 53%;
+    --radius: 0.5rem;
+
+    /* JuegaSports design tokens */
+    --bg-body: #2b2f36;
+    --bg-header: #3a3f47;
+    --bg-sidebar: #4a4f57;
+    --bg-panel: #3a3f47;
+    --bg-table-header: #2c3e50;
+    --bg-table-row-odd: #3a3f47;
+    --bg-table-row-even: #4a4f57;
+    --bg-tab: #4a4f57;
+    --bg-tab-active: #3a3f47;
+    --accent-blue: #3498db;
+    --accent-red: #e74c3c;
+    --border-subtle: #555a60;
+    --text-primary: #ffffff;
+    --text-secondary: #b0b5ba;
+    --text-dark: #333333;
+    --locked: #7f8c8d;
+  }
+
+  body {
+    font-family: 'Inter', system-ui, sans-serif;
+    background-color: var(--bg-body);
+    color: var(--text-primary);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  * {
+    @apply border-border;
+  }
+
+  /* Custom scrollbar for sidebar and bet slip */
+  .custom-scrollbar::-webkit-scrollbar {
+    width: 6px;
+  }
+
+  .custom-scrollbar::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  .custom-scrollbar::-webkit-scrollbar-thumb {
+    background-color: #555a60;
+    border-radius: 3px;
+  }
+
+  .custom-scrollbar::-webkit-scrollbar-thumb:hover {
+    background-color: #3498db;
+  }
+
+  /* Firefox scrollbar */
+  .custom-scrollbar {
+    scrollbar-width: thin;
+    scrollbar-color: #555a60 transparent;
+  }
+
+  /* Hide default scrollbar but keep functionality */
+  .hide-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+
+  .hide-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+
+  /* Prevent pull-to-refresh on mobile */
+  html, body {
+    overscroll-behavior-y: none;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  /* Prevent text selection for app-like feel */
+  body {
+    -webkit-user-select: none;
+    user-select: none;
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  /* Allow text selection on inputs and textareas */
+  input, textarea, select {
+    -webkit-user-select: text;
+    user-select: text;
+  }
+
+  /* Smooth scrolling */
+  html {
+    scroll-behavior: smooth;
+  }
+
+  /* Safe area insets for notched phones */
+  .safe-top {
+    padding-top: env(safe-area-inset-top);
+  }
+
+  .safe-bottom {
+    padding-bottom: env(safe-area-inset-bottom);
+  }
+}

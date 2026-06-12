@@ -1,1 +1,225 @@
-aW1wb3J0IHsgdXNlU3RhdGUgfSBmcm9tICJyZWFjdCI7CmltcG9ydCB7IG1vdGlvbiwgQW5pbWF0ZVByZXNlbmNlIH0gZnJvbSAiZnJhbWVyLW1vdGlvbiI7CmltcG9ydCB7IFBsdXMsIE1pbnVzIH0gZnJvbSAibHVjaWRlLXJlYWN0IjsKaW1wb3J0IHsgdXNlQXBwIH0gZnJvbSAiQC9jb250ZXh0L0FwcENvbnRleHQiOwppbXBvcnQgeyB0IH0gZnJvbSAiQC9saWIvaTE4biI7CmltcG9ydCB0eXBlIHsgU2F2ZWRUaWNrZXQgfSBmcm9tICJAL2NvbnRleHQvQXBwQ29udGV4dCI7CgovLyBNb2NrIHNhdmVkIHRpY2tldHMgZm9yIGRlbW8KY29uc3QgbW9ja1RpY2tldHM6IFNhdmVkVGlja2V0W10gPSBbCiAgewogICAgaWQ6ICJ0aWNrZXQtMDAxIiwKICAgIGRhdGU6ICIxMS8wNi8yMDI2IiwKICAgIHRpbWU6ICIxMDozMCBBTSIsCiAgICBhbW91bnQ6IDIwLAogICAgcGF5b3V0OiA2My4wLAogICAgc3RhdHVzOiAicGVuZGllbnRlIiwKICAgIHNlbGVjdGlvbnM6IFsKICAgICAgewogICAgICAgIGlkOiAic2VsLTAwMSIsCiAgICAgICAgc3BvcnQ6ICJNTEIiLAogICAgICAgIGdhbWVJZDogImdhbWUtMDAxIiwKICAgICAgICB0ZWFtOiAiQ2FyZGluYWxzIiwKICAgICAgICB0eXBlOiAiUi9MIiwKICAgICAgICBsaW5lOiAiKzEuNSIsCiAgICAgICAgb2RkczogLTE2NSwKICAgICAgICB0aW1lc3RhbXA6IERhdGUubm93KCkgLSAzNjAwMDAwLAogICAgICB9LAogICAgICB7CiAgICAgICAgaWQ6ICJzZWwtMDAyIiwKICAgICAgICBzcG9ydDogIk1MQiIsCiAgICAgICAgZ2FtZUlkOiAiZ2FtZS0wMDEiLAogICAgICAgIHRlYW06ICJDYXJkaW5hbHMgdnMgTWV0cyIsCiAgICAgICAgdHlwZTogIkEgTUFTIiwKICAgICAgICBsaW5lOiAiOS4wIiwKICAgICAgICBvZGRzOiAtMTA1LAogICAgICAgIHRpbWVzdGFtcDogRGF0ZS5ub3coKSAtIDM1MDAwMDAsCiAgICAgIH0sCiAgICBdLAogIH0sCiAgewogICAgaWQ6ICJ0aWNrZXQtMDAyIiwKICAgIGRhdGU6ICIxMS8wNi8yMDI2IiwKICAgIHRpbWU6ICIwOToxNSBBTSIsCiAgICBhbW91bnQ6IDM1LAogICAgcGF5b3V0OiA4Ny41LAogICAgc3RhdHVzOiAicGVuZGllbnRlIiwKICAgIHNlbGVjdGlvbnM6IFsKICAgICAgewogICAgICAgIGlkOiAic2VsLTAwMyIsCiAgICAgICAgc3BvcnQ6ICJNTEIiLAogICAgICAgIGdhbWVJZDogImdhbWUtMDAyIiwKICAgICAgICB0ZWFtOiAiWWFua2VlcyIsCiAgICAgICAgdHlwZTogIk0uTC4iLAogICAgICAgIGxpbmU6ICIiLAogICAgICAgIG9kZHM6IC0xNDAsCiAgICAgICAgdGltZXN0YW1wOiBEYXRlLm5vdygpIC0gNzIwMDAwMCwKICAgICAgfSwKICAgICAgewogICAgICAgIGlkOiAic2VsLTAwNCIsCiAgICAgICAgc3BvcnQ6ICJOQkEiLAogICAgICAgIGdhbWVJZDogImdhbWUtMDAzIiwKICAgICAgICB0ZWFtOiAiTGFrZXJzIiwKICAgICAgICB0eXBlOiAiUi9MIiwKICAgICAgICBsaW5lOiAiLTQuNSIsCiAgICAgICAgb2RkczogLTExMCwKICAgICAgICB0aW1lc3RhbXA6IERhdGUubm93KCkgLSA3MTAwMDAwLAogICAgICB9LAogICAgXSwKICB9LApdOwoKZXhwb3J0IGRlZmF1bHQgZnVuY3Rpb24gVGlja2V0cygpIHsKICBjb25zdCB7IGxhbmd1YWdlLCBzYXZlZFRpY2tldHMgfSA9IHVzZUFwcCgpOwogIGNvbnN0IFtzZWFyY2hEYXRlLCBzZXRTZWFyY2hEYXRlXSA9IHVzZVN0YXRlKCIxMS8wNi8yMDI2Iik7CiAgY29uc3QgW3Nob3dXaW5uZXJzT25seSwgc2V0U2hvd1dpbm5lcnNPbmx5XSA9IHVzZVN0YXRlKGZhbHNlKTsKICBjb25zdCBbZXhwYW5kZWRUaWNrZXRJZCwgc2V0RXhwYW5kZWRUaWNrZXRJZF0gPSB1c2VTdGF0ZTxzdHJpbmcgfCBudWxsPihudWxsKTsKCiAgLy8gQ29tYmluZSBjb250ZXh0IHNhdmVkIHRpY2tldHMgd2l0aCBtb2NrIHRpY2tldHMgZm9yIGRlbW8KICBjb25zdCBhbGxUaWNrZXRzID0gWy4uLnNhdmVkVGlja2V0cywgLi4ubW9ja1RpY2tldHNdOwoKICBjb25zdCBmaWx0ZXJlZFRpY2tldHMgPSBzaG93V2lubmVyc09ubHkKICAgID8gYWxsVGlja2V0cy5maWx0ZXIoKHQpID0+IHQuc3RhdHVzID09PSAiZ2FuYWRvIikKICAgIDogYWxsVGlja2V0czsKCiAgY29uc3QgdG9nZ2xlRXhwYW5kID0gKHRpY2tldElkOiBzdHJpbmcpID0+IHsKICAgIHNldEV4cGFuZGVkVGlja2V0SWQoKHByZXYpID0+IChwcmV2ID09PSB0aWNrZXRJZCA/IG51bGwgOiB0aWNrZXRJZCkpOwogIH07CgogIHJldHVybiAoCiAgICA8ZGl2IGNsYXNzTmFtZT0ibWluLWgtWzEwMGR2aF0gYmctWyNmMGYwZjBdIHB0LTEyIj4KICAgICAgPG1vdGlvbi5kaXYKICAgICAgICBpbml0aWFsPXt7IG9wYWNpdHk6IDAgfX0KICAgICAgICBhbmltYXRlPXt7IG9wYWNpdHk6IDEgfX0KICAgICAgICB0cmFuc2l0aW9uPXt7IGR1cmF0aW9uOiAwLjMgfX0KICAgICAgICBjbGFzc05hbWU9InAtMyIKICAgICAgPgogICAgICAgIHsvKiBUb3AgU2VjdGlvbiAtIFdoaXRlIENhcmQgKi99CiAgICAgICAgPGRpdiBjbGFzc05hbWU9Im1iLTQgcm91bmRlZC1sZyBiZy13aGl0ZSBwLTQgc2hhZG93LXNtIj4KICAgICAgICAgIDxoMiBjbGFzc05hbWU9Im1iLTMgdGV4dC1jZW50ZXIgdGV4dC1sZyBmb250LWJvbGQgdGV4dC1bIzMzMzMzM10iPgogICAgICAgICAgICB7dChsYW5ndWFnZSwgImZlY2hhIil9CiAgICAgICAgICA8L2gyPgoKICAgICAgICAgIHsvKiBEYXRlIElucHV0ICovfQogICAgICAgICAgPGRpdiBjbGFzc05hbWU9Im1iLTMiPgogICAgICAgICAgICA8aW5wdXQKICAgICAgICAgICAgICB0eXBlPSJ0ZXh0IgogICAgICAgICAgICAgIHZhbHVlPXtzZWFyY2hEYXRlfQogICAgICAgICAgICAgIG9uQ2hhbmdlPXsoZSkgPT4gc2V0U2VhcmNoRGF0ZShlLnRhcmdldC52YWx1ZSl9CiAgICAgICAgICAgICAgcGxhY2Vob2xkZXI9IkREL01NL1lZWVkiCiAgICAgICAgICAgICAgY2xhc3NOYW1lPSJ3LWZ1bGwgcm91bmRlZCBib3JkZXIgYm9yZGVyLVsjZGRkXSBiZy1bI2Y1ZjVmNV0gcHgtMyBweS0yLjUgdGV4dC1jZW50ZXIgdGV4dC1zbSB0ZXh0LVsjMzMzMzMzXSBvdXRsaW5lLW5vbmUgZm9jdXM6Ym9yZGVyLVsjMzQ5OGRiXSIKICAgICAgICAgICAgLz4KICAgICAgICAgIDwvZGl2PgoKICAgICAgICAgIHsvKiBUb2dnbGUgKyBTZWFyY2ggYnV0dG9ucyAqL30KICAgICAgICAgIDxkaXYgY2xhc3NOYW1lPSJmbGV4IGdhcC0yIj4KICAgICAgICAgICAgPGJ1dHRvbgogICAgICAgICAgICAgIG9uQ2xpY2s9eygpID0+IHNldFNob3dXaW5uZXJzT25seSghc2hvd1dpbm5lcnNPbmx5KX0KICAgICAgICAgICAgICBjbGFzc05hbWU9e2BmbGV4LTEgcm91bmRlZCBweS0yLjUgdGV4dC14cyBmb250LWJvbGQgdXBwZXJjYXNlIHRyYW5zaXRpb24tY29sb3JzICR7CiAgICAgICAgICAgICAgICBzaG93V2lubmVyc09ubHkKICAgICAgICAgICAgICAgICAgPyAiYmctWyMyZWNjNzFdIHRleHQtd2hpdGUiCiAgICAgICAgICAgICAgICAgIDogImJnLVsjNmM3NTdkXSB0ZXh0LXdoaXRlIGhvdmVyOmJnLVsjNWE2MjY4XSIKICAgICAgICAgICAgICB9YH0KICAgICAgICAgICAgPgogICAgICAgICAgICAgIFRpY2tldHMgZ2FuYWRvcmVzCiAgICAgICAgICAgIDwvYnV0dG9uPgogICAgICAgICAgICA8YnV0dG9uIGNsYXNzTmFtZT0iZmxleC0xIHJvdW5kZWQgYmctWyMzNDk4ZGJdIHB5LTIuNSB0ZXh0LXhzIGZvbnQtYm9sZCB1cHBlcmNhc2UgdGV4dC13aGl0ZSB0cmFuc2l0aW9uLWNvbG9ycyBob3ZlcjpiZy1bIzI5ODBiOV0iPgogICAgICAgICAgICAgIEJ1c2NhciB0aWNrZXRzCiAgICAgICAgICAgIDwvYnV0dG9uPgogICAgICAgICAgPC9kaXY+CiAgICAgICAgPC9kaXY+CgogICAgICAgIHsvKiBUaWNrZXRzIExpc3QgKi99CiAgICAgICAge2ZpbHRlcmVkVGlja2V0cy5sZW5ndGggPT09IDAgPyAoCiAgICAgICAgICA8ZGl2IGNsYXNzTmFtZT0icHktMTAgdGV4dC1jZW50ZXIiPgogICAgICAgICAgICA8cCBjbGFzc05hbWU9InRleHQtc20gdGV4dC1bIzdmOGM4ZF0iPgogICAgICAgICAgICAgIHt0KGxhbmd1YWdlLCAibm9UaWNrZXRzQWJpZXJ0b3MiKX0KICAgICAgICAgICAgPC9wPgogICAgICAgICAgPC9kaXY+CiAgICAgICAgKSA6ICgKICAgICAgICAgIDxkaXYgY2xhc3NOYW1lPSJzcGFjZS15LTMgcGItMTYiPgogICAgICAgICAgICB7ZmlsdGVyZWRUaWNrZXRzLm1hcCgodGlja2V0LCBpZHgpID0+ICgKICAgICAgICAgICAgICA8bW90aW9uLmRpdgogICAgICAgICAgICAgICAga2V5PXt0aWNrZXQuaWR9CiAgICAgICAgICAgICAgICBpbml0aWFsPXt7IG9wYWNpdHk6IDAsIHk6IDggfX0KICAgICAgICAgICAgICAgIGFuaW1hdGU9e3sgb3BhY2l0eTogMSwgeTogMCB9fQogICAgICAgICAgICAgICAgdHJhbnNpdGlvbj17eyBkZWxheTogaWR4ICogMC4wNSwgZHVyYXRpb246IDAuMiB9fQogICAgICAgICAgICAgICAgY2xhc3NOYW1lPSJvdmVyZmxvdy1oaWRkZW4gcm91bmRlZC1sZyBiZy1bIzZjNzU3ZF0gc2hhZG93LXNtIgogICAgICAgICAgICAgID4KICAgICAgICAgICAgICAgIHsvKiBUaWNrZXQgSGVhZGVyIFJvdyAqL30KICAgICAgICAgICAgICAgIDxidXR0b24KICAgICAgICAgICAgICAgICAgb25DbGljaz17KCkgPT4gdG9nZ2xlRXhwYW5kKHRpY2tldC5pZCl9CiAgICAgICAgICAgICAgICAgIGNsYXNzTmFtZT0iZmxleCB3LWZ1bGwgaXRlbXMtY2VudGVyIGp1c3RpZnktYmV0d2VlbiBweC00IHB5LTMgdGV4dC1sZWZ0IgogICAgICAgICAgICAgICAgPgogICAgICAgICAgICAgICAgICA8ZGl2IGNsYXNzTmFtZT0iZmxleC0xIj4KICAgICAgICAgICAgICAgICAgICA8c3BhbiBjbGFzc05hbWU9InRleHQtc20gZm9udC1ib2xkIHRleHQtd2hpdGUiPgogICAgICAgICAgICAgICAgICAgICAgJHt0aWNrZXQuYW1vdW50LnRvRml4ZWQoMil9IC0gSnVnYWRhcygKICAgICAgICAgICAgICAgICAgICAgIHt0aWNrZXQuc2VsZWN0aW9ucy5sZW5ndGh9KSB7dGlja2V0LnRpbWV9IC0ge317IiAifQogICAgICAgICAgICAgICAgICAgICAgPHNwYW4KICAgICAgICAgICAgICAgICAgICAgICAgY2xhc3NOYW1lPXtgcm91bmRlZCBweC0xLjUgcHktMC41IHRleHQtWzEwcHhdIGZvbnQtYm9sZCB1cHBlcmNhc2UgJHsKICAgICAgICAgICAgICAgICAgICAgICAgICB0aWNrZXQuc3RhdHVzID09PSAicGVuZGllbnRlIgogICAgICAgICAgICAgICAgICAgICAgICAgICAgPyAiYmctWyNmMzljMTJdIHRleHQtd2hpdGUiCiAgICAgICAgICAgICAgICAgICAgICAgICAgICA6IHRpY2tldC5zdGF0dXMgPT09ICJnYW5hZG8iCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgID8gImJnLVsjMmVjYzcxXSB0ZXh0LXdoaXRlIgogICAgICAgICAgICAgICAgICAgICAgICAgICAgICA6ICJiZy1bI2U3NGMzY10gdGV4dC13aGl0ZSIKICAgICAgICAgICAgICAgICAgICAgICAgfWB9CiAgICAgICAgICAgICAgICAgICAgICA+CiAgICAgICAgICAgICAgICAgICAgICAgIHt0aWNrZXQuc3RhdHVzfQogICAgICAgICAgICAgICAgICAgICAgPC9zcGFuPnsiICJ9CiAgICAgICAgICAgICAgICAgICAgICAke3RpY2tldC5wYXlvdXQudG9GaXhlZCgyKX0KICAgICAgICAgICAgICAgICAgICA8L3NwYW4+CiAgICAgICAgICAgICAgICAgIDwvZGl2PgogICAgICAgICAgICAgICAgICA8ZGl2IGNsYXNzTmFtZT0ibWwtMiBmbGV4IGgtNyB3LTcgc2hyaW5rLTAgaXRlbXMtY2VudGVyIGp1c3RpZnktY2VudGVyIHJvdW5kZWQgYmctWyM1NTVhNjBdIHRleHQtd2hpdGUiPgogICAgICAgICAgICAgICAgICAgIHtleHBhbmRlZFRpY2tldElkID09PSB0aWNrZXQuaWQgPyAoCiAgICAgICAgICAgICAgICAgICAgICA8TWludXMgc2l6ZT17MTR9IC8+CiAgICAgICAgICAgICAgICAgICAgKSA6ICgKICAgICAgICAgICAgICAgICAgICAgIDxQbHVzIHNpemU9ezE0fSAvPgogICAgICAgICAgICAgICAgICAgICl9CiAgICAgICAgICAgICAgICAgIDwvZGl2PgogICAgICAgICAgICAgICAgPC9idXR0b24+CgogICAgICAgICAgICAgICAgey8qIEV4cGFuZGVkIFNlbGVjdGlvbnMgKi99CiAgICAgICAgICAgICAgICA8QW5pbWF0ZVByZXNlbmNlPgogICAgICAgICAgICAgICAgICB7ZXhwYW5kZWRUaWNrZXRJZCA9PT0gdGlja2V0LmlkICYmICgKICAgICAgICAgICAgICAgICAgICA8bW90aW9uLmRpdgogICAgICAgICAgICAgICAgICAgICAgaW5pdGlhbD17eyBoZWlnaHQ6IDAsIG9wYWNpdHk6IDAgfX0KICAgICAgICAgICAgICAgICAgICAgIGFuaW1hdGU9e3sgaGVpZ2h0OiAiYXV0byIsIG9wYWNpdHk6IDEgfX0KICAgICAgICAgICAgICAgICAgICAgIGV4aXQ9e3sgaGVpZ2h0OiAwLCBvcGFjaXR5OiAwIH19CiAgICAgICAgICAgICAgICAgICAgICB0cmFuc2l0aW9uPXt7IGR1cmF0aW9uOiAwLjIgfX0KICAgICAgICAgICAgICAgICAgICAgIGNsYXNzTmFtZT0ib3ZlcmZsb3ctaGlkZGVuIgogICAgICAgICAgICAgICAgICAgID4KICAgICAgICAgICAgICAgICAgICAgIDxkaXYgY2xhc3NOYW1lPSJzcGFjZS15LTIgcHgtMyBwYi0zIj4KICAgICAgICAgICAgICAgICAgICAgICAge3RpY2tldC5zZWxlY3Rpb25zLm1hcCgoc2VsLCBzSWR4KSA9PiAoCiAgICAgICAgICAgICAgICAgICAgICAgICAgPGRpdgogICAgICAgICAgICAgICAgICAgICAgICAgICAga2V5PXtzSWR4fQogICAgICAgICAgICAgICAgICAgICAgICAgICAgY2xhc3NOYW1lPSJyb3VuZGVkLWxnIGJnLVsjMzQ5OGRiXSBwLTMiCiAgICAgICAgICAgICAgICAgICAgICAgICAgPgogICAgICAgICAgICAgICAgICAgICAgICAgICAgPGRpdiBjbGFzc05hbWU9ImZsZXggaXRlbXMtc3RhcnQgZ2FwLTIiPgogICAgICAgICAgICAgICAgICAgICAgICAgICAgICB7LyogTUxCIExvZ28gcGxhY2Vob2xkZXIgKi99CiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxkaXYgY2xhc3NOYW1lPSJmbGV4IGgtOCB3LTggc2hyaW5rLTAgaXRlbXMtY2VudGVyIGp1c3RpZnktY2VudGVyIHJvdW5kZWQtZnVsbCBiZy13aGl0ZSB0ZXh0LVsxMHB4XSBmb250LWJvbGQgdGV4dC1bIzM0OThkYl0iPgogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIHtzZWwuc3BvcnR9CiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDwvZGl2PgogICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8ZGl2IGNsYXNzTmFtZT0iZmxleC0xIG1pbi13LTAiPgogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxwIGNsYXNzTmFtZT0idGV4dC1bMTJweF0gZm9udC1ib2xkIHRleHQtd2hpdGUiPgogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAge3NlbC5zcG9ydH0gLSB7c2VsLnRlYW19ICh7c2VsLnR5cGV9KXsiICJ9CiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICB7c2VsLmxpbmV9IHtzZWwub2RkcyA+IDAgPyBgKyR7c2VsLm9kZHN9YCA6IHNlbC5vZGRzfQogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDwvcD4KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8cCBjbGFzc05hbWU9Im10LTAuNSB0ZXh0LVsxMXB4XSB0ZXh0LXdoaXRlLzgwIj4KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIEluaWNpbyBkZWwganVlZ28ge3RpY2tldC5kYXRlfSB7dGlja2V0LnRpbWV9CiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPC9wPgogICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8L2Rpdj4KICAgICAgICAgICAgICAgICAgICAgICAgICAgIDwvZGl2PgogICAgICAgICAgICAgICAgICAgICAgICAgIDwvZGl2PgogICAgICAgICAgICAgICAgICAgICAgICApKX0KICAgICAgICAgICAgICAgICAgICAgIDwvZGl2PgogICAgICAgICAgICAgICAgICAgIDwvbW90aW9uLmRpdj4KICAgICAgICAgICAgICAgICAgKX0KICAgICAgICAgICAgICAgIDwvQW5pbWF0ZVByZXNlbmNlPgogICAgICAgICAgICAgIDwvbW90aW9uLmRpdj4KICAgICAgICAgICAgKSl9CiAgICAgICAgICA8L2Rpdj4KICAgICAgICApfQogICAgICA8L21vdGlvbi5kaXY+CiAgICA8L2Rpdj4KICApOwp9Cg==
+﻿import { useState } from "react";
+import { motion, AnimatePresence } from "framer-motion";
+import { Plus, Minus } from "lucide-react";
+import { useApp } from "@/context/AppContext";
+import { t } from "@/lib/i18n";
+import type { SavedTicket } from "@/context/AppContext";
+
+// Mock saved tickets for demo
+const mockTickets: SavedTicket[] = [
+  {
+    id: "ticket-001",
+    date: "11/06/2026",
+    time: "10:30 AM",
+    amount: 20,
+    payout: 63.0,
+    status: "pendiente",
+    selections: [
+      {
+        id: "sel-001",
+        sport: "MLB",
+        gameId: "game-001",
+        team: "Cardinals",
+        type: "R/L",
+        line: "+1.5",
+        odds: -165,
+        timestamp: Date.now() - 3600000,
+      },
+      {
+        id: "sel-002",
+        sport: "MLB",
+        gameId: "game-001",
+        team: "Cardinals vs Mets",
+        type: "A MAS",
+        line: "9.0",
+        odds: -105,
+        timestamp: Date.now() - 3500000,
+      },
+    ],
+  },
+  {
+    id: "ticket-002",
+    date: "11/06/2026",
+    time: "09:15 AM",
+    amount: 35,
+    payout: 87.5,
+    status: "pendiente",
+    selections: [
+      {
+        id: "sel-003",
+        sport: "MLB",
+        gameId: "game-002",
+        team: "Yankees",
+        type: "M.L.",
+        line: "",
+        odds: -140,
+        timestamp: Date.now() - 7200000,
+      },
+      {
+        id: "sel-004",
+        sport: "NBA",
+        gameId: "game-003",
+        team: "Lakers",
+        type: "R/L",
+        line: "-4.5",
+        odds: -110,
+        timestamp: Date.now() - 7100000,
+      },
+    ],
+  },
+];
+
+export default function Tickets() {
+  const { language, savedTickets } = useApp();
+  const [searchDate, setSearchDate] = useState("11/06/2026");
+  const [showWinnersOnly, setShowWinnersOnly] = useState(false);
+  const [expandedTicketId, setExpandedTicketId] = useState<string | null>(null);
+
+  // Combine context saved tickets with mock tickets for demo
+  const allTickets = [...savedTickets, ...mockTickets];
+
+  const filteredTickets = showWinnersOnly
+    ? allTickets.filter((t) => t.status === "ganado")
+    : allTickets;
+
+  const toggleExpand = (ticketId: string) => {
+    setExpandedTicketId((prev) => (prev === ticketId ? null : ticketId));
+  };
+
+  return (
+    <div className="min-h-[100dvh] bg-[#f0f0f0] pt-12">
+      <motion.div
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 0.3 }}
+        className="p-3"
+      >
+        {/* Top Section - White Card */}
+        <div className="mb-4 rounded-lg bg-white p-4 shadow-sm">
+          <h2 className="mb-3 text-center text-lg font-bold text-[#333333]">
+            {t(language, "fecha")}
+          </h2>
+
+          {/* Date Input */}
+          <div className="mb-3">
+            <input
+              type="text"
+              value={searchDate}
+              onChange={(e) => setSearchDate(e.target.value)}
+              placeholder="DD/MM/YYYY"
+              className="w-full rounded border border-[#ddd] bg-[#f5f5f5] px-3 py-2.5 text-center text-sm text-[#333333] outline-none focus:border-[#3498db]"
+            />
+          </div>
+
+          {/* Toggle + Search buttons */}
+          <div className="flex gap-2">
+            <button
+              onClick={() => setShowWinnersOnly(!showWinnersOnly)}
+              className={`flex-1 rounded py-2.5 text-xs font-bold uppercase transition-colors ${
+                showWinnersOnly
+                  ? "bg-[#2ecc71] text-white"
+                  : "bg-[#6c757d] text-white hover:bg-[#5a6268]"
+              }`}
+            >
+              Tickets ganadores
+            </button>
+            <button className="flex-1 rounded bg-[#3498db] py-2.5 text-xs font-bold uppercase text-white transition-colors hover:bg-[#2980b9]">
+              Buscar tickets
+            </button>
+          </div>
+        </div>
+
+        {/* Tickets List */}
+        {filteredTickets.length === 0 ? (
+          <div className="py-10 text-center">
+            <p className="text-sm text-[#7f8c8d]">
+              {t(language, "noTicketsAbiertos")}
+            </p>
+          </div>
+        ) : (
+          <div className="space-y-3 pb-16">
+            {filteredTickets.map((ticket, idx) => (
+              <motion.div
+                key={ticket.id}
+                initial={{ opacity: 0, y: 8 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ delay: idx * 0.05, duration: 0.2 }}
+                className="overflow-hidden rounded-lg bg-[#6c757d] shadow-sm"
+              >
+                {/* Ticket Header Row */}
+                <button
+                  onClick={() => toggleExpand(ticket.id)}
+                  className="flex w-full items-center justify-between px-4 py-3 text-left"
+                >
+                  <div className="flex-1">
+                    <span className="text-sm font-bold text-white">
+                      ${ticket.amount.toFixed(2)} - Jugadas(
+                      {ticket.selections.length}) {ticket.time} - {}{" "}
+                      <span
+                        className={`rounded px-1.5 py-0.5 text-[10px] font-bold uppercase ${
+                          ticket.status === "pendiente"
+                            ? "bg-[#f39c12] text-white"
+                            : ticket.status === "ganado"
+                              ? "bg-[#2ecc71] text-white"
+                              : "bg-[#e74c3c] text-white"
+                        }`}
+                      >
+                        {ticket.status}
+                      </span>{" "}
+                      ${ticket.payout.toFixed(2)}
+                    </span>
+                  </div>
+                  <div className="ml-2 flex h-7 w-7 shrink-0 items-center justify-center rounded bg-[#555a60] text-white">
+                    {expandedTicketId === ticket.id ? (
+                      <Minus size={14} />
+                    ) : (
+                      <Plus size={14} />
+                    )}
+                  </div>
+                </button>
+
+                {/* Expanded Selections */}
+                <AnimatePresence>
+                  {expandedTicketId === ticket.id && (
+                    <motion.div
+                      initial={{ height: 0, opacity: 0 }}
+                      animate={{ height: "auto", opacity: 1 }}
+                      exit={{ height: 0, opacity: 0 }}
+                      transition={{ duration: 0.2 }}
+                      className="overflow-hidden"
+                    >
+                      <div className="space-y-2 px-3 pb-3">
+                        {ticket.selections.map((sel, sIdx) => (
+                          <div
+                            key={sIdx}
+                            className="rounded-lg bg-[#3498db] p-3"
+                          >
+                            <div className="flex items-start gap-2">
+                              {/* MLB Logo placeholder */}
+                              <div className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-white text-[10px] font-bold text-[#3498db]">
+                                {sel.sport}
+                              </div>
+                              <div className="flex-1 min-w-0">
+                                <p className="text-[12px] font-bold text-white">
+                                  {sel.sport} - {sel.team} ({sel.type}){" "}
+                                  {sel.line} {sel.odds > 0 ? `+${sel.odds}` : sel.odds}
+                                </p>
+                                <p className="mt-0.5 text-[11px] text-white/80">
+                                  Inicio del juego {ticket.date} {ticket.time}
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+                        ))}
+                      </div>
+                    </motion.div>
+                  )}
+                </AnimatePresence>
+              </motion.div>
+            ))}
+          </div>
+        )}
+      </motion.div>
+    </div>
+  );
+}

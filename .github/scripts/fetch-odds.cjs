@@ -15,10 +15,10 @@ if (!ODDS_API_KEY || !SUPABASE_URL || !SUPABASE_SERVICE_KEY) {
 
 // Sports to fetch from the-odds-api → mapped to our app's SportCode
 const SPORTS = [
-  { apiKey: 'baseball_mlb',        code: 'MLB'    },
-  { apiKey: 'basketball_nba',      code: 'NBA'    },
-  { apiKey: 'basketball_wnba',     code: 'WNBA'   },
-  { apiKey: 'soccer_uefa_nations_league', code: 'Soccer' },
+  { apiKey: 'baseball_mlb',              code: 'MLB'    },
+  { apiKey: 'basketball_nba',            code: 'NBA'    },
+  { apiKey: 'basketball_wnba',           code: 'WNBA'   },
+  { apiKey: 'soccer_uefa_nations_league',code: 'Soccer' },
 ];
 
 // ─── Helpers ────────────────────────────────────────────────────────────────
@@ -53,7 +53,6 @@ function httpsRequest(options, body) {
 function shortName(full) {
   const parts = full.trim().split(' ');
   if (parts.length <= 1) return full;
-  // Last word, but handle multi-word nicknames like "Red Sox", "Blue Jays"
   const twoWord = ['Red Sox','Blue Jays','White Sox','Real Madrid','Man City'];
   const lastTwo = parts.slice(-2).join(' ');
   if (twoWord.some(n => full.endsWith(n))) return lastTwo;
@@ -69,14 +68,27 @@ function formatTime(isoStr) {
   });
 }
 
+// Returns today's date range in UTC for ET timezone (UTC-4 during EDT)
+function getTodayRangeET() {
+  const now = new Date();
+  const offset = 4 * 60 * 60 * 1000; // EDT = UTC-4
+  const etNow = new Date(now.getTime() - offset);
+  const start = new Date(etNow); start.setUTCHours(0, 0, 0, 0);
+  const end   = new Date(etNow); end.setUTCHours(23, 59, 59, 0);
+  return {
+    from: new Date(start.getTime() + offset).toISOString().replace('.000Z', 'Z'),
+    to:   new Date(end.getTime()   + offset).toISOString().replace('.000Z', 'Z'),
+  };
+}
+
 // Transform one game from the-odds-api format → our Game format
 function transformGame(g, sportCode) {
   const bookmaker = g.bookmakers?.[0];
   if (!bookmaker) return null;
 
-  const ml_market   = bookmaker.markets?.find(m => m.key === 'h2h');
-  const rl_market   = bookmaker.markets?.find(m => m.key === 'spreads');
-  const tot_market  = bookmaker.markets?.find(m => m.key === 'totals');
+  const ml_market  = bookmaker.markets?.find(m => m.key === 'h2h');
+  const rl_market  = bookmaker.markets?.find(m => m.key === 'spreads');
+  const tot_market = bookmaker.markets?.find(m => m.key === 'totals');
 
   const away = g.away_team;
   const home = g.home_team;
@@ -136,7 +148,7 @@ async function ensureBucket() {
   };
   const body = JSON.stringify({ id: BUCKET, name: BUCKET, public: true });
   const res = await httpsRequest(opts, body);
-  if (res.status === 200 || res.status === 409) { // 409 = already exists
+  if (res.status === 200 || res.status === 409) {
     console.log('Bucket ready:', BUCKET);
     return true;
   }
@@ -147,7 +159,6 @@ async function ensureBucket() {
 async function uploadJSON(filename, data) {
   const json = JSON.stringify(data, null, 2);
   const buf  = Buffer.from(json, 'utf8');
-  // Try PUT first (update existing), otherwise POST (new)
   for (const method of ['PUT', 'POST']) {
     const opts = {
       hostname: supabaseHost,
@@ -180,10 +191,13 @@ async function main() {
   await ensureBucket();
 
   const result = { last_updated: new Date().toISOString(), games: {} };
+  const { from, to } = getTodayRangeET();
+  console.log(`Date filter: ${from} → ${to}`);
 
   for (const sport of SPORTS) {
     const url = `https://api.the-odds-api.com/v4/sports/${sport.apiKey}/odds/?`
-      + `apiKey=${ODDS_API_KEY}&regions=us&markets=h2h,spreads,totals&oddsFormat=american`;
+      + `apiKey=${ODDS_API_KEY}&regions=us&markets=h2h,spreads,totals&oddsFormat=american`
+      + `&commenceTimeFrom=${from}&commenceTimeTo=${to}`;
 
     console.log(`\nFetching ${sport.code} (${sport.apiKey})...`);
     const { status, body } = await httpsGet(url);
@@ -200,10 +214,8 @@ async function main() {
     console.log(`  → ${transformed.length} games`);
   }
 
-  // Upload the full JSON
   await uploadJSON('games.json', result);
 
-  // Also upload a status file with last run info
   const status_doc = {
     last_run: new Date().toISOString(),
     counts: Object.fromEntries(Object.entries(result.games).map(([k,v]) => [k, v.length])),

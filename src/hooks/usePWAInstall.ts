@@ -1,1 +1,49 @@
-aW1wb3J0IHsgdXNlU3RhdGUsIHVzZUVmZmVjdCwgdXNlQ2FsbGJhY2sgfSBmcm9tICdyZWFjdCc7CgppbnRlcmZhY2UgQmVmb3JlSW5zdGFsbFByb21wdEV2ZW50IGV4dGVuZHMgRXZlbnQgewogIHByb21wdDogKCkgPT4gUHJvbWlzZTx2b2lkPjsKICB1c2VyQ2hvaWNlOiBQcm9taXNlPHsgb3V0Y29tZTogJ2FjY2VwdGVkJyB8ICdkaXNtaXNzZWQnIH0+Owp9CgpleHBvcnQgZnVuY3Rpb24gdXNlUFdBSW5zdGFsbCgpIHsKICBjb25zdCBbaW5zdGFsbFByb21wdCwgc2V0SW5zdGFsbFByb21wdF0gPSB1c2VTdGF0ZTxCZWZvcmVJbnN0YWxsUHJvbXB0RXZlbnQgfCBudWxsPihudWxsKTsKICBjb25zdCBbaXNJbnN0YWxsZWQsIHNldElzSW5zdGFsbGVkXSA9IHVzZVN0YXRlKGZhbHNlKTsKICBjb25zdCBbaXNJT1MsIHNldElzSU9TXSA9IHVzZVN0YXRlKGZhbHNlKTsKCiAgdXNlRWZmZWN0KCgpID0+IHsKICAgIC8vIENoZWNrIGlmIGFscmVhZHkgaW5zdGFsbGVkCiAgICBpZiAod2luZG93Lm1hdGNoTWVkaWEoJyhkaXNwbGF5LW1vZGU6IHN0YW5kYWxvbmUpJykubWF0Y2hlcykgewogICAgICBzZXRJc0luc3RhbGxlZCh0cnVlKTsKICAgIH0KICAgIAogICAgLy8gRGV0ZWN0IGlPUyAobm8gbmF0aXZlIGluc3RhbGwgcHJvbXB0KQogICAgY29uc3QgaU9TRGV2aWNlID0gL2lQYWR8aVBob25lfGlQb2QvLnRlc3QobmF2aWdhdG9yLnVzZXJBZ2VudCkgJiYgISh3aW5kb3cgYXMgYW55KS5NU1N0cmVhbTsKICAgIHNldElzSU9TKGlPU0RldmljZSk7CgogICAgY29uc3QgaGFuZGxlciA9IChlOiBFdmVudCkgPT4gewogICAgICBlLnByZXZlbnREZWZhdWx0KCk7CiAgICAgIHNldEluc3RhbGxQcm9tcHQoZSBhcyBCZWZvcmVJbnN0YWxsUHJvbXB0RXZlbnQpOwogICAgfTsKCiAgICB3aW5kb3cuYWRkRXZlbnRMaXN0ZW5lcignYmVmb3JlaW5zdGFsbHByb21wdCcsIGhhbmRsZXIpOwogICAgd2luZG93LmFkZEV2ZW50TGlzdGVuZXIoJ2FwcGluc3RhbGxlZCcsICgpID0+IHsKICAgICAgc2V0SXNJbnN0YWxsZWQodHJ1ZSk7CiAgICAgIHNldEluc3RhbGxQcm9tcHQobnVsbCk7CiAgICB9KTsKCiAgICByZXR1cm4gKCkgPT4gewogICAgICB3aW5kb3cucmVtb3ZlRXZlbnRMaXN0ZW5lcignYmVmb3JlaW5zdGFsbHByb21wdCcsIGhhbmRsZXIpOwogICAgfTsKICB9LCBbXSk7CgogIGNvbnN0IHByb21wdEluc3RhbGwgPSB1c2VDYWxsYmFjayhhc3luYyAoKSA9PiB7CiAgICBpZiAoIWluc3RhbGxQcm9tcHQpIHJldHVybjsKICAgIGF3YWl0IGluc3RhbGxQcm9tcHQucHJvbXB0KCk7CiAgICBjb25zdCByZXN1bHQgPSBhd2FpdCBpbnN0YWxsUHJvbXB0LnVzZXJDaG9pY2U7CiAgICBpZiAocmVzdWx0Lm91dGNvbWUgPT09ICdhY2NlcHRlZCcpIHsKICAgICAgc2V0SW5zdGFsbFByb21wdChudWxsKTsKICAgIH0KICB9LCBbaW5zdGFsbFByb21wdF0pOwoKICByZXR1cm4geyBpbnN0YWxsUHJvbXB0LCBpc0luc3RhbGxlZCwgaXNJT1MsIHByb21wdEluc3RhbGwgfTsKfQo=
+﻿import { useState, useEffect, useCallback } from 'react';
+
+interface BeforeInstallPromptEvent extends Event {
+  prompt: () => Promise<void>;
+  userChoice: Promise<{ outcome: 'accepted' | 'dismissed' }>;
+}
+
+export function usePWAInstall() {
+  const [installPrompt, setInstallPrompt] = useState<BeforeInstallPromptEvent | null>(null);
+  const [isInstalled, setIsInstalled] = useState(false);
+  const [isIOS, setIsIOS] = useState(false);
+
+  useEffect(() => {
+    // Check if already installed
+    if (window.matchMedia('(display-mode: standalone)').matches) {
+      setIsInstalled(true);
+    }
+    
+    // Detect iOS (no native install prompt)
+    const iOSDevice = /iPad|iPhone|iPod/.test(navigator.userAgent) && !(window as any).MSStream;
+    setIsIOS(iOSDevice);
+
+    const handler = (e: Event) => {
+      e.preventDefault();
+      setInstallPrompt(e as BeforeInstallPromptEvent);
+    };
+
+    window.addEventListener('beforeinstallprompt', handler);
+    window.addEventListener('appinstalled', () => {
+      setIsInstalled(true);
+      setInstallPrompt(null);
+    });
+
+    return () => {
+      window.removeEventListener('beforeinstallprompt', handler);
+    };
+  }, []);
+
+  const promptInstall = useCallback(async () => {
+    if (!installPrompt) return;
+    await installPrompt.prompt();
+    const result = await installPrompt.userChoice;
+    if (result.outcome === 'accepted') {
+      setInstallPrompt(null);
+    }
+  }, [installPrompt]);
+
+  return { installPrompt, isInstalled, isIOS, promptInstall };
+}

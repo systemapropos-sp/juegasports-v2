@@ -1,1 +1,119 @@
-aW1wb3J0IHsgdXNlU3RhdGUgfSBmcm9tICJyZWFjdCI7CmltcG9ydCB7IHVzZU5hdmlnYXRlIH0gZnJvbSAicmVhY3Qtcm91dGVyIjsKaW1wb3J0IHsgbW90aW9uIH0gZnJvbSAiZnJhbWVyLW1vdGlvbiI7CmltcG9ydCB7IFVzZXIsIExvY2sgfSBmcm9tICJsdWNpZGUtcmVhY3QiOwppbXBvcnQgeyB1c2VBcHAgfSBmcm9tICJAL2NvbnRleHQvQXBwQ29udGV4dCI7CgpleHBvcnQgZGVmYXVsdCBmdW5jdGlvbiBMb2dpbigpIHsKICBjb25zdCBuYXZpZ2F0ZSA9IHVzZU5hdmlnYXRlKCk7CiAgY29uc3QgeyBsb2dpbiB9ID0gdXNlQXBwKCk7CiAgY29uc3QgW3VzZXJuYW1lLCBzZXRVc2VybmFtZV0gPSB1c2VTdGF0ZSgiIik7CiAgY29uc3QgW3Bhc3N3b3JkLCBzZXRQYXNzd29yZF0gPSB1c2VTdGF0ZSgiIik7CiAgY29uc3QgW2Vycm9yLCBzZXRFcnJvcl0gPSB1c2VTdGF0ZSgiIik7CgogIGNvbnN0IGhhbmRsZVN1Ym1pdCA9IChlOiBSZWFjdC5Gb3JtRXZlbnQpID0+IHsKICAgIGUucHJldmVudERlZmF1bHQoKTsKICAgIHNldEVycm9yKCIiKTsKCiAgICBpZiAodXNlcm5hbWUgPT09ICJqdWFuMDEiICYmIHBhc3N3b3JkID09PSAiMDUwNTg3IikgewogICAgICBsb2dpbih7CiAgICAgICAgZW1haWw6ICJkdWVwb3N0bGxjQGdtYWlsLmNvbSIsCiAgICAgICAgdXNlcm5hbWU6ICJqdWFuMDEiLAogICAgICAgIHJvbGU6ICJwbGF5ZXIiLAogICAgICB9KTsKICAgICAgbmF2aWdhdGUoIi8iKTsKICAgIH0gZWxzZSB7CiAgICAgIHNldEVycm9yKCJJbnZhbGlkIHVzZXJuYW1lIG9yIHBhc3N3b3JkIik7CiAgICB9CiAgfTsKCiAgcmV0dXJuICgKICAgIDxkaXYgY2xhc3NOYW1lPSJyZWxhdGl2ZSBmbGV4IG1pbi1oLVsxMDBkdmhdIGl0ZW1zLWNlbnRlciBqdXN0aWZ5LWNlbnRlciBvdmVyZmxvdy1oaWRkZW4gcHgtNCI+CiAgICAgIHsvKiBEYXJrIHNwb3J0cy10aGVtZWQgYmFja2dyb3VuZCAqL30KICAgICAgPGRpdgogICAgICAgIGNsYXNzTmFtZT0iYWJzb2x1dGUgaW5zZXQtMCIKICAgICAgICBzdHlsZT17ewogICAgICAgICAgYmFja2dyb3VuZDoKICAgICAgICAgICAgImxpbmVhci1ncmFkaWVudCgxMzVkZWcsICMxYTFhMmUgMCUsICMxNjIxM2UgMjUlLCAjMGYzNDYwIDUwJSwgIzE2MjEzZSA3NSUsICMxYTFhMmUgMTAwJSkiLAogICAgICAgICAgYmFja2dyb3VuZFNpemU6ICI0MDAlIDQwMCUiLAogICAgICAgICAgYW5pbWF0aW9uOiAiZ3JhZGllbnRTaGlmdCA4cyBlYXNlIGluZmluaXRlIiwKICAgICAgICB9fQogICAgICAvPgogICAgICA8ZGl2IGNsYXNzTmFtZT0iYWJzb2x1dGUgaW5zZXQtMCBiZy1ncmFkaWVudC10by1iciBmcm9tLWJsYWNrLzg1IHRvLWJsYWNrLzcwIiAvPgoKICAgICAgey8qIFN1YnRsZSBzcG9ydHMgcGF0dGVybiBvdmVybGF5ICovfQogICAgICA8ZGl2CiAgICAgICAgY2xhc3NOYW1lPSJhYnNvbHV0ZSBpbnNldC0wIG9wYWNpdHktNSIKICAgICAgICBzdHlsZT17ewogICAgICAgICAgYmFja2dyb3VuZEltYWdlOiBgdXJsKCJkYXRhOmltYWdlL3N2Zyt4bWwsJTNDc3ZnIHdpZHRoPSc2MCcgaGVpZ2h0PSc2MCcgdmlld0JveD0nMCAwIDYwIDYwJyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnJTNFJTNDZyBmaWxsPSdub25lJyBmaWxsLXJ1bGU9J2V2ZW5vZGQnJTNFJTNDZyBmaWxsPSclMjNmZmZmZmYnIGZpbGwtb3BhY2l0eT0nMSclM0UlM0NwYXRoIGQ9J00zNiAzNHYtNGgtMnY0aC00djJoNHY0aDJ2LTRoNHYtMmgtNHptMC0zMFYwaC0ydjRoLTR2Mmg0djRoMlY2aDRWNGgtNHpNNiAzNHYtNEg0djRIMHYyaDR2NGgydi00aDR2LTJINnpNNiA0VjBINHY0SDB2Mmg0djRoMlY2aDRWNEg2eicvJTNFJTNDL2clM0UlM0MvZyUzRSUzQy9zdmclM0UiKWAsCiAgICAgICAgfX0KICAgICAgLz4KCiAgICAgIHsvKiBMb2dpbiBDYXJkICovfQogICAgICA8bW90aW9uLmRpdgogICAgICAgIGluaXRpYWw9e3sgb3BhY2l0eTogMCwgeTogMzAgfX0KICAgICAgICBhbmltYXRlPXt7IG9wYWNpdHk6IDEsIHk6IDAgfX0KICAgICAgICB0cmFuc2l0aW9uPXt7IGR1cmF0aW9uOiAwLjUgfX0KICAgICAgICBjbGFzc05hbWU9InJlbGF0aXZlIHotMTAgdy1mdWxsIG1heC13LVszODBweF0iCiAgICAgID4KICAgICAgICA8aDEgY2xhc3NOYW1lPSJtYi04IHRleHQtY2VudGVyIHRleHQtWzMycHhdIGZvbnQtZXh0cmFib2xkIHRyYWNraW5nLXRpZ2h0IHRleHQtd2hpdGUiPgogICAgICAgICAgSnVlZ2FTcG9ydHMKICAgICAgICA8L2gxPgoKICAgICAgICA8Zm9ybSBvblN1Ym1pdD17aGFuZGxlU3VibWl0fSBjbGFzc05hbWU9InNwYWNlLXktNCI+CiAgICAgICAgICB7LyogVXNlcm5hbWUgKi99CiAgICAgICAgICA8ZGl2IGNsYXNzTmFtZT0icmVsYXRpdmUiPgogICAgICAgICAgICA8VXNlcgogICAgICAgICAgICAgIHNpemU9ezE4fQogICAgICAgICAgICAgIGNsYXNzTmFtZT0iYWJzb2x1dGUgbGVmdC0zIHRvcC0xLzIgLXRyYW5zbGF0ZS15LTEvMiB0ZXh0LVsjN2Y4YzhkXSIKICAgICAgICAgICAgLz4KICAgICAgICAgICAgPGlucHV0CiAgICAgICAgICAgICAgdHlwZT0idGV4dCIKICAgICAgICAgICAgICB2YWx1ZT17dXNlcm5hbWV9CiAgICAgICAgICAgICAgb25DaGFuZ2U9eyhlKSA9PiBzZXRVc2VybmFtZShlLnRhcmdldC52YWx1ZSl9CiAgICAgICAgICAgICAgcGxhY2Vob2xkZXI9IlVzZXJuYW1lIgogICAgICAgICAgICAgIGNsYXNzTmFtZT0idy1mdWxsIHJvdW5kZWQtbGcgYm9yZGVyIGJvcmRlci1bIzU1NWE2MF0gYmctWyM0YTRmNTddIHB5LTMuNSBwbC0xMCBwci00IHRleHQtc20gdGV4dC13aGl0ZSBvdXRsaW5lLW5vbmUgdHJhbnNpdGlvbi1jb2xvcnMgcGxhY2Vob2xkZXI6dGV4dC1bIzdmOGM4ZF0gZm9jdXM6Ym9yZGVyLVsjZTc0YzNjXSBtaW4taC1bNDhweF0iCiAgICAgICAgICAgICAgcmVxdWlyZWQKICAgICAgICAgICAgLz4KICAgICAgICAgIDwvZGl2PgoKICAgICAgICAgIHsvKiBQYXNzd29yZCAqL30KICAgICAgICAgIDxkaXYgY2xhc3NOYW1lPSJyZWxhdGl2ZSI+CiAgICAgICAgICAgIDxMb2NrCiAgICAgICAgICAgICAgc2l6ZT17MTh9CiAgICAgICAgICAgICAgY2xhc3NOYW1lPSJhYnNvbHV0ZSBsZWZ0LTMgdG9wLTEvMiAtdHJhbnNsYXRlLXktMS8yIHRleHQtWyM3ZjhjOGRdIgogICAgICAgICAgICAvPgogICAgICAgICAgICA8aW5wdXQKICAgICAgICAgICAgICB0eXBlPSJwYXNzd29yZCIKICAgICAgICAgICAgICB2YWx1ZT17cGFzc3dvcmR9CiAgICAgICAgICAgICAgb25DaGFuZ2U9eyhlKSA9PiBzZXRQYXNzd29yZChlLnRhcmdldC52YWx1ZSl9CiAgICAgICAgICAgICAgcGxhY2Vob2xkZXI9IlBhc3N3b3JkIgogICAgICAgICAgICAgIGNsYXNzTmFtZT0idy1mdWxsIHJvdW5kZWQtbGcgYm9yZGVyIGJvcmRlci1bIzU1NWE2MF0gYmctWyM0YTRmNTddIHB5LTMuNSBwbC0xMCBwci00IHRleHQtc20gdGV4dC13aGl0ZSBvdXRsaW5lLW5vbmUgdHJhbnNpdGlvbi1jb2xvcnMgcGxhY2Vob2xkZXI6dGV4dC1bIzdmOGM4ZF0gZm9jdXM6Ym9yZGVyLVsjZTc0YzNjXSBtaW4taC1bNDhweF0iCiAgICAgICAgICAgICAgcmVxdWlyZWQKICAgICAgICAgICAgLz4KICAgICAgICAgIDwvZGl2PgoKICAgICAgICAgIHtlcnJvciAmJiAoCiAgICAgICAgICAgIDxwIGNsYXNzTmFtZT0idGV4dC1jZW50ZXIgdGV4dC1zbSB0ZXh0LVsjZTc0YzNjXSI+e2Vycm9yfTwvcD4KICAgICAgICAgICl9CgogICAgICAgICAgPGJ1dHRvbgogICAgICAgICAgICB0eXBlPSJzdWJtaXQiCiAgICAgICAgICAgIGNsYXNzTmFtZT0ibXQtMiB3LWZ1bGwgcm91bmRlZC1sZyBiZy1bI2U3NGMzY10gcHktMy41IHRleHQtc20gZm9udC1ib2xkIHVwcGVyY2FzZSB0cmFja2luZy13aWRlciB0ZXh0LXdoaXRlIHRyYW5zaXRpb24tYWxsIGhvdmVyOmJnLVsjYzAzOTJiXSBhY3RpdmU6c2NhbGUtWzAuOThdIG1pbi1oLVs0OHB4XSIKICAgICAgICAgID4KICAgICAgICAgICAgTE9HIElOCiAgICAgICAgICA8L2J1dHRvbj4KICAgICAgICA8L2Zvcm0+CiAgICAgIDwvbW90aW9uLmRpdj4KCiAgICAgIHsvKiBDU1MgZm9yIGFuaW1hdGVkIGdyYWRpZW50ICovfQogICAgICA8c3R5bGU+e2AKICAgICAgICBAa2V5ZnJhbWVzIGdyYWRpZW50U2hpZnQgewogICAgICAgICAgMCUgeyBiYWNrZ3JvdW5kLXBvc2l0aW9uOiAwJSA1MCU7IH0KICAgICAgICAgIDUwJSB7IGJhY2tncm91bmQtcG9zaXRpb246IDEwMCUgNTAlOyB9CiAgICAgICAgICAxMDAlIHsgYmFja2dyb3VuZC1wb3NpdGlvbjogMCUgNTAlOyB9CiAgICAgICAgfQogICAgICBgfTwvc3R5bGU+CiAgICA8L2Rpdj4KICApOwp9Cg==
+﻿import { useState } from "react";
+import { useNavigate } from "react-router";
+import { motion } from "framer-motion";
+import { User, Lock } from "lucide-react";
+import { useApp } from "@/context/AppContext";
+
+export default function Login() {
+  const navigate = useNavigate();
+  const { login } = useApp();
+  const [username, setUsername] = useState("");
+  const [password, setPassword] = useState("");
+  const [error, setError] = useState("");
+
+  const handleSubmit = (e: React.FormEvent) => {
+    e.preventDefault();
+    setError("");
+
+    if (username === "juan01" && password === "050587") {
+      login({
+        email: "duepostllc@gmail.com",
+        username: "juan01",
+        role: "player",
+      });
+      navigate("/");
+    } else {
+      setError("Invalid username or password");
+    }
+  };
+
+  return (
+    <div className="relative flex min-h-[100dvh] items-center justify-center overflow-hidden px-4">
+      {/* Dark sports-themed background */}
+      <div
+        className="absolute inset-0"
+        style={{
+          background:
+            "linear-gradient(135deg, #1a1a2e 0%, #16213e 25%, #0f3460 50%, #16213e 75%, #1a1a2e 100%)",
+          backgroundSize: "400% 400%",
+          animation: "gradientShift 8s ease infinite",
+        }}
+      />
+      <div className="absolute inset-0 bg-gradient-to-br from-black/85 to-black/70" />
+
+      {/* Subtle sports pattern overlay */}
+      <div
+        className="absolute inset-0 opacity-5"
+        style={{
+          backgroundImage: `url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='1'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")`,
+        }}
+      />
+
+      {/* Login Card */}
+      <motion.div
+        initial={{ opacity: 0, y: 30 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.5 }}
+        className="relative z-10 w-full max-w-[380px]"
+      >
+        <h1 className="mb-8 text-center text-[32px] font-extrabold tracking-tight text-white">
+          JuegaSports
+        </h1>
+
+        <form onSubmit={handleSubmit} className="space-y-4">
+          {/* Username */}
+          <div className="relative">
+            <User
+              size={18}
+              className="absolute left-3 top-1/2 -translate-y-1/2 text-[#7f8c8d]"
+            />
+            <input
+              type="text"
+              value={username}
+              onChange={(e) => setUsername(e.target.value)}
+              placeholder="Username"
+              className="w-full rounded-lg border border-[#555a60] bg-[#4a4f57] py-3.5 pl-10 pr-4 text-sm text-white outline-none transition-colors placeholder:text-[#7f8c8d] focus:border-[#e74c3c] min-h-[48px]"
+              required
+            />
+          </div>
+
+          {/* Password */}
+          <div className="relative">
+            <Lock
+              size={18}
+              className="absolute left-3 top-1/2 -translate-y-1/2 text-[#7f8c8d]"
+            />
+            <input
+              type="password"
+              value={password}
+              onChange={(e) => setPassword(e.target.value)}
+              placeholder="Password"
+              className="w-full rounded-lg border border-[#555a60] bg-[#4a4f57] py-3.5 pl-10 pr-4 text-sm text-white outline-none transition-colors placeholder:text-[#7f8c8d] focus:border-[#e74c3c] min-h-[48px]"
+              required
+            />
+          </div>
+
+          {error && (
+            <p className="text-center text-sm text-[#e74c3c]">{error}</p>
+          )}
+
+          <button
+            type="submit"
+            className="mt-2 w-full rounded-lg bg-[#e74c3c] py-3.5 text-sm font-bold uppercase tracking-wider text-white transition-all hover:bg-[#c0392b] active:scale-[0.98] min-h-[48px]"
+          >
+            LOG IN
+          </button>
+        </form>
+      </motion.div>
+
+      {/* CSS for animated gradient */}
+      <style>{`
+        @keyframes gradientShift {
+          0% { background-position: 0% 50%; }
+          50% { background-position: 100% 50%; }
+          100% { background-position: 0% 50%; }
+        }
+      `}</style>
+    </div>
+  );
+}

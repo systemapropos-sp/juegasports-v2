@@ -1,1 +1,221 @@
-aW1wb3J0IHsgdXNlTmF2aWdhdGUgfSBmcm9tICJyZWFjdC1yb3V0ZXIiOwppbXBvcnQgeyBtb3Rpb24gfSBmcm9tICJmcmFtZXItbW90aW9uIjsKaW1wb3J0IHsgQ2hldnJvblVwIH0gZnJvbSAibHVjaWRlLXJlYWN0IjsKaW1wb3J0IHsgdXNlQXBwIH0gZnJvbSAiQC9jb250ZXh0L0FwcENvbnRleHQiOwppbXBvcnQgeyB0IH0gZnJvbSAiQC9saWIvaTE4biI7CmltcG9ydCB0eXBlIHsgU3BvcnRDb2RlIH0gZnJvbSAiQC9kYXRhL21vY2tEYXRhIjsKCmNvbnN0IHNwb3J0Q2FyZERhdGE6IHsKICBjb2RlOiBTcG9ydENvZGU7CiAgbmFtZTogc3RyaW5nOwogIGxvZ29Vcmw/OiBzdHJpbmc7CiAgaXNTdmc/OiBib29sZWFuOwp9W10gPSBbCiAgewogICAgY29kZTogIk1MQiIsCiAgICBuYW1lOiAiTUxCIiwKICAgIGxvZ29Vcmw6ICIvbG9nby1tbGIucG5nIiwKICB9LAogIHsKICAgIGNvZGU6ICJMTUIiLAogICAgbmFtZTogIkxNQiIsCiAgICBsb2dvVXJsOiAiL2xvZ28tbG1iLnBuZyIsCiAgfSwKICB7CiAgICBjb2RlOiAiTkJBIiwKICAgIG5hbWU6ICJOQkEiLAogICAgbG9nb1VybDogIi9sb2dvLW5iYS5wbmciLAogIH0sCiAgewogICAgY29kZTogIldOQkEiLAogICAgbmFtZTogIldOQkEiLAogICAgbG9nb1VybDogIi9sb2dvLXduYmEucG5nIiwKICB9LAogIHsKICAgIGNvZGU6ICJCUFMiLAogICAgbmFtZTogIkJQUyIsCiAgICBpc1N2ZzogdHJ1ZSwKICB9LAogIHsKICAgIGNvZGU6ICJTb2NjZXIiLAogICAgbmFtZTogIk5BQ0lPTkVTIiwKICAgIGxvZ29Vcmw6ICIvbG9nby1uYWNpb25lcy5wbmciLAogIH0sCiAgewogICAgY29kZTogIk5CQS1TIiwKICAgIG5hbWU6ICJOQkEtUyIsCiAgICBpc1N2ZzogdHJ1ZSwKICB9LApdOwoKZnVuY3Rpb24gU3BvcnRDYXJkKHsKICBzcG9ydCwKICBvbkNsaWNrLAp9OiB7CiAgc3BvcnQ6ICh0eXBlb2Ygc3BvcnRDYXJkRGF0YSlbbnVtYmVyXTsKICBvbkNsaWNrOiAoKSA9PiB2b2lkOwp9KSB7CiAgcmV0dXJuICgKICAgIDxtb3Rpb24uYnV0dG9uCiAgICAgIHdoaWxlVGFwPXt7IHNjYWxlOiAwLjk2IH19CiAgICAgIG9uQ2xpY2s9e29uQ2xpY2t9CiAgICAgIGNsYXNzTmFtZT0iZmxleCBmbGV4LWNvbCBpdGVtcy1jZW50ZXIgcm91bmRlZC14bCBiZy13aGl0ZSBwLTQgc2hhZG93LW1kIHRyYW5zaXRpb24tc2hhZG93IGFjdGl2ZTpzaGFkb3ctbGciCiAgICA+CiAgICAgIDxkaXYgY2xhc3NOYW1lPSJtYi0yIGZsZXggaC0xNiB3LWZ1bGwgaXRlbXMtY2VudGVyIGp1c3RpZnktY2VudGVyIG92ZXJmbG93LWhpZGRlbiI+CiAgICAgICAge3Nwb3J0LmxvZ29VcmwgPyAoCiAgICAgICAgICA8aW1nCiAgICAgICAgICAgIHNyYz17c3BvcnQubG9nb1VybH0KICAgICAgICAgICAgYWx0PXtzcG9ydC5uYW1lfQogICAgICAgICAgICBjbGFzc05hbWU9Im1heC1oLTE0IG1heC13LWZ1bGwgb2JqZWN0LWNvbnRhaW4iCiAgICAgICAgICAgIGxvYWRpbmc9ImxhenkiCiAgICAgICAgICAgIG9uRXJyb3I9eyhlKSA9PiB7CiAgICAgICAgICAgICAgKGUudGFyZ2V0IGFzIEhUTUxJbWFnZUVsZW1lbnQpLnN0eWxlLmRpc3BsYXkgPSAibm9uZSI7CiAgICAgICAgICAgIH19CiAgICAgICAgICAvPgogICAgICAgICkgOiBzcG9ydC5jb2RlID09PSAiQlBTIiA/ICgKICAgICAgICAgIDxzdmcKICAgICAgICAgICAgdmlld0JveD0iMCAwIDY0IDY0IgogICAgICAgICAgICBjbGFzc05hbWU9ImgtMTQgdy0xNCIKICAgICAgICAgICAgZmlsbD0ibm9uZSIKICAgICAgICAgICAgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIgogICAgICAgICAgPgogICAgICAgICAgICA8Y2lyY2xlIGN4PSIzMiIgY3k9IjMyIiByPSIzMCIgc3Ryb2tlPSIjMWEzYTFjIiBzdHJva2VXaWR0aD0iMiIgZmlsbD0iI2YwZjBmMCIgLz4KICAgICAgICAgICAgPHBhdGgKICAgICAgICAgICAgICBkPSJNMzIgMTAgQzIyIDEwLCAxNCAxOCwgMTQgMjggQzE0IDM2LCAxOCA0MiwgMjQgNDQgTDI0IDU0IEwyOCA1MCBMMzIgNTQgTDM2IDUwIEw0MCA1NCBMNDAgNDQgQzQ2IDQyLCA1MCAzNiwgNTAgMjggQzUwIDE4LCA0MiAxMCwgMzIgMTAgWiIKICAgICAgICAgICAgICBmaWxsPSIjMWEzYTFjIgogICAgICAgICAgICAvPgogICAgICAgICAgICA8Y2lyY2xlIGN4PSIyNiIgY3k9IjI2IiByPSIzIiBmaWxsPSIjZmZmIiAvPgogICAgICAgICAgICA8Y2lyY2xlIGN4PSIzOCIgY3k9IjI2IiByPSIzIiBmaWxsPSIjZmZmIiAvPgogICAgICAgICAgICA8cGF0aCBkPSJNMjggMzQgUTMyIDM4LCAzNiAzNCIgc3Ryb2tlPSIjZmZmIiBzdHJva2VXaWR0aD0iMiIgZmlsbD0ibm9uZSIgLz4KICAgICAgICAgIDwvc3ZnPgogICAgICAgICkgOiBzcG9ydC5jb2RlID09PSAiTkJBLVMiID8gKAogICAgICAgICAgPHN2ZwogICAgICAgICAgICB2aWV3Qm94PSIwIDAgNjQgNjQiCiAgICAgICAgICAgIGNsYXNzTmFtZT0iaC0xNCB3LTE0IgogICAgICAgICAgICBmaWxsPSJub25lIgogICAgICAgICAgICB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciCiAgICAgICAgICA+CiAgICAgICAgICAgIDxjaXJjbGUgY3g9IjMyIiBjeT0iMzIiIHI9IjMwIiBzdHJva2U9IiMxYTFhM2UiIHN0cm9rZVdpZHRoPSIyIiBmaWxsPSIjZjBmMGYwIiAvPgogICAgICAgICAgICA8cGF0aAogICAgICAgICAgICAgIGQ9Ik0yMCA0OCBMMjAgMzAgQzIwIDIyLCAyNiAxNiwgMzIgMTYgQzM4IDE2LCA0NCAyMiwgNDQgMzAgTDQ0IDQ4IgogICAgICAgICAgICAgIHN0cm9rZT0iIzFhMWEzZSIKICAgICAgICAgICAgICBzdHJva2VXaWR0aD0iMyIKICAgICAgICAgICAgICBmaWxsPSJub25lIgogICAgICAgICAgICAgIHN0cm9rZUxpbmVjYXA9InJvdW5kIgogICAgICAgICAgICAvPgogICAgICAgICAgICA8Y2lyY2xlIGN4PSIzMiIgY3k9IjEyIiByPSI2IiBmaWxsPSIjMWExYTNlIiAvPgogICAgICAgICAgICA8cGF0aAogICAgICAgICAgICAgIGQ9Ik0yNiAzOCBMMjYgNDggTTM4IDM4IEwzOCA0OCIKICAgICAgICAgICAgICBzdHJva2U9IiMxYTFhM2UiCiAgICAgICAgICAgICAgc3Ryb2tlV2lkdGg9IjMiCiAgICAgICAgICAgICAgc3Ryb2tlTGluZWNhcD0icm91bmQiCiAgICAgICAgICAgIC8+CiAgICAgICAgICA8L3N2Zz4KICAgICAgICApIDogbnVsbH0KICAgICAgPC9kaXY+CiAgICAgIDxzcGFuIGNsYXNzTmFtZT0idGV4dC1zbSBmb250LWJvbGQgdGV4dC1bIzJjMmYzM10iPntzcG9ydC5uYW1lfTwvc3Bhbj4KICAgIDwvbW90aW9uLmJ1dHRvbj4KICApOwp9CgpleHBvcnQgZGVmYXVsdCBmdW5jdGlvbiBIb21lKCkgewogIGNvbnN0IG5hdmlnYXRlID0gdXNlTmF2aWdhdGUoKTsKICBjb25zdCB7CiAgICB0b2dnbGVCZXRTbGlwU2hlZXQsCiAgICBiZXRBbW91bnQsCiAgICBzZXRCZXRBbW91bnQsCiAgICBzZWxlY3RlZEJldHMsCiAgICBsYW5ndWFnZSwKICB9ID0gdXNlQXBwKCk7CgogIGNvbnN0IHRvdGFsUGF5b3V0ID0gc2VsZWN0ZWRCZXRzLnJlZHVjZSgoYWNjLCBiZXQpID0+IHsKICAgIGNvbnN0IGFtdCA9IHBhcnNlRmxvYXQoYmV0QW1vdW50KSB8fCAwOwogICAgaWYgKGFtdCA8PSAwKSByZXR1cm4gMDsKICAgIGNvbnN0IG9kZHMgPSBiZXQub2RkczsKICAgIGlmIChvZGRzID4gMCkgewogICAgICByZXR1cm4gYWNjICsgYW10ICogKG9kZHMgLyAxMDAgKyAxKTsKICAgIH0gZWxzZSB7CiAgICAgIHJldHVybiBhY2MgKyBhbXQgKiAoMTAwIC8gTWF0aC5hYnMob2RkcykgKyAxKTsKICAgIH0KICB9LCAwKTsKCiAgY29uc3QgaGFuZGxlU3BvcnRDbGljayA9IChjb2RlOiBTcG9ydENvZGUpID0+IHsKICAgIG5hdmlnYXRlKGAvc3BvcnQvJHtjb2RlfWApOwogIH07CgogIHJldHVybiAoCiAgICA8ZGl2IGNsYXNzTmFtZT0ibWluLWgtWzEwMGR2aF0gYmctWyMzYTNmNDddIHB0LTEyIj4KICAgICAgey8qIFRvcCBzZWN0aW9uOiBDYW50aWRhZCwgUFJFTUlPLCBQUkVNSU8gU0ksIEFjdGl2YXIgc2kgKi99CiAgICAgIDxkaXYgY2xhc3NOYW1lPSJib3JkZXItYiBib3JkZXItWyM1NTVhNjBdIGJnLVsjM2EzZjQ3XSBweC0zIHB5LTIiPgogICAgICAgIHsvKiBDYW50aWRhZCAqL30KICAgICAgICA8ZGl2IGNsYXNzTmFtZT0ibWItMiI+CiAgICAgICAgICA8bGFiZWwgY2xhc3NOYW1lPSJtYi0wLjUgYmxvY2sgdGV4dC1bMTJweF0gZm9udC1tZWRpdW0gdGV4dC1bI2IwYjViYV0iPgogICAgICAgICAgICB7dChsYW5ndWFnZSwgImNhbnRpZGFkIil9CiAgICAgICAgICA8L2xhYmVsPgogICAgICAgICAgPGlucHV0CiAgICAgICAgICAgIHR5cGU9Im51bWJlciIKICAgICAgICAgICAgdmFsdWU9e2JldEFtb3VudH0KICAgICAgICAgICAgb25DaGFuZ2U9eyhlKSA9PiBzZXRCZXRBbW91bnQoZS50YXJnZXQudmFsdWUpfQogICAgICAgICAgICBwbGFjZWhvbGRlcj0iMC4wMCIKICAgICAgICAgICAgY2xhc3NOYW1lPSJ3LWZ1bGwgcm91bmRlZCBib3JkZXIgYm9yZGVyLVsjNTU1YTYwXSBiZy13aGl0ZSBweC0zIHB5LTIgdGV4dC1zbSB0ZXh0LVsjMmMyZjMzXSBvdXRsaW5lLW5vbmUgdHJhbnNpdGlvbi1jb2xvcnMgcGxhY2Vob2xkZXI6dGV4dC1bIzk5OV0gZm9jdXM6Ym9yZGVyLVsjZTc0YzNjXSIKICAgICAgICAgIC8+CiAgICAgICAgPC9kaXY+CgogICAgICAgIHsvKiBQUkVNSU8gfCBQUkVNSU8gU0kgfCBBY3RpdmFyIHNpICovfQogICAgICAgIDxkaXYgY2xhc3NOYW1lPSJmbGV4IGl0ZW1zLWNlbnRlciBnYXAtMiI+CiAgICAgICAgICA8ZGl2IGNsYXNzTmFtZT0iZmxleC0xIj4KICAgICAgICAgICAgPHNwYW4gY2xhc3NOYW1lPSJ0ZXh0LVsxMXB4XSBmb250LXNlbWlib2xkIHRleHQtWyNiMGI1YmFdIj4KICAgICAgICAgICAgICB7dChsYW5ndWFnZSwgInByZW1pbyIpfQogICAgICAgICAgICA8L3NwYW4+CiAgICAgICAgICAgIDxwIGNsYXNzTmFtZT0idGV4dC1bMTRweF0gZm9udC1ib2xkIHRleHQtd2hpdGUiPgogICAgICAgICAgICAgICR7dG90YWxQYXlvdXQudG9GaXhlZCgyKX0KICAgICAgICAgICAgPC9wPgogICAgICAgICAgPC9kaXY+CiAgICAgICAgICA8ZGl2IGNsYXNzTmFtZT0iZmxleC0xIj4KICAgICAgICAgICAgPHNwYW4gY2xhc3NOYW1lPSJ0ZXh0LVsxMXB4XSBmb250LXNlbWlib2xkIHRleHQtWyNiMGI1YmFdIj4KICAgICAgICAgICAgICB7dChsYW5ndWFnZSwgInByZW1pb1NpIil9CiAgICAgICAgICAgIDwvc3Bhbj4KICAgICAgICAgICAgPHAgY2xhc3NOYW1lPSJ0ZXh0LVsxNHB4XSBmb250LWJvbGQgdGV4dC13aGl0ZSI+CiAgICAgICAgICAgICAgJHt0b3RhbFBheW91dC50b0ZpeGVkKDIpfQogICAgICAgICAgICA8L3A+CiAgICAgICAgICA8L2Rpdj4KICAgICAgICAgIDxidXR0b24gY2xhc3NOYW1lPSJzaHJpbmstMCByb3VuZGVkLWZ1bGwgYmctd2hpdGUgcHgtNCBweS0yIHRleHQtWzEycHhdIGZvbnQtc2VtaWJvbGQgdGV4dC1bIzJjMmYzM10gc2hhZG93IHRyYW5zaXRpb24tY29sb3JzIGFjdGl2ZTpiZy1ncmF5LTEwMCI+CiAgICAgICAgICAgIHt0KGxhbmd1YWdlLCAiYWN0aXZhclNpIil9CiAgICAgICAgICA8L2J1dHRvbj4KICAgICAgICA8L2Rpdj4KICAgICAgPC9kaXY+CgogICAgICB7LyogU3BvcnQgQ2FyZHMgR3JpZCAqL30KICAgICAgPGRpdiBjbGFzc05hbWU9InB4LTMgcHktNCI+CiAgICAgICAgPGRpdiBjbGFzc05hbWU9ImdyaWQgZ3JpZC1jb2xzLTMgZ2FwLTMiPgogICAgICAgICAge3Nwb3J0Q2FyZERhdGEubWFwKChzcG9ydCkgPT4gKAogICAgICAgICAgICA8U3BvcnRDYXJkCiAgICAgICAgICAgICAga2V5PXtzcG9ydC5jb2RlfQogICAgICAgICAgICAgIHNwb3J0PXtzcG9ydH0KICAgICAgICAgICAgICBvbkNsaWNrPXsoKSA9PiBoYW5kbGVTcG9ydENsaWNrKHNwb3J0LmNvZGUpfQogICAgICAgICAgICAvPgogICAgICAgICAgKSl9CiAgICAgICAgPC9kaXY+CiAgICAgIDwvZGl2PgoKICAgICAgey8qIEJvdHRvbTogVHVzIGp1Z2FkYXMgYnV0dG9uIC0gcG9zaXRpb25lZCBhYm92ZSBib3R0b20gbmF2ICovfQogICAgICA8ZGl2IGNsYXNzTmFtZT0iZml4ZWQgYm90dG9tLTE2IGxlZnQtMCByaWdodC0wIHotMzAgcC0zIj4KICAgICAgICA8YnV0dG9uCiAgICAgICAgICBvbkNsaWNrPXsoKSA9PiB0b2dnbGVCZXRTbGlwU2hlZXQoKX0KICAgICAgICAgIGNsYXNzTmFtZT0iZmxleCB3LWZ1bGwgaXRlbXMtY2VudGVyIGp1c3RpZnktY2VudGVyIGdhcC0yIHJvdW5kZWQtbGcgYmctWyMyZWNjNzFdIHB5LTMuNSB0ZXh0LXNtIGZvbnQtYm9sZCB1cHBlcmNhc2UgdHJhY2tpbmctd2lkZSB0ZXh0LXdoaXRlIHNoYWRvdy1sZyB0cmFuc2l0aW9uLWFsbCBhY3RpdmU6c2NhbGUtWzAuOThdIGFjdGl2ZTpiZy1bIzI3YWU2MF0iCiAgICAgICAgPgogICAgICAgICAgPHNwYW4+e3QobGFuZ3VhZ2UsICJ0dXNKdWdhZGFzIil9PC9zcGFuPgogICAgICAgICAgPENoZXZyb25VcCBzaXplPXsxOH0gLz4KICAgICAgICAgIHtzZWxlY3RlZEJldHMubGVuZ3RoID4gMCAmJiAoCiAgICAgICAgICAgIDxzcGFuIGNsYXNzTmFtZT0ibWwtMSBmbGV4IGgtNSB3LTUgaXRlbXMtY2VudGVyIGp1c3RpZnktY2VudGVyIHJvdW5kZWQtZnVsbCBiZy13aGl0ZSB0ZXh0LVsxMXB4XSBmb250LWJvbGQgdGV4dC1bIzJlY2M3MV0iPgogICAgICAgICAgICAgIHtzZWxlY3RlZEJldHMubGVuZ3RofQogICAgICAgICAgICA8L3NwYW4+CiAgICAgICAgICApfQogICAgICAgIDwvYnV0dG9uPgogICAgICA8L2Rpdj4KCiAgICAgIHsvKiBTcGFjZXIgZm9yIGJvdHRvbSBidXR0b24gKyBuYXYgKi99CiAgICAgIDxkaXYgY2xhc3NOYW1lPSJoLTMyIiAvPgogICAgPC9kaXY+CiAgKTsKfQo=
+﻿import { useNavigate } from "react-router";
+import { motion } from "framer-motion";
+import { ChevronUp } from "lucide-react";
+import { useApp } from "@/context/AppContext";
+import { t } from "@/lib/i18n";
+import type { SportCode } from "@/data/mockData";
+
+const sportCardData: {
+  code: SportCode;
+  name: string;
+  logoUrl?: string;
+  isSvg?: boolean;
+}[] = [
+  {
+    code: "MLB",
+    name: "MLB",
+    logoUrl: "/logo-mlb.png",
+  },
+  {
+    code: "LMB",
+    name: "LMB",
+    logoUrl: "/logo-lmb.png",
+  },
+  {
+    code: "NBA",
+    name: "NBA",
+    logoUrl: "/logo-nba.png",
+  },
+  {
+    code: "WNBA",
+    name: "WNBA",
+    logoUrl: "/logo-wnba.png",
+  },
+  {
+    code: "BPS",
+    name: "BPS",
+    isSvg: true,
+  },
+  {
+    code: "Soccer",
+    name: "NACIONES",
+    logoUrl: "/logo-naciones.png",
+  },
+  {
+    code: "NBA-S",
+    name: "NBA-S",
+    isSvg: true,
+  },
+];
+
+function SportCard({
+  sport,
+  onClick,
+}: {
+  sport: (typeof sportCardData)[number];
+  onClick: () => void;
+}) {
+  return (
+    <motion.button
+      whileTap={{ scale: 0.96 }}
+      onClick={onClick}
+      className="flex flex-col items-center rounded-xl bg-white p-4 shadow-md transition-shadow active:shadow-lg"
+    >
+      <div className="mb-2 flex h-16 w-full items-center justify-center overflow-hidden">
+        {sport.logoUrl ? (
+          <img
+            src={sport.logoUrl}
+            alt={sport.name}
+            className="max-h-14 max-w-full object-contain"
+            loading="lazy"
+            onError={(e) => {
+              (e.target as HTMLImageElement).style.display = "none";
+            }}
+          />
+        ) : sport.code === "BPS" ? (
+          <svg
+            viewBox="0 0 64 64"
+            className="h-14 w-14"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <circle cx="32" cy="32" r="30" stroke="#1a3a1c" strokeWidth="2" fill="#f0f0f0" />
+            <path
+              d="M32 10 C22 10, 14 18, 14 28 C14 36, 18 42, 24 44 L24 54 L28 50 L32 54 L36 50 L40 54 L40 44 C46 42, 50 36, 50 28 C50 18, 42 10, 32 10 Z"
+              fill="#1a3a1c"
+            />
+            <circle cx="26" cy="26" r="3" fill="#fff" />
+            <circle cx="38" cy="26" r="3" fill="#fff" />
+            <path d="M28 34 Q32 38, 36 34" stroke="#fff" strokeWidth="2" fill="none" />
+          </svg>
+        ) : sport.code === "NBA-S" ? (
+          <svg
+            viewBox="0 0 64 64"
+            className="h-14 w-14"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <circle cx="32" cy="32" r="30" stroke="#1a1a3e" strokeWidth="2" fill="#f0f0f0" />
+            <path
+              d="M20 48 L20 30 C20 22, 26 16, 32 16 C38 16, 44 22, 44 30 L44 48"
+              stroke="#1a1a3e"
+              strokeWidth="3"
+              fill="none"
+              strokeLinecap="round"
+            />
+            <circle cx="32" cy="12" r="6" fill="#1a1a3e" />
+            <path
+              d="M26 38 L26 48 M38 38 L38 48"
+              stroke="#1a1a3e"
+              strokeWidth="3"
+              strokeLinecap="round"
+            />
+          </svg>
+        ) : null}
+      </div>
+      <span className="text-sm font-bold text-[#2c2f33]">{sport.name}</span>
+    </motion.button>
+  );
+}
+
+export default function Home() {
+  const navigate = useNavigate();
+  const {
+    toggleBetSlipSheet,
+    betAmount,
+    setBetAmount,
+    selectedBets,
+    language,
+  } = useApp();
+
+  const totalPayout = selectedBets.reduce((acc, bet) => {
+    const amt = parseFloat(betAmount) || 0;
+    if (amt <= 0) return 0;
+    const odds = bet.odds;
+    if (odds > 0) {
+      return acc + amt * (odds / 100 + 1);
+    } else {
+      return acc + amt * (100 / Math.abs(odds) + 1);
+    }
+  }, 0);
+
+  const handleSportClick = (code: SportCode) => {
+    navigate(`/sport/${code}`);
+  };
+
+  return (
+    <div className="min-h-[100dvh] bg-[#3a3f47] pt-12">
+      {/* Top section: Cantidad, PREMIO, PREMIO SI, Activar si */}
+      <div className="border-b border-[#555a60] bg-[#3a3f47] px-3 py-2">
+        {/* Cantidad */}
+        <div className="mb-2">
+          <label className="mb-0.5 block text-[12px] font-medium text-[#b0b5ba]">
+            {t(language, "cantidad")}
+          </label>
+          <input
+            type="number"
+            value={betAmount}
+            onChange={(e) => setBetAmount(e.target.value)}
+            placeholder="0.00"
+            className="w-full rounded border border-[#555a60] bg-white px-3 py-2 text-sm text-[#2c2f33] outline-none transition-colors placeholder:text-[#999] focus:border-[#e74c3c]"
+          />
+        </div>
+
+        {/* PREMIO | PREMIO SI | Activar si */}
+        <div className="flex items-center gap-2">
+          <div className="flex-1">
+            <span className="text-[11px] font-semibold text-[#b0b5ba]">
+              {t(language, "premio")}
+            </span>
+            <p className="text-[14px] font-bold text-white">
+              ${totalPayout.toFixed(2)}
+            </p>
+          </div>
+          <div className="flex-1">
+            <span className="text-[11px] font-semibold text-[#b0b5ba]">
+              {t(language, "premioSi")}
+            </span>
+            <p className="text-[14px] font-bold text-white">
+              ${totalPayout.toFixed(2)}
+            </p>
+          </div>
+          <button className="shrink-0 rounded-full bg-white px-4 py-2 text-[12px] font-semibold text-[#2c2f33] shadow transition-colors active:bg-gray-100">
+            {t(language, "activarSi")}
+          </button>
+        </div>
+      </div>
+
+      {/* Sport Cards Grid */}
+      <div className="px-3 py-4">
+        <div className="grid grid-cols-3 gap-3">
+          {sportCardData.map((sport) => (
+            <SportCard
+              key={sport.code}
+              sport={sport}
+              onClick={() => handleSportClick(sport.code)}
+            />
+          ))}
+        </div>
+      </div>
+
+      {/* Bottom: Tus jugadas button - positioned above bottom nav */}
+      <div className="fixed bottom-16 left-0 right-0 z-30 p-3">
+        <button
+          onClick={() => toggleBetSlipSheet()}
+          className="flex w-full items-center justify-center gap-2 rounded-lg bg-[#2ecc71] py-3.5 text-sm font-bold uppercase tracking-wide text-white shadow-lg transition-all active:scale-[0.98] active:bg-[#27ae60]"
+        >
+          <span>{t(language, "tusJugadas")}</span>
+          <ChevronUp size={18} />
+          {selectedBets.length > 0 && (
+            <span className="ml-1 flex h-5 w-5 items-center justify-center rounded-full bg-white text-[11px] font-bold text-[#2ecc71]">
+              {selectedBets.length}
+            </span>
+          )}
+        </button>
+      </div>
+
+      {/* Spacer for bottom button + nav */}
+      <div className="h-32" />
+    </div>
+  );
+}

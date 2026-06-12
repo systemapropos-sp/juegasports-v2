@@ -1,1 +1,76 @@
-aW1wb3J0IHsgdXNlU3RhdGUsIHVzZUVmZmVjdCB9IGZyb20gJ3JlYWN0JzsKaW1wb3J0IHsgbW90aW9uLCBBbmltYXRlUHJlc2VuY2UgfSBmcm9tICdmcmFtZXItbW90aW9uJzsKaW1wb3J0IHsgRG93bmxvYWQsIFggfSBmcm9tICdsdWNpZGUtcmVhY3QnOwppbXBvcnQgeyB1c2VQV0FJbnN0YWxsIH0gZnJvbSAnQC9ob29rcy91c2VQV0FJbnN0YWxsJzsKCmV4cG9ydCBkZWZhdWx0IGZ1bmN0aW9uIEluc3RhbGxQcm9tcHQoKSB7CiAgY29uc3QgeyBpbnN0YWxsUHJvbXB0LCBpc0luc3RhbGxlZCwgaXNJT1MsIHByb21wdEluc3RhbGwgfSA9IHVzZVBXQUluc3RhbGwoKTsKICBjb25zdCBbc2hvd1Byb21wdCwgc2V0U2hvd1Byb21wdF0gPSB1c2VTdGF0ZShmYWxzZSk7CiAgY29uc3QgW2Rpc21pc3NlZCwgc2V0RGlzbWlzc2VkXSA9IHVzZVN0YXRlKGZhbHNlKTsKCiAgdXNlRWZmZWN0KCgpID0+IHsKICAgIGNvbnN0IGFscmVhZHlEaXNtaXNzZWQgPSBsb2NhbFN0b3JhZ2UuZ2V0SXRlbSgnaW5zdGFsbC1wcm9tcHQtZGlzbWlzc2VkJyk7CiAgICBpZiAoYWxyZWFkeURpc21pc3NlZCkgewogICAgICBzZXREaXNtaXNzZWQodHJ1ZSk7CiAgICB9CiAgfSwgW10pOwoKICB1c2VFZmZlY3QoKCkgPT4gewogICAgaWYgKChpbnN0YWxsUHJvbXB0IHx8IGlzSU9TKSAmJiAhaXNJbnN0YWxsZWQgJiYgIWRpc21pc3NlZCkgewogICAgICBjb25zdCB0aW1lciA9IHNldFRpbWVvdXQoKCkgPT4gc2V0U2hvd1Byb21wdCh0cnVlKSwgMjAwMCk7CiAgICAgIHJldHVybiAoKSA9PiBjbGVhclRpbWVvdXQodGltZXIpOwogICAgfQogIH0sIFtpbnN0YWxsUHJvbXB0LCBpc0lPUywgaXNJbnN0YWxsZWQsIGRpc21pc3NlZF0pOwoKICBjb25zdCBoYW5kbGVEaXNtaXNzID0gKCkgPT4gewogICAgc2V0U2hvd1Byb21wdChmYWxzZSk7CiAgICBzZXREaXNtaXNzZWQodHJ1ZSk7CiAgICBsb2NhbFN0b3JhZ2Uuc2V0SXRlbSgnaW5zdGFsbC1wcm9tcHQtZGlzbWlzc2VkJywgJ3RydWUnKTsKICB9OwoKICBjb25zdCBoYW5kbGVJbnN0YWxsID0gYXN5bmMgKCkgPT4gewogICAgaWYgKGlzSU9TKSB7CiAgICAgIC8vIGlPUyBkb2Vzbid0IHN1cHBvcnQgbmF0aXZlIGluc3RhbGwgLSBzaG93IGluc3RydWN0aW9ucwogICAgICBhbGVydCgnUGFyYSBpbnN0YWxhcjogdG9jYSBlbCBib3RvbiBDb21wYXJ0aXIgeSBzZWxlY2Npb25hICJBZ3JlZ2FyIGEgSW5pY2lvIicpOwogICAgfSBlbHNlIHsKICAgICAgYXdhaXQgcHJvbXB0SW5zdGFsbCgpOwogICAgfQogICAgaGFuZGxlRGlzbWlzcygpOwogIH07CgogIGlmIChpc0luc3RhbGxlZCkgcmV0dXJuIG51bGw7CgogIHJldHVybiAoCiAgICA8QW5pbWF0ZVByZXNlbmNlPgogICAgICB7c2hvd1Byb21wdCAmJiAoCiAgICAgICAgPG1vdGlvbi5kaXYKICAgICAgICAgIGluaXRpYWw9e3sgeTogMTAwLCBvcGFjaXR5OiAwIH19CiAgICAgICAgICBhbmltYXRlPXt7IHk6IDAsIG9wYWNpdHk6IDEgfX0KICAgICAgICAgIGV4aXQ9e3sgeTogMTAwLCBvcGFjaXR5OiAwIH19CiAgICAgICAgICB0cmFuc2l0aW9uPXt7IHR5cGU6ICdzcHJpbmcnLCBkYW1waW5nOiAyNSwgc3RpZmZuZXNzOiAzMDAgfX0KICAgICAgICAgIGNsYXNzTmFtZT0iZml4ZWQgYm90dG9tLTIwIGxlZnQtMyByaWdodC0zIHotWzYwXSByb3VuZGVkLXhsIGJnLVsjM2EzZjQ3XSBwLTQgc2hhZG93LTJ4bCBib3JkZXIgYm9yZGVyLVsjNTU1YTYwXSIKICAgICAgICAgIHN0eWxlPXt7IHBhZGRpbmdCb3R0b206ICdtYXgoMTZweCwgZW52KHNhZmUtYXJlYS1pbnNldC1ib3R0b20pKScgfX0KICAgICAgICA+CiAgICAgICAgICA8YnV0dG9uIG9uQ2xpY2s9e2hhbmRsZURpc21pc3N9IGNsYXNzTmFtZT0iYWJzb2x1dGUgcmlnaHQtMiB0b3AtMiB0ZXh0LVsjN2Y4YzhkXSBob3Zlcjp0ZXh0LXdoaXRlIj4KICAgICAgICAgICAgPFggc2l6ZT17MTh9IC8+CiAgICAgICAgICA8L2J1dHRvbj4KICAgICAgICAgIDxkaXYgY2xhc3NOYW1lPSJmbGV4IGl0ZW1zLWNlbnRlciBnYXAtMyI+CiAgICAgICAgICAgIDxkaXYgY2xhc3NOYW1lPSJmbGV4IGgtMTIgdy0xMiBzaHJpbmstMCBpdGVtcy1jZW50ZXIganVzdGlmeS1jZW50ZXIgcm91bmRlZC14bCBiZy1bIzM0OThkYl0vMjAiPgogICAgICAgICAgICAgIDxEb3dubG9hZCBzaXplPXsyNH0gY2xhc3NOYW1lPSJ0ZXh0LVsjMzQ5OGRiXSIgLz4KICAgICAgICAgICAgPC9kaXY+CiAgICAgICAgICAgIDxkaXYgY2xhc3NOYW1lPSJmbGV4LTEiPgogICAgICAgICAgICAgIDxwIGNsYXNzTmFtZT0idGV4dC1zbSBmb250LWJvbGQgdGV4dC13aGl0ZSI+SW5zdGFsYSBKdWVnYVNwb3J0czwvcD4KICAgICAgICAgICAgICA8cCBjbGFzc05hbWU9InRleHQteHMgdGV4dC1bI2IwYjViYV0iPkFjY2VzbyByYXBpZG8uIEV4cGVyaWVuY2lhIGRlIGFwcCBuYXRpdmEuPC9wPgogICAgICAgICAgICA8L2Rpdj4KICAgICAgICAgICAgPGJ1dHRvbgogICAgICAgICAgICAgIG9uQ2xpY2s9e2hhbmRsZUluc3RhbGx9CiAgICAgICAgICAgICAgY2xhc3NOYW1lPSJzaHJpbmstMCByb3VuZGVkLWxnIGJnLVsjMzQ5OGRiXSBweC00IHB5LTIgdGV4dC14cyBmb250LWJvbGQgdXBwZXJjYXNlIHRleHQtd2hpdGUgYWN0aXZlOnNjYWxlLTk1IgogICAgICAgICAgICA+CiAgICAgICAgICAgICAgSW5zdGFsYXIKICAgICAgICAgICAgPC9idXR0b24+CiAgICAgICAgICA8L2Rpdj4KICAgICAgICA8L21vdGlvbi5kaXY+CiAgICAgICl9CiAgICA8L0FuaW1hdGVQcmVzZW5jZT4KICApOwp9Cg==
+﻿import { useState, useEffect } from 'react';
+import { motion, AnimatePresence } from 'framer-motion';
+import { Download, X } from 'lucide-react';
+import { usePWAInstall } from '@/hooks/usePWAInstall';
+
+export default function InstallPrompt() {
+  const { installPrompt, isInstalled, isIOS, promptInstall } = usePWAInstall();
+  const [showPrompt, setShowPrompt] = useState(false);
+  const [dismissed, setDismissed] = useState(false);
+
+  useEffect(() => {
+    const alreadyDismissed = localStorage.getItem('install-prompt-dismissed');
+    if (alreadyDismissed) {
+      setDismissed(true);
+    }
+  }, []);
+
+  useEffect(() => {
+    if ((installPrompt || isIOS) && !isInstalled && !dismissed) {
+      const timer = setTimeout(() => setShowPrompt(true), 2000);
+      return () => clearTimeout(timer);
+    }
+  }, [installPrompt, isIOS, isInstalled, dismissed]);
+
+  const handleDismiss = () => {
+    setShowPrompt(false);
+    setDismissed(true);
+    localStorage.setItem('install-prompt-dismissed', 'true');
+  };
+
+  const handleInstall = async () => {
+    if (isIOS) {
+      // iOS doesn't support native install - show instructions
+      alert('Para instalar: toca el boton Compartir y selecciona "Agregar a Inicio"');
+    } else {
+      await promptInstall();
+    }
+    handleDismiss();
+  };
+
+  if (isInstalled) return null;
+
+  return (
+    <AnimatePresence>
+      {showPrompt && (
+        <motion.div
+          initial={{ y: 100, opacity: 0 }}
+          animate={{ y: 0, opacity: 1 }}
+          exit={{ y: 100, opacity: 0 }}
+          transition={{ type: 'spring', damping: 25, stiffness: 300 }}
+          className="fixed bottom-20 left-3 right-3 z-[60] rounded-xl bg-[#3a3f47] p-4 shadow-2xl border border-[#555a60]"
+          style={{ paddingBottom: 'max(16px, env(safe-area-inset-bottom))' }}
+        >
+          <button onClick={handleDismiss} className="absolute right-2 top-2 text-[#7f8c8d] hover:text-white">
+            <X size={18} />
+          </button>
+          <div className="flex items-center gap-3">
+            <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-[#3498db]/20">
+              <Download size={24} className="text-[#3498db]" />
+            </div>
+            <div className="flex-1">
+              <p className="text-sm font-bold text-white">Instala JuegaSports</p>
+              <p className="text-xs text-[#b0b5ba]">Acceso rapido. Experiencia de app nativa.</p>
+            </div>
+            <button
+              onClick={handleInstall}
+              className="shrink-0 rounded-lg bg-[#3498db] px-4 py-2 text-xs font-bold uppercase text-white active:scale-95"
+            >
+              Instalar
+            </button>
+          </div>
+        </motion.div>
+      )}
+    </AnimatePresence>
+  );
+}

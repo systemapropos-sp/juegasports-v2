@@ -1,1 +1,80 @@
-aW1wb3J0IHsgTGluaywgdXNlTG9jYXRpb24gfSBmcm9tICJyZWFjdC1yb3V0ZXIiOwppbXBvcnQgeyBtb3Rpb24gfSBmcm9tICJmcmFtZXItbW90aW9uIjsKaW1wb3J0IHsgVHJvcGh5LCBUaWNrZXQsIFVzZXIsIFBsdXMgfSBmcm9tICJsdWNpZGUtcmVhY3QiOwppbXBvcnQgeyB1c2VBcHAgfSBmcm9tICJAL2NvbnRleHQvQXBwQ29udGV4dCI7CgpleHBvcnQgZGVmYXVsdCBmdW5jdGlvbiBNb2JpbGVCb3R0b21OYXYoKSB7CiAgY29uc3QgbG9jYXRpb24gPSB1c2VMb2NhdGlvbigpOwogIGNvbnN0IHsgdG9nZ2xlQmV0U2xpcFNoZWV0LCB0b2dnbGVVc2VyTWVudSwgaXNMb2dnZWRJbiB9ID0gdXNlQXBwKCk7CgogIGNvbnN0IG5hdkl0ZW1zID0gWwogICAgewogICAgICBpY29uOiBUcm9waHksCiAgICAgIGxhYmVsOiAiSG9tZSIsCiAgICAgIGxpbms6ICIvIiwKICAgICAgYWN0aXZlOiBsb2NhdGlvbi5wYXRobmFtZSA9PT0gIi8iLAogICAgfSwKICAgIHsKICAgICAgaWNvbjogVGlja2V0LAogICAgICBsYWJlbDogIkp1Z2FkYXMiLAogICAgICBhY3Rpb246ICgpID0+IHRvZ2dsZUJldFNsaXBTaGVldCgpLAogICAgICBhY3RpdmU6IGZhbHNlLAogICAgfSwKICAgIHsKICAgICAgaWNvbjogVXNlciwKICAgICAgbGFiZWw6ICJNZW51IiwKICAgICAgYWN0aW9uOiAoKSA9PiB0b2dnbGVVc2VyTWVudSgpLAogICAgICBhY3RpdmU6IGZhbHNlLAogICAgfSwKICAgIHsKICAgICAgaWNvbjogUGx1cywKICAgICAgbGFiZWw6ICJNYXMiLAogICAgICBhY3Rpb246ICgpID0+IHt9LAogICAgICBhY3RpdmU6IGZhbHNlLAogICAgfSwKICBdOwoKICAvLyBEb24ndCBzaG93IGJvdHRvbSBuYXYgd2hlbiBub3QgbG9nZ2VkIGluIG9yIG9uIGxvZ2luIHBhZ2UKICBpZiAoIWlzTG9nZ2VkSW4gfHwgbG9jYXRpb24ucGF0aG5hbWUgPT09ICIvbG9naW4iKSByZXR1cm4gbnVsbDsKCiAgcmV0dXJuICgKICAgIDxuYXYKICAgICAgY2xhc3NOYW1lPSJmaXhlZCBib3R0b20tMCBsZWZ0LTAgcmlnaHQtMCB6LTUwIGJvcmRlci10IGJvcmRlci1bIzU1NWE2MF0gYmctWyMyYjJmMzZdLzk1IGJhY2tkcm9wLWJsdXItbWQiCiAgICAgIHN0eWxlPXt7IHBhZGRpbmdCb3R0b206ICJlbnYoc2FmZS1hcmVhLWluc2V0LWJvdHRvbSkiIH19CiAgICA+CiAgICAgIDxkaXYgY2xhc3NOYW1lPSJmbGV4IGgtMTYgaXRlbXMtY2VudGVyIGp1c3RpZnktYXJvdW5kIj4KICAgICAgICB7bmF2SXRlbXMubWFwKChpdGVtKSA9PiB7CiAgICAgICAgICBjb25zdCBJY29uID0gaXRlbS5pY29uOwogICAgICAgICAgY29uc3QgaXNBY3RpdmUgPSBpdGVtLmFjdGl2ZTsKCiAgICAgICAgICBjb25zdCBjb250ZW50ID0gKAogICAgICAgICAgICA8YnV0dG9uCiAgICAgICAgICAgICAgb25DbGljaz17aXRlbS5hY3Rpb24gfHwgdW5kZWZpbmVkfQogICAgICAgICAgICAgIGNsYXNzTmFtZT17YHJlbGF0aXZlIGZsZXggbWluLWgtWzQ0cHhdIG1pbi13LVs0NHB4XSBmbGV4LWNvbCBpdGVtcy1jZW50ZXIganVzdGlmeS1jZW50ZXIgZ2FwLTAuNSBweC0zIHB5LTEgdHJhbnNpdGlvbi1jb2xvcnMgJHsKICAgICAgICAgICAgICAgIGlzQWN0aXZlID8gInRleHQtWyNlNzRjM2NdIiA6ICJ0ZXh0LVsjN2Y4YzhkXSIKICAgICAgICAgICAgICB9YH0KICAgICAgICAgICAgPgogICAgICAgICAgICAgIDxJY29uIHNpemU9ezIyfSBzdHJva2VXaWR0aD17aXNBY3RpdmUgPyAyLjUgOiAxLjV9IC8+CiAgICAgICAgICAgICAgPHNwYW4gY2xhc3NOYW1lPSJ0ZXh0LVsxMHB4XSBmb250LW1lZGl1bSI+e2l0ZW0ubGFiZWx9PC9zcGFuPgogICAgICAgICAgICAgIHtpc0FjdGl2ZSAmJiAoCiAgICAgICAgICAgICAgICA8bW90aW9uLmRpdgogICAgICAgICAgICAgICAgICBsYXlvdXRJZD0iYm90dG9tTmF2SW5kaWNhdG9yIgogICAgICAgICAgICAgICAgICBjbGFzc05hbWU9ImFic29sdXRlIC10b3AtcHggaC0wLjUgdy04IHJvdW5kZWQtZnVsbCBiZy1bI2U3NGMzY10iCiAgICAgICAgICAgICAgICAvPgogICAgICAgICAgICAgICl9CiAgICAgICAgICAgIDwvYnV0dG9uPgogICAgICAgICAgKTsKCiAgICAgICAgICBpZiAoaXRlbS5saW5rKSB7CiAgICAgICAgICAgIHJldHVybiAoCiAgICAgICAgICAgICAgPExpbmsga2V5PXtpdGVtLmxhYmVsfSB0bz17aXRlbS5saW5rfT4KICAgICAgICAgICAgICAgIHtjb250ZW50fQogICAgICAgICAgICAgIDwvTGluaz4KICAgICAgICAgICAgKTsKICAgICAgICAgIH0KICAgICAgICAgIHJldHVybiA8ZGl2IGtleT17aXRlbS5sYWJlbH0+e2NvbnRlbnR9PC9kaXY+OwogICAgICAgIH0pfQogICAgICA8L2Rpdj4KICAgIDwvbmF2PgogICk7Cn0K
+﻿import { Link, useLocation } from "react-router";
+import { motion } from "framer-motion";
+import { Trophy, Ticket, User, Plus } from "lucide-react";
+import { useApp } from "@/context/AppContext";
+
+export default function MobileBottomNav() {
+  const location = useLocation();
+  const { toggleBetSlipSheet, toggleUserMenu, isLoggedIn } = useApp();
+
+  const navItems = [
+    {
+      icon: Trophy,
+      label: "Home",
+      link: "/",
+      active: location.pathname === "/",
+    },
+    {
+      icon: Ticket,
+      label: "Jugadas",
+      action: () => toggleBetSlipSheet(),
+      active: false,
+    },
+    {
+      icon: User,
+      label: "Menu",
+      action: () => toggleUserMenu(),
+      active: false,
+    },
+    {
+      icon: Plus,
+      label: "Mas",
+      action: () => {},
+      active: false,
+    },
+  ];
+
+  // Don't show bottom nav when not logged in or on login page
+  if (!isLoggedIn || location.pathname === "/login") return null;
+
+  return (
+    <nav
+      className="fixed bottom-0 left-0 right-0 z-50 border-t border-[#555a60] bg-[#2b2f36]/95 backdrop-blur-md"
+      style={{ paddingBottom: "env(safe-area-inset-bottom)" }}
+    >
+      <div className="flex h-16 items-center justify-around">
+        {navItems.map((item) => {
+          const Icon = item.icon;
+          const isActive = item.active;
+
+          const content = (
+            <button
+              onClick={item.action || undefined}
+              className={`relative flex min-h-[44px] min-w-[44px] flex-col items-center justify-center gap-0.5 px-3 py-1 transition-colors ${
+                isActive ? "text-[#e74c3c]" : "text-[#7f8c8d]"
+              }`}
+            >
+              <Icon size={22} strokeWidth={isActive ? 2.5 : 1.5} />
+              <span className="text-[10px] font-medium">{item.label}</span>
+              {isActive && (
+                <motion.div
+                  layoutId="bottomNavIndicator"
+                  className="absolute -top-px h-0.5 w-8 rounded-full bg-[#e74c3c]"
+                />
+              )}
+            </button>
+          );
+
+          if (item.link) {
+            return (
+              <Link key={item.label} to={item.link}>
+                {content}
+              </Link>
+            );
+          }
+          return <div key={item.label}>{content}</div>;
+        })}
+      </div>
+    </nav>
+  );
+}

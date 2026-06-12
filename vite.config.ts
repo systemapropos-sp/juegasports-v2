@@ -1,1 +1,17 @@
-aW1wb3J0IHBhdGggZnJvbSAicGF0aCIKaW1wb3J0IHJlYWN0IGZyb20gIkB2aXRlanMvcGx1Z2luLXJlYWN0IgppbXBvcnQgeyBkZWZpbmVDb25maWcgfSBmcm9tICJ2aXRlIgppbXBvcnQgeyBpbnNwZWN0QXR0ciB9IGZyb20gJ3BsdWdpbi1pbnNwZWN0LXJlYWN0LWNvZGUnCgovLyBodHRwczovL3ZpdGUuZGV2L2NvbmZpZy8KZXhwb3J0IGRlZmF1bHQgZGVmaW5lQ29uZmlnKHsKICBiYXNlOiAnLi8nLAogIHBsdWdpbnM6IFtpbnNwZWN0QXR0cigpLCByZWFjdCgpXSwKICBzZXJ2ZXI6IHsKICAgIHBvcnQ6IDMwMDAsCiAgfSwKICByZXNvbHZlOiB7CiAgICBhbGlhczogewogICAgICAiQCI6IHBhdGgucmVzb2x2ZShfX2Rpcm5hbWUsICIuL3NyYyIpLAogICAgfSwKICB9LAp9KTsK
+﻿import path from "path"
+import react from "@vitejs/plugin-react"
+import { defineConfig } from "vite"
+
+// https://vite.dev/config/
+export default defineConfig({
+  base: './',
+  plugins: [react()],
+  server: {
+    port: 3000,
+  },
+  resolve: {
+    alias: {
+      "@": path.resolve(__dirname, "./src"),
+    },
+  },
+});
