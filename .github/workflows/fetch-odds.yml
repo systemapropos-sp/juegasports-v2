@@ -1,9 +1,14 @@
 name: Fetch Sports Odds
 
 on:
-  schedule:
-    # 15:00 UTC = 11:00 AM Eastern Time (ET)
-    - cron: '0 15 * * *'
+  # Desactivado (2026-08-04): este workflow y el de fsb-pro escribían al
+  # mismo games.json en Supabase, pisándose entre sí — fsb-pro corre cada 2h
+  # y ya trae resultados/scores + mercados por período, así que es la única
+  # fuente que debe quedar activa. Se deja workflow_dispatch por si hace
+  # falta correrlo a mano alguna vez; el `schedule:` automático queda
+  # comentado a propósito, no borrado.
+  # schedule:
+  #   - cron: '0 15 * * *'
   workflow_dispatch:
     # Also allows manual "Run workflow" button in GitHub Actions tab
 
